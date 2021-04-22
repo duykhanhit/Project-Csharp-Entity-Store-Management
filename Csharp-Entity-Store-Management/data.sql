@@ -301,3 +301,6 @@ as
 		on [Supplier].supplierID = d.supplierID
 	end
 
+	insert into [User] (username,password,role,fullname,address,position,phone) values ("admin","12345","admin","Duc Diep", "Ha Noi","CEO","12345435")
+	insert into [Customer] (name, address,phone) values ("Nguyen Van A", "Hai Phong","12364556")
+	insert into [Order] (amount,totalAmount,customerID,userID) values (10000,20000,1,1)

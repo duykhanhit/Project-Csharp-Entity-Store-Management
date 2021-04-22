@@ -40,3 +40,8 @@ select * from Supplier;
 select * from Category;
 select * from [User];
 select * from Customer;
+select * from [Order];
+
+insert into [Product] (categoryID,name,stockOnHand,price,thumb) values (1,N'Sữa bò', 100, 10000,''),(1,N'Sữa chua', 150, 20000,''),(2,N'Táo', 100, 10000,''),(2,N'Lê', 100, 10000,''),(2,N'Nho', 100, 10000,'')
+insert into [Order] (amount,totalAmount,customerID,userID) values (10000,20000,1,1),(10000,20000,2,1),(10000,20000,3,1)
+insert into [OrderDetail] (orderID,productID,price,quantity,discount) values (2,2,1000,10,0),(2,3,2000,20,0),(2,4,3000,30,0)
