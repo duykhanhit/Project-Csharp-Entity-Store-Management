@@ -53,7 +53,7 @@ namespace Csharp_Entity_Store_Management
                               soLuong = a.quantity,
                               donGia = a.price,
                               giamGia = a.discount,
-                              thanhTien = a.price * a.quantity - a.price*a.quantity*a.discount
+                              thanhTien = a.price * a.quantity - a.price*a.quantity*a.discount/100
                           }).ToList();
             dgvListProduct.DataSource = result;
             dgvListProduct.Columns[0].HeaderText = "Mã hàng";
