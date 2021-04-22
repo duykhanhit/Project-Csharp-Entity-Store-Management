@@ -160,8 +160,17 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmManagementAccount.resx">
+      <DependentUpon>frmManagementAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagementCategory.resx">
+      <DependentUpon>frmManagementCategory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmManagementOrder.resx">
       <DependentUpon>frmManagementOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagementSuppiler.resx">
+      <DependentUpon>frmManagementSuppiler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOrderDetail.resx">
       <DependentUpon>frmOrderDetail.cs</DependentUpon>
@@ -202,6 +211,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dog.PNG" />
+    <Content Include="Resources\add.ico" />
+    <Content Include="Resources\clear.ico" />
+    <Content Include="Resources\close.ico" />
+    <Content Include="Resources\delete.ico" />
+    <Content Include="Resources\delete_user.ico" />
+    <Content Include="Resources\edit.ico" />
+    <Content Include="Resources\edit_user.ico" />
+    <Content Include="Resources\search_user.ico" />
+    <Content Include="Resources\user_add.ico" />
+    <Content Include="Resources\view_all.ico" />
     <Content Include="StoreModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>StoreModel.Context.cs</LastGenOutput>
