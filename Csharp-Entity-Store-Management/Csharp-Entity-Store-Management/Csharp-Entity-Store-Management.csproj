@@ -157,6 +157,9 @@
     <Compile Include="User.cs">
       <DependentUpon>StoreModel.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>

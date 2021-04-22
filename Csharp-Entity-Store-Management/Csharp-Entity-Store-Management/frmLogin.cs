@@ -27,30 +27,36 @@ namespace Csharp_Entity_Store_Management
 
             if (account == null)
             {
-                MessageBox.Show("Không tồn tại tài khoản!", "Thông báo!");
+                MessageBox.Show("Không tồn tại tài khoản!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             if (!account.password.Equals(password))
             {
-                MessageBox.Show("Sai mật khẩu!", "Thông báo!");
+                MessageBox.Show("Sai mật khẩu!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            MessageBox.Show("Đăng nhập thành công!");
+            this.Hide();
 
-            //User account = new User();
-            //account.username = "demo";
-            //account.password = "123";
-            //account.role = "staff";
-            //account.position = "staff";
-            //account.phone = "123123";
-            //account.address = "TQ";
-            //account.fullname = "Nguyen Van A";
+            if (account.role.Equals("admin"))
+            {
+                frmDashboard frmDashboard = new frmDashboard();
+                frmDashboard.User = account;
+                frmDashboard.Closed += (s, args) => this.Close();
+                MessageBox.Show("Đăng nhập thành công với quyền quản trị!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frmDashboard.Show();
+            }
+            else
+            {
+                frmSelling frmSelling = new frmSelling();
+                frmSelling.User = account;
+                frmSelling.Closed += (s, args) => this.Close();
+                MessageBox.Show("Đăng nhập thành công với quyền nhân viên!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frmSelling.Show();
+            }
 
-            //db.Users.Add(account);
-            //db.SaveChanges();
-            //MessageBox.Show("Đăng nhập thành công!");
+
         }
     }
 }

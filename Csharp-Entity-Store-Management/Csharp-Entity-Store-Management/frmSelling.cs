@@ -12,6 +12,9 @@ namespace Csharp_Entity_Store_Management
 {
     public partial class frmSelling : Form
     {
+        private User user;
+
+        public User User { get => user; set => user = value; }
         public frmSelling()
         {
             InitializeComponent();
@@ -28,6 +31,7 @@ namespace Csharp_Entity_Store_Management
             grbProductDetail.Visible = false;
             dgvCarts.Visible = false;
             lblDetailID.Visible = false;
+            lblUserName.Text = "Xin chào: " + user.fullname;
 
             setDataDgvProducts();
 
@@ -334,7 +338,7 @@ namespace Csharp_Entity_Store_Management
             sumOfMoney();
         }
 
-        private void sumOfMoney()
+        private long sumOfMoney()
         {
             long sum = 0;
             for(int i = 0; i < productInCarts.Count; i++)
@@ -343,6 +347,19 @@ namespace Csharp_Entity_Store_Management
             }
 
             lblTotalAmount.Text = sum + " VNĐ";
+
+            return sum;
+        }
+
+        private long sumOfTotalMoney()
+        {
+            long sum = 0;
+            for (int i = 0; i < productInCarts.Count; i++)
+            {
+                sum += (productInCarts[i].quantity * productInCarts[i].price);
+            }
+
+            return sum;
         }
 
         private void txtKeyword_TextChanged(object sender, EventArgs e)
@@ -399,9 +416,62 @@ namespace Csharp_Entity_Store_Management
 
         private void btnPay_Click(object sender, EventArgs e)
         {
+
+            string phone = lblCustomerPhone.Text;
+            var customer = db.Customers.Select(c => c).Where(c => c.phone == phone).SingleOrDefault();
+
+            if(customer == null)
+            {
+                MessageBox.Show("Chưa có thông tin khách hàng!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if(productInCarts.Count == 0)
+            {
+                MessageBox.Show("Chưa có sản phẩm trong giỏ hàng!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            Order currentOrder = new Order();
+            currentOrder.amount = sumOfTotalMoney();
+            currentOrder.totalAmount = sumOfMoney();
+            currentOrder.userID = user.userID;
+            currentOrder.customerID = customer.customerID;
+
+
+            db.Orders.Add(currentOrder);
+            db.SaveChanges();
+
+            int ID = currentOrder.orderID;
+
+            List<OrderDetail> orderDetails = new List<OrderDetail>();
+
+            for(int i = 0; i < productInCarts.Count; i++)
+            {
+                ProductInCart prInCart = productInCarts[i];
+
+                OrderDetail orderDetail = new OrderDetail();
+                orderDetail.discount = prInCart.discount;
+                orderDetail.price = prInCart.price;
+                orderDetail.productID = prInCart.productID;
+                orderDetail.orderID = ID;
+                orderDetail.quantity = prInCart.quantity;
+
+                Product product = db.Products.Find(prInCart.productID);
+                product.stockOnHand = product.stockOnHand - prInCart.quantity;
+
+                orderDetails.Add(orderDetail);
+            }
+
+            db.OrderDetails.AddRange(orderDetails);
+            db.SaveChanges();
+
+            this.Hide();
+
             frmOrderDetail frm = new frmOrderDetail();
-            frm.OrderID = 1;
-            frm.ShowDialog();
+            frm.OrderID = ID;
+            frm.Closed += (s, args) => this.Close();
+            frm.Show();
         }
     }
 }

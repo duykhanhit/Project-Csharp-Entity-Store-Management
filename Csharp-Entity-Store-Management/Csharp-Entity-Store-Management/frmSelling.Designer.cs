@@ -40,8 +40,14 @@ namespace Csharp_Entity_Store_Management
             this.txtKeyword = new System.Windows.Forms.TextBox();
             this.dgvProducts = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblNotiCart = new System.Windows.Forms.Label();
             this.dgvCarts = new System.Windows.Forms.DataGridView();
             this.grbProductDetail = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.btnApplyDiscount = new System.Windows.Forms.Button();
+            this.txtDiscount = new System.Windows.Forms.TextBox();
+            this.lblDetailID = new System.Windows.Forms.Label();
             this.lblDetailPrice = new System.Windows.Forms.Label();
             this.lblDetailTotal = new System.Windows.Forms.Label();
             this.lblDetailName = new System.Windows.Forms.Label();
@@ -75,12 +81,7 @@ namespace Csharp_Entity_Store_Management
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblNotiCart = new System.Windows.Forms.Label();
-            this.lblDetailID = new System.Windows.Forms.Label();
-            this.txtDiscount = new System.Windows.Forms.TextBox();
-            this.btnApplyDiscount = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -201,6 +202,16 @@ namespace Csharp_Entity_Store_Management
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Giỏ hàng";
             // 
+            // lblNotiCart
+            // 
+            this.lblNotiCart.AutoSize = true;
+            this.lblNotiCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotiCart.Location = new System.Drawing.Point(411, 38);
+            this.lblNotiCart.Name = "lblNotiCart";
+            this.lblNotiCart.Size = new System.Drawing.Size(292, 36);
+            this.lblNotiCart.TabIndex = 1;
+            this.lblNotiCart.Text = "GIỎ HÀNG TRỐNG";
+            // 
             // dgvCarts
             // 
             this.dgvCarts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -237,6 +248,49 @@ namespace Csharp_Entity_Store_Management
             this.grbProductDetail.TabIndex = 0;
             this.grbProductDetail.TabStop = false;
             this.grbProductDetail.Text = "Chi tiết sản phẩm";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(183, 217);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(30, 25);
+            this.label17.TabIndex = 9;
+            this.label17.Text = "%";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(8, 217);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(94, 25);
+            this.label16.TabIndex = 8;
+            this.label16.Text = "Discount:";
+            // 
+            // btnApplyDiscount
+            // 
+            this.btnApplyDiscount.Location = new System.Drawing.Point(235, 208);
+            this.btnApplyDiscount.Name = "btnApplyDiscount";
+            this.btnApplyDiscount.Size = new System.Drawing.Size(103, 36);
+            this.btnApplyDiscount.TabIndex = 7;
+            this.btnApplyDiscount.Text = "Áp dụng";
+            this.btnApplyDiscount.UseVisualStyleBackColor = true;
+            this.btnApplyDiscount.Click += new System.EventHandler(this.btnApplyDiscount_Click);
+            // 
+            // txtDiscount
+            // 
+            this.txtDiscount.Location = new System.Drawing.Point(107, 214);
+            this.txtDiscount.Name = "txtDiscount";
+            this.txtDiscount.Size = new System.Drawing.Size(70, 30);
+            this.txtDiscount.TabIndex = 6;
+            // 
+            // lblDetailID
+            // 
+            this.lblDetailID.AutoSize = true;
+            this.lblDetailID.Location = new System.Drawing.Point(2, 155);
+            this.lblDetailID.Name = "lblDetailID";
+            this.lblDetailID.Size = new System.Drawing.Size(0, 25);
+            this.lblDetailID.TabIndex = 5;
             // 
             // lblDetailPrice
             // 
@@ -557,64 +611,21 @@ namespace Csharp_Entity_Store_Management
             this.label2.TabIndex = 0;
             this.label2.Text = "Tên:";
             // 
-            // lblNotiCart
+            // lblUserName
             // 
-            this.lblNotiCart.AutoSize = true;
-            this.lblNotiCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotiCart.Location = new System.Drawing.Point(411, 38);
-            this.lblNotiCart.Name = "lblNotiCart";
-            this.lblNotiCart.Size = new System.Drawing.Size(292, 36);
-            this.lblNotiCart.TabIndex = 1;
-            this.lblNotiCart.Text = "GIỎ HÀNG TRỐNG";
-            // 
-            // lblDetailID
-            // 
-            this.lblDetailID.AutoSize = true;
-            this.lblDetailID.Location = new System.Drawing.Point(2, 155);
-            this.lblDetailID.Name = "lblDetailID";
-            this.lblDetailID.Size = new System.Drawing.Size(0, 25);
-            this.lblDetailID.TabIndex = 5;
-            // 
-            // txtDiscount
-            // 
-            this.txtDiscount.Location = new System.Drawing.Point(107, 214);
-            this.txtDiscount.Name = "txtDiscount";
-            this.txtDiscount.Size = new System.Drawing.Size(70, 30);
-            this.txtDiscount.TabIndex = 6;
-            // 
-            // btnApplyDiscount
-            // 
-            this.btnApplyDiscount.Location = new System.Drawing.Point(235, 208);
-            this.btnApplyDiscount.Name = "btnApplyDiscount";
-            this.btnApplyDiscount.Size = new System.Drawing.Size(103, 36);
-            this.btnApplyDiscount.TabIndex = 7;
-            this.btnApplyDiscount.Text = "Áp dụng";
-            this.btnApplyDiscount.UseVisualStyleBackColor = true;
-            this.btnApplyDiscount.Click += new System.EventHandler(this.btnApplyDiscount_Click);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(8, 217);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(94, 25);
-            this.label16.TabIndex = 8;
-            this.label16.Text = "Discount:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(183, 217);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(30, 25);
-            this.label17.TabIndex = 9;
-            this.label17.Text = "%";
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Location = new System.Drawing.Point(12, 9);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(192, 25);
+            this.lblUserName.TabIndex = 5;
+            this.lblUserName.Text = "Xin chào: Nhân Viên";
             // 
             // frmSelling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1559, 786);
+            this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.grbAddCustomer);
             this.Controls.Add(this.grbCustomerDetail);
             this.Controls.Add(this.lblTotalAmount);
@@ -704,5 +715,6 @@ namespace Csharp_Entity_Store_Management
         private System.Windows.Forms.Button btnApplyDiscount;
         private System.Windows.Forms.TextBox txtDiscount;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lblUserName;
     }
 }

@@ -16,7 +16,7 @@ namespace Csharp_Entity_Store_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmManagementAccount());
+            Application.Run(new frmLogin());
         }
     }
 }

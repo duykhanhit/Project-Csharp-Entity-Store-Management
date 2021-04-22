@@ -61,6 +61,7 @@ namespace Csharp_Entity_Store_Management
                 if (dialog.Equals(DialogResult.Yes))
                 {
                     Order order = data.Orders.Find(orderIDTemp);
+                    data.OrderDetails.RemoveRange(data.OrderDetails.Where(od => od.orderID == orderIDTemp));
                     data.Orders.Remove(order);
                     data.SaveChanges();
                     loadData();
