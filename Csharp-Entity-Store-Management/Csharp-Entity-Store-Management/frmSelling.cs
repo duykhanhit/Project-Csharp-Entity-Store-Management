@@ -27,7 +27,7 @@ namespace Csharp_Entity_Store_Management
         private void frmSelling_Load(object sender, EventArgs e)
         {
             grbAddCustomer.Visible = false;
-            grbCustomerDetail.Visible = false;
+            //grbCustomerDetail.Visible = false;
             grbProductDetail.Visible = false;
             dgvCarts.Visible = false;
             lblDetailID.Visible = false;
@@ -55,7 +55,7 @@ namespace Csharp_Entity_Store_Management
         private void btnCheckPhone_Click(object sender, EventArgs e)
         {
             grbAddCustomer.Visible = false;
-            grbCustomerDetail.Visible = false;
+            //grbCustomerDetail.Visible = false;
 
             string phone = txtCheckPhone.Text;
             var customer = db.Customers.Select(c => c).Where(c => c.phone == phone).SingleOrDefault();
@@ -68,7 +68,7 @@ namespace Csharp_Entity_Store_Management
             }
 
             setCustomerDetail(customer);
-            lblCustomerCreatedAt.Text = customer.createdAt.ToString();
+            //lblCustomerCreatedAt.Text = customer.createdAt.ToString();
         }
 
         private void btnAddCustomer_Click(object sender, EventArgs e)
@@ -93,17 +93,17 @@ namespace Csharp_Entity_Store_Management
 
             grbAddCustomer.Visible = false;
             setCustomerDetail(customer);
-            lblCustomerCreatedAt.Text = System.DateTime.Now.ToString();
+            //lblCustomerCreatedAt.Text = System.DateTime.Now.ToString();
 
         }
 
         private void setCustomerDetail(Customer customer)
         {
-            grbCustomerDetail.Visible = true;
+            //grbCustomerDetail.Visible = true;
 
-            lblCustomerName.Text = customer.name;
-            lblCustomerAddress.Text = customer.address;
-            lblCustomerPhone.Text = customer.phone;
+            //lblCustomerName.Text = customer.name;
+            //lblCustomerAddress.Text = customer.address;
+            //lblCustomerPhone.Text = customer.phone;
         }
 
         private void setTitleDgvProducts()
@@ -417,7 +417,8 @@ namespace Csharp_Entity_Store_Management
         private void btnPay_Click(object sender, EventArgs e)
         {
 
-            string phone = lblCustomerPhone.Text;
+            //string phone = lblCustomerPhone.Text;
+            string phone = "123";
             var customer = db.Customers.Select(c => c).Where(c => c.phone == phone).SingleOrDefault();
 
             if(customer == null)
