@@ -29,6 +29,7 @@ namespace Csharp_Entity_Store_Management
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataNhapKho = new System.Windows.Forms.DataGridView();
             this.btnNhap = new System.Windows.Forms.Button();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
@@ -37,13 +38,16 @@ namespace Csharp_Entity_Store_Management
             this.cbNCC = new System.Windows.Forms.ComboBox();
             this.cbTen = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataNhapKho)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataNhapKho
             // 
+            this.dataNhapKho.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataNhapKho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataNhapKho.Location = new System.Drawing.Point(131, 244);
+            this.dataNhapKho.Location = new System.Drawing.Point(39, 230);
             this.dataNhapKho.Name = "dataNhapKho";
             this.dataNhapKho.Size = new System.Drawing.Size(679, 215);
             this.dataNhapKho.TabIndex = 15;
@@ -51,7 +55,7 @@ namespace Csharp_Entity_Store_Management
             // 
             // btnNhap
             // 
-            this.btnNhap.Location = new System.Drawing.Point(730, 64);
+            this.btnNhap.Location = new System.Drawing.Point(533, 60);
             this.btnNhap.Name = "btnNhap";
             this.btnNhap.Size = new System.Drawing.Size(120, 51);
             this.btnNhap.TabIndex = 14;
@@ -61,15 +65,16 @@ namespace Csharp_Entity_Store_Management
             // 
             // txtSoLuong
             // 
-            this.txtSoLuong.Location = new System.Drawing.Point(517, 64);
+            this.txtSoLuong.Location = new System.Drawing.Point(190, 154);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(116, 22);
             this.txtSoLuong.TabIndex = 13;
+            this.txtSoLuong.Validating += new System.ComponentModel.CancelEventHandler(this.check_SoLuong);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(450, 68);
+            this.label3.Location = new System.Drawing.Point(83, 154);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 15);
             this.label3.TabIndex = 12;
@@ -78,7 +83,7 @@ namespace Csharp_Entity_Store_Management
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(83, 142);
+            this.label2.Location = new System.Drawing.Point(83, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 15);
             this.label2.TabIndex = 11;
@@ -87,7 +92,7 @@ namespace Csharp_Entity_Store_Management
             // cbNCC
             // 
             this.cbNCC.FormattingEnabled = true;
-            this.cbNCC.Location = new System.Drawing.Point(190, 142);
+            this.cbNCC.Location = new System.Drawing.Point(190, 110);
             this.cbNCC.Name = "cbNCC";
             this.cbNCC.Size = new System.Drawing.Size(199, 23);
             this.cbNCC.TabIndex = 10;
@@ -109,11 +114,15 @@ namespace Csharp_Entity_Store_Management
             this.label1.TabIndex = 8;
             this.label1.Text = "Mặt hàng";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // frmManagementStockIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 519);
+            this.ClientSize = new System.Drawing.Size(753, 519);
             this.Controls.Add(this.dataNhapKho);
             this.Controls.Add(this.btnNhap);
             this.Controls.Add(this.txtSoLuong);
@@ -127,6 +136,7 @@ namespace Csharp_Entity_Store_Management
             this.Text = "frmManagementStockIn";
             this.Load += new System.EventHandler(this.frmManagementStockIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataNhapKho)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,5 +152,6 @@ namespace Csharp_Entity_Store_Management
         private System.Windows.Forms.ComboBox cbNCC;
         private System.Windows.Forms.ComboBox cbTen;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

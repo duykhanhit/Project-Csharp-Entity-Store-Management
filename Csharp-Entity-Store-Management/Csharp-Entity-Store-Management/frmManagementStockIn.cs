@@ -24,14 +24,14 @@ namespace Csharp_Entity_Store_Management
             var result = from c in db.StockIns select new { IDNCC = c.supplierID, IDSP = c.productID, soluong = c.quantity, createAt = c.createdAt, updateAt = c.updatedAt };
             dataNhapKho.DataSource = result.ToList();
             dataNhapKho.Columns[0].HeaderText = "Mã nhà cung cấp";
-            dataNhapKho.Columns[0].Width = 150;
+        
             dataNhapKho.Columns[1].HeaderText = "Mã hàng";
-            dataNhapKho.Columns[1].Width = 100;
+    
             dataNhapKho.Columns[2].HeaderText = "Số lượng";
             dataNhapKho.Columns[3].HeaderText = "Ngày nhập";
-            dataNhapKho.Columns[3].Width = 150;
+   
             dataNhapKho.Columns[4].HeaderText = "Ngày cập nhật";
-            dataNhapKho.Columns[4].Width = 150;
+        
 
 
         }
@@ -50,7 +50,8 @@ namespace Csharp_Entity_Store_Management
                 }
                 else
                 {
-                    stThem.quantity = Convert.ToInt32(txtSoLuong.Text);
+                    stThem.quantity += Convert.ToInt32(txtSoLuong.Text);
+
                 }
                 db.SaveChanges();
                 loadData();
@@ -67,7 +68,13 @@ namespace Csharp_Entity_Store_Management
         #region Events
         private void btnNhap_Click(object sender, EventArgs e)
         {
-            addStockIn();
+            if (txtSoLuong.Text == "")
+            {
+                txtSoLuong.Focus();
+                errorProvider1.SetError(txtSoLuong, "Soluong can not be empty.");
+            }
+            else
+                addStockIn();
         }
 
         private void frmManagementStockIn_Load(object sender, EventArgs e)
@@ -91,6 +98,32 @@ namespace Csharp_Entity_Store_Management
             cbNCC.SelectedValue = Convert.ToInt32(dataNhapKho.Rows[d].Cells[0].Value.ToString());
             txtSoLuong.Text = dataNhapKho.Rows[d].Cells[2].Value.ToString();
         }
+        private void check_SoLuong(object sender, CancelEventArgs e)
+        {
+            int a;
+            if (string.IsNullOrWhiteSpace(txtSoLuong.Text))
+            {
+                txtSoLuong.Focus();
+                errorProvider1.SetError(txtSoLuong, "Soluong can not be empty.");
+            }
+            else if (!int.TryParse(txtSoLuong.Text, out a))
+            {
+                txtSoLuong.Focus();
+                errorProvider1.SetError(txtSoLuong, "soluong can not be number.");
+            }
+            else if (a <= 0)
+            {
+                txtSoLuong.Focus();
+                errorProvider1.SetError(txtSoLuong, "so luong >0");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtSoLuong, "");
+            }
+        }
         #endregion
+
+
     }
 }
