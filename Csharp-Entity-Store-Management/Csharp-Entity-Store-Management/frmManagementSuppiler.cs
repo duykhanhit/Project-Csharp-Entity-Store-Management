@@ -17,7 +17,7 @@ namespace Csharp_Entity_Store_Management
         {
             InitializeComponent();
             StoreEntities = new StoreEntities();
-            
+            dataGridViewSupplier.RowTemplate.Height = 25;
         }
 
         private void LoadData()
@@ -25,11 +25,11 @@ namespace Csharp_Entity_Store_Management
             dataGridViewSupplier.DataSource = StoreEntities.Suppliers
                 .Select(s => new
                 {
-                    MaNCC = s.supplierID,
-                    TenNCC = s.name,
-                    DiaChi = s.address,
-                    CreatedAt = s.createdAt,
-                    UpdatedAt = s.updatedAt
+                    s.supplierID,
+                    s.name,
+                    s.address,
+                    s.createdAt,
+                    s.updatedAt
                 }).ToList();
         }
         private void btnAddSupplier_Click(object sender, EventArgs e)
@@ -37,21 +37,30 @@ namespace Csharp_Entity_Store_Management
             string tenNCC = txtTenNCC.Text;
             string diaChi = txtDCNCC.Text;
 
-            Supplier supplier = new Supplier();
-            supplier.name = tenNCC;
-            supplier.address = diaChi;
+            if(string.IsNullOrEmpty(tenNCC) || string.IsNullOrEmpty(diaChi))
+            {
+                MessageBox.Show("Bạn cần điền đầy đủ thông tin",
+                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            } else
+            {
+                Supplier supplier = new Supplier();
+                supplier.name = tenNCC;
+                supplier.address = diaChi;
 
-            StoreEntities.Suppliers.Add(supplier);
-            StoreEntities.SaveChanges();
-            txtMaNCC.Text = supplier.supplierID + "";
-            LoadData();
+                StoreEntities.Suppliers.Add(supplier);
+                StoreEntities.SaveChanges();
+                txtMaNCC.Text = supplier.supplierID + "";
+                LoadData();
+                LoadDataSourceCbx();
+                MessageBox.Show("Thêm nhà cung cấp thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void dataGridViewSupplier_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int row = e.RowIndex;
             txtMaNCC.Text = dataGridViewSupplier.Rows[row].Cells[0].Value + "";
-            txtTenNCC.Text = dataGridViewSupplier.Rows[row].Cells[1].Value +"";
+            txtTenNCC.Text = dataGridViewSupplier.Rows[row].Cells[1].Value + "";
             txtDCNCC.Text = dataGridViewSupplier.Rows[row].Cells[2].Value + "";
         }
 
@@ -60,6 +69,14 @@ namespace Csharp_Entity_Store_Management
             LoadData();
             txtMaNCC.ReadOnly = true;
             SetWidth();
+            LoadDataSourceCbx();
+            txtSearchKeyword.GotFocus += TxtSearchKeyword_GotFocus;
+        }
+
+        private void TxtSearchKeyword_GotFocus(object sender, EventArgs e)
+        {
+            txtSearchKeyword.Text = "";
+            txtSearchKeyword.ForeColor = Color.Black;
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -80,6 +97,7 @@ namespace Csharp_Entity_Store_Management
                 StoreEntities.SaveChanges();
                 ClearTextBoxes();
                 LoadData();
+                LoadDataSourceCbx();
             }
         }
         private void ClearTextBoxes()
@@ -102,44 +120,84 @@ namespace Csharp_Entity_Store_Management
 
             supplier.name = txtTenNCC.Text;
             supplier.address = txtDCNCC.Text;
-            ClearTextBoxes();
-            StoreEntities.SaveChanges();
-            LoadData();
+            if (string.IsNullOrEmpty(supplier.name) || string.IsNullOrEmpty(supplier.address))
+            {
+                MessageBox.Show("Bạn cần điền đầy đủ thông tin",
+                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            } else
+            {
+                ClearTextBoxes();
+                StoreEntities.SaveChanges();
+                LoadData();
+                LoadDataSourceCbx();
+            }
         }
         private void SetWidth()
         {
-            dataGridViewSupplier.Columns[0].Width = 50;
-            dataGridViewSupplier.Columns[1].Width = 140;
-            dataGridViewSupplier.Columns[2].Width = 80;
-            dataGridViewSupplier.Columns[3].Width = 120;
-            dataGridViewSupplier.Columns[4].Width = 120;
+            dataGridViewSupplier.Columns[0].Width = 70;
+            dataGridViewSupplier.Columns[1].Width = 190;
+            dataGridViewSupplier.Columns[2].Width = 90;
+            dataGridViewSupplier.Columns[3].Width = 160;
+            dataGridViewSupplier.Columns[4].Width = 180;
+            dataGridViewSupplier.Columns[0].HeaderText = "Mã NCC";
+            dataGridViewSupplier.Columns[1].HeaderText = "Tên NCC";
+            dataGridViewSupplier.Columns[2].HeaderText = "Địa chỉ";
+            dataGridViewSupplier.Columns[3].HeaderText = "Ngày tạo";
+            dataGridViewSupplier.Columns[4].HeaderText = "Ngày cập nhật";
         }
 
-        private void txtTenNCC_Validating(object sender, CancelEventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(txtTenNCC.Text))
+            cbxAddress.SelectedIndex = 0;
+            string tenNCC = txtSearchKeyword.Text;
+            dataGridViewSupplier.DataSource = StoreEntities.Suppliers.
+                Where(s => s.name.Contains(tenNCC)).Select(s => new
+                {
+                    s.supplierID,
+                    s.name,
+                    s.address,
+                    s.createdAt,
+                    s.updatedAt
+                }).ToList();
+        }
+
+        private void btnViewAll_Click(object sender, EventArgs e)
+        {
+            LoadData();
+            cbxAddress.SelectedIndex = 0;
+        }
+        private void LoadDataSourceCbx()
+        {
+            HashSet<string> source = new HashSet<string>() { "All" };
+            HashSet<string> address = StoreEntities.Suppliers.Select(s => s.address).ToHashSet();
+            foreach (string dc in address)
             {
-                txtTenNCC.Focus();
-                errTenNCC.SetError(txtTenNCC, "Chưa nhập dữ liệu");
+                source.Add(dc);
+            }
+            cbxAddress.DataSource = source.ToList();
+        }
+
+        private void cbxAddress_SelectedValueChanged(object sender, EventArgs e)
+        {
+            string address = cbxAddress.Text.ToLower();
+            if(address.Equals("all"))
+            {
+                LoadData();
             } else
             {
-                e.Cancel = false;
-                errTenNCC.SetError(txtTenNCC, "");
+                dataGridViewSupplier.DataSource = StoreEntities.Suppliers.
+                Where(s => s.address.ToLower().Equals(address)).Select(s => new
+                {
+                    s.supplierID,
+                    s.name,
+                    s.address,
+                    s.createdAt,
+                    s.updatedAt
+                }).ToList();
             }
         }
 
-        private void txtDCNCC_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtDCNCC.Text))
-            {
-                txtDCNCC.Focus();
-                errDC.SetError(txtDCNCC, "Chưa nhập dữ liệu");
-            }
-            else
-            {
-                e.Cancel = false;
-                errDC.SetError(txtDCNCC, "");
-            }
-        }
     }
+
 }
+
