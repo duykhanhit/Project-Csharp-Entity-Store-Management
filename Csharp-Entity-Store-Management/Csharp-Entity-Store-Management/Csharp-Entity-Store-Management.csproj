@@ -172,6 +172,12 @@
     <EmbeddedResource Include="frmManagementOrder.resx">
       <DependentUpon>frmManagementOrder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmManagementProduct.resx">
+      <DependentUpon>frmManagementProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagementStockIn.resx">
+      <DependentUpon>frmManagementStockIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmManagementSuppiler.resx">
       <DependentUpon>frmManagementSuppiler.cs</DependentUpon>
     </EmbeddedResource>
