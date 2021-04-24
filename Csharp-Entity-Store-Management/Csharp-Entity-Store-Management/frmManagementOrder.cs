@@ -35,6 +35,10 @@ namespace Csharp_Entity_Store_Management
             }).ToList();
 
             dgvOrder.DataSource = result.ToList();
+            dgvOrder.Columns[0].HeaderText = "Mã hóa đơn";
+            dgvOrder.Columns[1].HeaderText = "Mã khách hàng";
+            dgvOrder.Columns[2].HeaderText = "Mã nhân viên";
+            dgvOrder.Columns[3].HeaderText = "Ngày lập";
         }
 
         private void cellClickItem(object sender, DataGridViewCellEventArgs e)
@@ -44,11 +48,12 @@ namespace Csharp_Entity_Store_Management
             String cusID = dataGridViewRow.Cells[1].Value.ToString();
             String userID = dataGridViewRow.Cells[2].Value.ToString();
             String dateCreate = dataGridViewRow.Cells[3].Value.ToString();
+            String[] list = dateCreate.Split(' ');
             orderIDTemp = int.Parse(orderID);
             
             lbOrderID.Text = "Mã hóa đơn:" + orderID;
             lbCusID.Text = "Mã khách hàng: " + cusID;
-            lbCreateAt.Text = "Ngày lập: " + dateCreate;
+            lbCreateAt.Text = "Ngày lập: " + list[0];
             lbUserID.Text = "Mã nhân viên: " + userID;
         }
 

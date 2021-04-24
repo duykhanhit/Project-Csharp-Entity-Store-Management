@@ -30,7 +30,7 @@ namespace Csharp_Entity_Store_Management
         {
             Order order = data.Orders.Where(p => p.orderID == orderID).SingleOrDefault();
             lbOrderID.Text = lbOrderID.Text + order.orderID;
-            lbTotalMoney.Text = lbTotalMoney.Text + order.totalAmount+"vnđ";
+            lbTotalMoney.Text = lbTotalMoney.Text + order.totalAmount+" vnđ";
             String[] date = order.createdAt.ToString().Split(' ');
             lbDate.Text = lbDate.Text + date[0];
             User user = data.Users.Where(p => p.userID == order.userID).SingleOrDefault();
