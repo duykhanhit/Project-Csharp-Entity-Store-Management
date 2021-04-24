@@ -40,16 +40,16 @@ namespace Csharp_Entity_Store_Management
             var result = from c in db.Products select new { ID = c.productID, tensp = c.name, loai = c.Category.name, soluong = c.stockOnHand, dongia = c.price, ngaytao = c.createdAt, ngaycapnhat = c.updatedAt };
             dataSanPham.DataSource = result.ToList();
             dataSanPham.Columns[0].HeaderText = "ID";
-            dataSanPham.Columns[0].Width = 50;
+            
             dataSanPham.Columns[1].HeaderText = "Tên hàng";
             dataSanPham.Columns[2].HeaderText = "Loại hàng";
             dataSanPham.Columns[3].HeaderText = "Số lượng";
             dataSanPham.Columns[4].HeaderText = "Đơn giá";
             
             dataSanPham.Columns[5].HeaderText = "Ngày nhập";
-            dataSanPham.Columns[5].Width = 150;
+           
             dataSanPham.Columns[6].HeaderText = "Ngày cập nhật";
-            dataSanPham.Columns[6].Width = 150;
+            
         }
         void addProduct()
         {
@@ -134,15 +134,15 @@ namespace Csharp_Entity_Store_Management
                          select new { ID = c.productID, tensp = c.name, loai = c.Category.name, soluong = c.stockOnHand, dongia = c.price, ngaytao = c.createdAt, ngaycapnhat = c.updatedAt };
             dataSanPham.DataSource = result.ToList();
             dataSanPham.Columns[0].HeaderText = "ID";
-            dataSanPham.Columns[0].Width = 50;
+           
             dataSanPham.Columns[1].HeaderText = "Tên hàng";
             dataSanPham.Columns[2].HeaderText = "Loại hàng";
             dataSanPham.Columns[3].HeaderText = "Số lượng";
             dataSanPham.Columns[4].HeaderText = "Đơn giá";
             dataSanPham.Columns[5].HeaderText = "Ngày nhập";
-            dataSanPham.Columns[5].Width = 150;
+            
             dataSanPham.Columns[6].HeaderText = "Ngày cập nhật";
-            dataSanPham.Columns[6].Width = 150;
+            
             addBinding();
         }
         #endregion
@@ -159,8 +159,25 @@ namespace Csharp_Entity_Store_Management
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-
-            addProduct();
+            if (txtTen.Text == "")
+            {
+                txtTen.Focus();
+                errorProvider1.SetError(txtTen, "Name can not be empty.");
+            }
+            else
+                if (txtSoLuong.Text == "")
+            {
+                txtSoLuong.Focus();
+                errorProvider2.SetError(txtSoLuong, "Soluong can not be empty.");
+            }
+            else
+                 if (txtDonGia.Text == "")
+            {
+                txtDonGia.Focus();
+                errorProvider3.SetError(txtDonGia, "Dongia can not be empty.");
+            }
+            else
+                    addProduct();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -177,6 +194,72 @@ namespace Csharp_Entity_Store_Management
         {
             findProduct();
         }
+        private void check_ten(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtTen.Text))
+            {
+                txtTen.Focus();
+                errorProvider1.SetError(txtTen, "Name can not be empty.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtTen, "");
+            }
+        }
+
+        private void check_soLuong(object sender, CancelEventArgs e)
+        {
+
+            int a;
+            if (string.IsNullOrWhiteSpace(txtSoLuong.Text))
+            {
+                txtSoLuong.Focus();
+                errorProvider2.SetError(txtSoLuong, "Soluong can not be empty.");
+            }
+            else if (!int.TryParse(txtSoLuong.Text, out a))
+            {
+                txtSoLuong.Focus();
+                errorProvider2.SetError(txtSoLuong, "soluong can not be number.");
+            }
+            else if (a <= 0)
+            {
+                txtSoLuong.Focus();
+                errorProvider2.SetError(txtSoLuong, "so luong >0");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider2.SetError(txtSoLuong, "");
+            }
+        }
+
+        private void check_DonGia(object sender, CancelEventArgs e)
+        {
+            int a;
+            if (string.IsNullOrWhiteSpace(txtDonGia.Text))
+            {
+                txtDonGia.Focus();
+                errorProvider3.SetError(txtDonGia, "Dongia can not be empty.");
+            }
+            else if (!int.TryParse(txtDonGia.Text, out a))
+            {
+                txtDonGia.Focus();
+                errorProvider3.SetError(txtDonGia, "Dongia can not be number.");
+            }
+            else if (a <= 0)
+            {
+                txtDonGia.Focus();
+                errorProvider3.SetError(txtDonGia, "Dongia >0");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider3.SetError(txtDonGia, "");
+            }
+        }
         #endregion
+
+
     }
 }

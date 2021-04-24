@@ -29,6 +29,7 @@ namespace Csharp_Entity_Store_Management
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataSanPham = new System.Windows.Forms.DataGridView();
             this.cbLoai = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -44,16 +45,22 @@ namespace Csharp_Entity_Store_Management
             this.btnThem = new System.Windows.Forms.Button();
             this.btnTim = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataSanPham)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
             this.SuspendLayout();
             // 
             // dataSanPham
             // 
+            this.dataSanPham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataSanPham.Location = new System.Drawing.Point(46, 314);
+            this.dataSanPham.Location = new System.Drawing.Point(51, 203);
             this.dataSanPham.Name = "dataSanPham";
-            this.dataSanPham.RowHeadersWidth = 51;
-            this.dataSanPham.Size = new System.Drawing.Size(787, 216);
+            this.dataSanPham.Size = new System.Drawing.Size(797, 216);
             this.dataSanPham.TabIndex = 21;
             // 
             // cbLoai
@@ -68,7 +75,7 @@ namespace Csharp_Entity_Store_Management
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(338, 273);
+            this.label6.Location = new System.Drawing.Point(238, 161);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(326, 31);
             this.label6.TabIndex = 17;
@@ -86,7 +93,7 @@ namespace Csharp_Entity_Store_Management
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(130, 197);
+            this.label5.Location = new System.Drawing.Point(545, 105);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 19);
             this.label5.TabIndex = 15;
@@ -95,7 +102,7 @@ namespace Csharp_Entity_Store_Management
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(130, 152);
+            this.label3.Location = new System.Drawing.Point(545, 58);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 19);
             this.label3.TabIndex = 19;
@@ -122,17 +129,19 @@ namespace Csharp_Entity_Store_Management
             // 
             // txtDonGia
             // 
-            this.txtDonGia.Location = new System.Drawing.Point(223, 197);
+            this.txtDonGia.Location = new System.Drawing.Point(619, 100);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(100, 26);
             this.txtDonGia.TabIndex = 12;
+            this.txtDonGia.Validating += new System.ComponentModel.CancelEventHandler(this.check_DonGia);
             // 
             // txtSoLuong
             // 
-            this.txtSoLuong.Location = new System.Drawing.Point(223, 150);
+            this.txtSoLuong.Location = new System.Drawing.Point(619, 55);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(100, 26);
             this.txtSoLuong.TabIndex = 11;
+            this.txtSoLuong.Validating += new System.ComponentModel.CancelEventHandler(this.check_soLuong);
             // 
             // txtTen
             // 
@@ -140,12 +149,13 @@ namespace Csharp_Entity_Store_Management
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(100, 26);
             this.txtTen.TabIndex = 10;
+            this.txtTen.Validating += new System.ComponentModel.CancelEventHandler(this.check_ten);
             // 
             // btnXoa
             // 
             this.btnXoa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnXoa.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.Location = new System.Drawing.Point(554, 141);
+            this.btnXoa.Location = new System.Drawing.Point(604, 435);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(90, 41);
             this.btnXoa.TabIndex = 8;
@@ -157,7 +167,7 @@ namespace Csharp_Entity_Store_Management
             // 
             this.btnThem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnThem.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btnThem.Location = new System.Drawing.Point(554, 45);
+            this.btnThem.Location = new System.Drawing.Point(604, 144);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(90, 41);
             this.btnThem.TabIndex = 7;
@@ -169,7 +179,7 @@ namespace Csharp_Entity_Store_Management
             // 
             this.btnTim.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTim.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btnTim.Location = new System.Drawing.Point(554, 188);
+            this.btnTim.Location = new System.Drawing.Point(710, 435);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(90, 41);
             this.btnTim.TabIndex = 9;
@@ -181,7 +191,7 @@ namespace Csharp_Entity_Store_Management
             // 
             this.btnCapNhat.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCapNhat.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.btnCapNhat.Location = new System.Drawing.Point(554, 94);
+            this.btnCapNhat.Location = new System.Drawing.Point(710, 144);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(90, 41);
             this.btnCapNhat.TabIndex = 6;
@@ -189,11 +199,23 @@ namespace Csharp_Entity_Store_Management
             this.btnCapNhat.UseVisualStyleBackColor = false;
             this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
+            // errorProvider3
+            // 
+            this.errorProvider3.ContainerControl = this;
+            // 
             // frmManagementProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 559);
+            this.ClientSize = new System.Drawing.Size(892, 498);
             this.Controls.Add(this.dataSanPham);
             this.Controls.Add(this.cbLoai);
             this.Controls.Add(this.label6);
@@ -214,6 +236,9 @@ namespace Csharp_Entity_Store_Management
             this.Text = "frmManagementProduct";
             this.Load += new System.EventHandler(this.frmManagementProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataSanPham)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,5 +261,8 @@ namespace Csharp_Entity_Store_Management
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.Button btnCapNhat;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
+        private System.Windows.Forms.ErrorProvider errorProvider3;
     }
 }
