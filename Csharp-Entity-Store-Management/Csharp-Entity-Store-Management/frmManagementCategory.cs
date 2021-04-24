@@ -17,15 +17,16 @@ namespace Csharp_Entity_Store_Management
         {
             InitializeComponent();
             StoreEntities = new StoreEntities();
+            dataGridViewCategory.RowTemplate.Height = 25;
         }
         private void LoadData()
         {
             dataGridViewCategory.DataSource = StoreEntities.Categories.Select(c => new
             {
-                MaDanhMuc = c.categoryID,
-                TenDanhMuc = c.name,
-                CreatedAt = c.createdAt,
-                UpdatedAt = c.updatedAt
+                c.categoryID,
+                c.name,
+                c.createdAt,
+                c.updatedAt
             }).ToList();
         }
 
@@ -39,11 +40,20 @@ namespace Csharp_Entity_Store_Management
         private void btnAddCategory_Click(object sender, EventArgs e)
         {
             string tenDanhMuc = txtTenDM.Text;
-            Category category = new Category { name = tenDanhMuc};
-            StoreEntities.Categories.Add(category);
-            StoreEntities.SaveChanges();
-            txtMaDM.Text = category.categoryID + "";
-            LoadData();
+            if(string.IsNullOrEmpty(tenDanhMuc))
+            {
+                MessageBox.Show("Bạn cần điền đầy đủ thông tin", 
+                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            } else
+            {
+                Category category = new Category { name = tenDanhMuc };
+                StoreEntities.Categories.Add(category);
+                StoreEntities.SaveChanges();
+                txtMaDM.Text = category.categoryID + "";
+                LoadData();
+                MessageBox.Show("Thêm danh mục thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        
         }
 
         private void btnEditCategory_Click(object sender, EventArgs e)
@@ -52,9 +62,19 @@ namespace Csharp_Entity_Store_Management
             Category category = StoreEntities.Categories.
                 SingleOrDefault(c => c.categoryID == updateID);
             category.name = txtTenDM.Text;
-            ClearTextBoxes();
-            StoreEntities.SaveChanges();
-            LoadData();
+            if (string.IsNullOrEmpty(category.name))
+            {
+                MessageBox.Show("Bạn cần điền đầy đủ thông tin",
+                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                ClearTextBoxes();
+                StoreEntities.SaveChanges();
+                LoadData();
+                MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        
         }
 
         private void btnDelCategory_Click(object sender, EventArgs e)
@@ -71,11 +91,6 @@ namespace Csharp_Entity_Store_Management
                 ClearTextBoxes();
                 LoadData();
             }
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Close();
         }
         private void ClearTextBoxes()
         {
@@ -96,24 +111,14 @@ namespace Csharp_Entity_Store_Management
         }
         private void SetWidth()
         {
-            dataGridViewCategory.Columns[0].Width = 80;
-            dataGridViewCategory.Columns[1].Width = 100;
-            dataGridViewCategory.Columns[2].Width = 120;
-            dataGridViewCategory.Columns[3].Width = 120;
-        }
-
-        private void txtTenDM_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtTenDM.Text))
-            {
-                txtTenDM.Focus();
-                errTenDM.SetError(txtTenDM, "Chưa nhập dữ liệu");
-            }
-            else
-            {
-                e.Cancel = false;
-                errTenDM.SetError(txtTenDM, "");
-            }
+            dataGridViewCategory.Columns[0].HeaderText = "Mã danh mục";
+            dataGridViewCategory.Columns[1].HeaderText = "Tên danh mục";
+            dataGridViewCategory.Columns[2].HeaderText = "Ngày tạo";
+            dataGridViewCategory.Columns[3].HeaderText = "Ngày cập nhật";
+            dataGridViewCategory.Columns[0].Width = 100;
+            dataGridViewCategory.Columns[1].Width = 110;
+            dataGridViewCategory.Columns[2].Width = 190;
+            dataGridViewCategory.Columns[3].Width = 180;
         }
     }
 }
