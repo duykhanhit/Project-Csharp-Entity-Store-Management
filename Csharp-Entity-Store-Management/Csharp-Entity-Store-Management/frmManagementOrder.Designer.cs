@@ -45,16 +45,17 @@ namespace Csharp_Entity_Store_Management
             // 
             this.dgvOrder.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvOrder.Location = new System.Drawing.Point(61, 119);
+            this.dgvOrder.Location = new System.Drawing.Point(50, 155);
             this.dgvOrder.Name = "dgvOrder";
             this.dgvOrder.RowHeadersVisible = false;
+            this.dgvOrder.RowHeadersWidth = 51;
             this.dgvOrder.Size = new System.Drawing.Size(430, 192);
             this.dgvOrder.TabIndex = 0;
             this.dgvOrder.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cellClickItem);
             // 
             // btnShowAOrder
             // 
-            this.btnShowAOrder.Location = new System.Drawing.Point(591, 160);
+            this.btnShowAOrder.Location = new System.Drawing.Point(576, 155);
             this.btnShowAOrder.Name = "btnShowAOrder";
             this.btnShowAOrder.Size = new System.Drawing.Size(96, 23);
             this.btnShowAOrder.TabIndex = 1;
@@ -64,7 +65,7 @@ namespace Csharp_Entity_Store_Management
             // 
             // btnDeleteAOrder
             // 
-            this.btnDeleteAOrder.Location = new System.Drawing.Point(591, 232);
+            this.btnDeleteAOrder.Location = new System.Drawing.Point(576, 252);
             this.btnDeleteAOrder.Name = "btnDeleteAOrder";
             this.btnDeleteAOrder.Size = new System.Drawing.Size(96, 23);
             this.btnDeleteAOrder.TabIndex = 2;
@@ -74,6 +75,9 @@ namespace Csharp_Entity_Store_Management
             // 
             // OrderManagement
             // 
+            this.OrderManagement.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.OrderManagement.Controls.Add(this.lbUserID);
             this.OrderManagement.Controls.Add(this.lbCusID);
             this.OrderManagement.Controls.Add(this.lbCreateAt);
@@ -81,9 +85,9 @@ namespace Csharp_Entity_Store_Management
             this.OrderManagement.Controls.Add(this.btnShowAOrder);
             this.OrderManagement.Controls.Add(this.dgvOrder);
             this.OrderManagement.Controls.Add(this.btnDeleteAOrder);
-            this.OrderManagement.Location = new System.Drawing.Point(23, 54);
+            this.OrderManagement.Location = new System.Drawing.Point(10, 11);
             this.OrderManagement.Name = "OrderManagement";
-            this.OrderManagement.Size = new System.Drawing.Size(747, 335);
+            this.OrderManagement.Size = new System.Drawing.Size(781, 429);
             this.OrderManagement.TabIndex = 3;
             this.OrderManagement.TabStop = false;
             this.OrderManagement.Text = "Quản lí đơn hàng";
