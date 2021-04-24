@@ -68,7 +68,7 @@ namespace Csharp_Entity_Store_Management
             this.cbLoai.FormattingEnabled = true;
             this.cbLoai.Location = new System.Drawing.Point(223, 102);
             this.cbLoai.Name = "cbLoai";
-            this.cbLoai.Size = new System.Drawing.Size(121, 23);
+            this.cbLoai.Size = new System.Drawing.Size(121, 27);
             this.cbLoai.TabIndex = 20;
             // 
             // label6
@@ -77,7 +77,7 @@ namespace Csharp_Entity_Store_Management
             this.label6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(238, 161);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(250, 24);
+            this.label6.Size = new System.Drawing.Size(326, 31);
             this.label6.TabIndex = 17;
             this.label6.Text = "DANH SÁCH SẢN PHẨM";
             // 
@@ -86,7 +86,7 @@ namespace Csharp_Entity_Store_Management
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(130, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 15);
+            this.label4.Size = new System.Drawing.Size(75, 19);
             this.label4.TabIndex = 16;
             this.label4.Text = "Loại hàng";
             // 
@@ -95,7 +95,7 @@ namespace Csharp_Entity_Store_Management
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(545, 105);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 15);
+            this.label5.Size = new System.Drawing.Size(62, 19);
             this.label5.TabIndex = 15;
             this.label5.Text = "Đơn giá";
             // 
@@ -104,7 +104,7 @@ namespace Csharp_Entity_Store_Management
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(545, 58);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 15);
+            this.label3.Size = new System.Drawing.Size(70, 19);
             this.label3.TabIndex = 19;
             this.label3.Text = "Số lượng";
             // 
@@ -113,7 +113,7 @@ namespace Csharp_Entity_Store_Management
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(130, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 15);
+            this.label2.Size = new System.Drawing.Size(34, 19);
             this.label2.TabIndex = 14;
             this.label2.Text = "Tên";
             // 
@@ -123,7 +123,7 @@ namespace Csharp_Entity_Store_Management
             this.txtUser.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.Location = new System.Drawing.Point(11, 10);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(93, 15);
+            this.txtUser.Size = new System.Drawing.Size(126, 19);
             this.txtUser.TabIndex = 13;
             this.txtUser.Text = "Xin chào Admin";
             // 
@@ -131,7 +131,7 @@ namespace Csharp_Entity_Store_Management
             // 
             this.txtDonGia.Location = new System.Drawing.Point(619, 100);
             this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.Size = new System.Drawing.Size(100, 22);
+            this.txtDonGia.Size = new System.Drawing.Size(100, 26);
             this.txtDonGia.TabIndex = 12;
             this.txtDonGia.Validating += new System.ComponentModel.CancelEventHandler(this.check_DonGia);
             // 
@@ -139,7 +139,7 @@ namespace Csharp_Entity_Store_Management
             // 
             this.txtSoLuong.Location = new System.Drawing.Point(619, 55);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(100, 22);
+            this.txtSoLuong.Size = new System.Drawing.Size(100, 26);
             this.txtSoLuong.TabIndex = 11;
             this.txtSoLuong.Validating += new System.ComponentModel.CancelEventHandler(this.check_soLuong);
             // 
@@ -147,7 +147,7 @@ namespace Csharp_Entity_Store_Management
             // 
             this.txtTen.Location = new System.Drawing.Point(223, 55);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(100, 22);
+            this.txtTen.Size = new System.Drawing.Size(100, 26);
             this.txtTen.TabIndex = 10;
             this.txtTen.Validating += new System.ComponentModel.CancelEventHandler(this.check_ten);
             // 
@@ -213,7 +213,7 @@ namespace Csharp_Entity_Store_Management
             // 
             // frmManagementProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(892, 498);
             this.Controls.Add(this.dataSanPham);

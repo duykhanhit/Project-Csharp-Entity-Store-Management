@@ -23,6 +23,7 @@ namespace Csharp_Entity_Store_Management
         {
 
             loadData();
+            grbOrderDetail.Visible = false;
             
         }
         public void loadData()
@@ -50,6 +51,8 @@ namespace Csharp_Entity_Store_Management
             String dateCreate = dataGridViewRow.Cells[3].Value.ToString();
             String[] list = dateCreate.Split(' ');
             orderIDTemp = int.Parse(orderID);
+
+            grbOrderDetail.Visible = true;
             
             lbOrderID.Text = "Mã hóa đơn:" + orderID;
             lbCusID.Text = "Mã khách hàng: " + cusID;
@@ -70,6 +73,7 @@ namespace Csharp_Entity_Store_Management
                     data.Orders.Remove(order);
                     data.SaveChanges();
                     loadData();
+                    grbOrderDetail.Visible = false;
                 }
                 
             }

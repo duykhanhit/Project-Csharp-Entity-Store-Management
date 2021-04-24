@@ -23,7 +23,7 @@ namespace Csharp_Entity_Store_Management
 
         private void frmDashboard_Load(object sender, EventArgs e)
         {
-            grbFeature.Text = "Xin chào: " + user.fullname + " !";
+            lblUsername.Text = "Xin chào: " + user.fullname + " !";
 
             panel.Visible = false;
 
@@ -66,9 +66,10 @@ namespace Csharp_Entity_Store_Management
             frmManagementOrder frm = new frmManagementOrder();
             frm.TopLevel = false;
             panel.Controls.Add(frm);
-            panel.AutoScroll = true;
+            //panel.AutoScroll = true;
             panel.BorderStyle = BorderStyle.FixedSingle;
             frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
             frm.Show();
         }
 
