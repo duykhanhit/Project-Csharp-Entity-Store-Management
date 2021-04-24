@@ -96,5 +96,26 @@ namespace Csharp_Entity_Store_Management
                 MessageBox.Show("Vui lòng chọn 1 hóa đơn để xem!", "Thông báo");
             }
         }
+
+        private void onDateChange(object sender, EventArgs e)
+        {
+            onDateChangeData();
+        }
+
+        private void onDateFromChange(object sender, EventArgs e)
+        {
+            onDateChangeData();
+        }
+        public void onDateChangeData()
+        {
+            var result = data.Orders.Select(p => new
+            {
+                orderID = p.orderID,
+                customerID = p.customerID,
+                userId = p.userID,
+                createAt = p.createdAt
+            }).Where(p => p.createAt >= dtpFrom.Value && p.createAt <= dtpTo.Value);
+            dgvOrder.DataSource = result.ToList();
+        }
     }
 }
