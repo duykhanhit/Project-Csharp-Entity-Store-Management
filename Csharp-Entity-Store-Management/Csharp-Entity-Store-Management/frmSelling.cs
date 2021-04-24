@@ -63,9 +63,16 @@ namespace Csharp_Entity_Store_Management
             if(customer == null)
             {
                 grbAddCustomer.Visible = true;
+                txtCustomerName.ReadOnly = false;
+                txtCustomerAddress.ReadOnly = false;
+                txtCustomerPhone.ReadOnly = false;
+                txtCustomerName.Clear();
+                txtCustomerAddress.Clear();
+                btnAddCustomer.Visible = true;
                 txtCustomerPhone.Text = phone;
                 return;
             }
+            txtCheckPhone.Clear();
 
             setCustomerDetail(customer);
             //lblCustomerCreatedAt.Text = customer.createdAt.ToString();
@@ -80,6 +87,14 @@ namespace Csharp_Entity_Store_Management
             if(phone.Length == 0 || name.Length == 0 || address.Length == 0)
             {
                 MessageBox.Show("Không để trống các trường!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var curCustomer = db.Customers.Select(c => c).Where(c => c.phone == phone).SingleOrDefault();
+
+            if(curCustomer != null)
+            {
+                MessageBox.Show("Khách hàng đã tồn tại trong hệ thống!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -99,11 +114,14 @@ namespace Csharp_Entity_Store_Management
 
         private void setCustomerDetail(Customer customer)
         {
-            //grbCustomerDetail.Visible = true;
-
-            //lblCustomerName.Text = customer.name;
-            //lblCustomerAddress.Text = customer.address;
-            //lblCustomerPhone.Text = customer.phone;
+            grbAddCustomer.Visible = true;
+            txtCustomerName.Text = customer.name;
+            txtCustomerName.ReadOnly = true;
+            txtCustomerAddress.Text = customer.address;
+            txtCustomerAddress.ReadOnly = true;
+            txtCustomerPhone.Text = customer.phone;
+            txtCustomerPhone.ReadOnly = true;
+            btnAddCustomer.Visible = false;
         }
 
         private void setTitleDgvProducts()
@@ -417,8 +435,14 @@ namespace Csharp_Entity_Store_Management
         private void btnPay_Click(object sender, EventArgs e)
         {
 
-            //string phone = lblCustomerPhone.Text;
-            string phone = "123";
+            string phone = txtCustomerPhone.Text;
+
+            if(!txtCustomerPhone.ReadOnly)
+            {
+                MessageBox.Show("Chưa có thông tin khách hàng!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             var customer = db.Customers.Select(c => c).Where(c => c.phone == phone).SingleOrDefault();
 
             if(customer == null)
@@ -467,12 +491,13 @@ namespace Csharp_Entity_Store_Management
             db.OrderDetails.AddRange(orderDetails);
             db.SaveChanges();
 
-            this.Hide();
+            //this.Hide();
 
             frmOrderDetail frm = new frmOrderDetail();
             frm.OrderID = ID;
-            frm.Closed += (s, args) => this.Close();
-            frm.Show();
+            //frm.Closed += (s, args) => this.Close();
+            frm.ShowDialog();
+            this.frmSelling_Load(sender, e);
         }
     }
 }

@@ -319,10 +319,11 @@ namespace Csharp_Entity_Store_Management
             // 
             // label17
             // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(181, 125);
+            this.label17.Location = new System.Drawing.Point(181, 131);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(30, 25);
+            this.label17.Size = new System.Drawing.Size(57, 25);
             this.label17.TabIndex = 9;
             this.label17.Text = "%";
             // 
@@ -423,12 +424,11 @@ namespace Csharp_Entity_Store_Management
             // 
             // label16
             // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(3, 125);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(63, 38);
+            this.label16.Size = new System.Drawing.Size(87, 38);
             this.label16.TabIndex = 8;
             this.label16.Text = "Giảm giá:";
             // 
@@ -619,7 +619,7 @@ namespace Csharp_Entity_Store_Management
             this.grbAddCustomer.Size = new System.Drawing.Size(431, 222);
             this.grbAddCustomer.TabIndex = 4;
             this.grbAddCustomer.TabStop = false;
-            this.grbAddCustomer.Text = "Thêm khách hàng";
+            this.grbAddCustomer.Text = "Thông tin khách hàng";
             // 
             // btnAddCustomer
             // 
