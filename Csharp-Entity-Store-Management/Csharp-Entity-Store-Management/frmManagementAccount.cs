@@ -97,14 +97,22 @@ namespace Csharp_Entity_Store_Management
                 User usr = StoreEntities.Users.FirstOrDefault(u => u.username.Equals(user.username));
                 if (usr == null)
                 {
-                    StoreEntities.Users.Add(user);
-                    StoreEntities.SaveChanges();
-                    txtAccountID.Text = user.userID + "";
-                    LoadData();
+                    User usr1 = StoreEntities.Users.FirstOrDefault(u => u.phone.Equals(user.phone));
+                    if(usr1 == null)
+                    {
+                        StoreEntities.Users.Add(user);
+                        StoreEntities.SaveChanges();
+                        txtAccountID.Text = user.userID + "";
+                        LoadData();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Số điện thoại đã tồn tại", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Username đã tồn tại", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Tên tài khoản đã tồn tại", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

@@ -48,13 +48,13 @@ namespace Csharp_Entity_Store_Management
             // 
             this.lblMaDM.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblMaDM.AutoSize = true;
-            this.lblMaDM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaDM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaDM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lblMaDM.Location = new System.Drawing.Point(4, 126);
+            this.lblMaDM.Location = new System.Drawing.Point(4, 128);
             this.lblMaDM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMaDM.Name = "lblMaDM";
             this.lblMaDM.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.lblMaDM.Size = new System.Drawing.Size(199, 25);
+            this.lblMaDM.Size = new System.Drawing.Size(159, 20);
             this.lblMaDM.TabIndex = 7;
             this.lblMaDM.Text = "Mã danh mục:";
             // 
@@ -62,32 +62,32 @@ namespace Csharp_Entity_Store_Management
             // 
             this.lblTenDM.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblTenDM.AutoSize = true;
-            this.lblTenDM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenDM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenDM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lblTenDM.Location = new System.Drawing.Point(4, 204);
+            this.lblTenDM.Location = new System.Drawing.Point(4, 207);
             this.lblTenDM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTenDM.Name = "lblTenDM";
             this.lblTenDM.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.lblTenDM.Size = new System.Drawing.Size(207, 25);
+            this.lblTenDM.Size = new System.Drawing.Size(164, 20);
             this.lblTenDM.TabIndex = 8;
             this.lblTenDM.Text = "Tên danh mục:";
             // 
             // txtMaDM
             // 
             this.txtMaDM.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtMaDM.Location = new System.Drawing.Point(305, 123);
+            this.txtMaDM.Location = new System.Drawing.Point(305, 125);
             this.txtMaDM.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMaDM.Name = "txtMaDM";
-            this.txtMaDM.Size = new System.Drawing.Size(208, 30);
+            this.txtMaDM.Size = new System.Drawing.Size(208, 26);
             this.txtMaDM.TabIndex = 9;
             // 
             // txtTenDM
             // 
             this.txtTenDM.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtTenDM.Location = new System.Drawing.Point(305, 202);
+            this.txtTenDM.Location = new System.Drawing.Point(305, 204);
             this.txtTenDM.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTenDM.Name = "txtTenDM";
-            this.txtTenDM.Size = new System.Drawing.Size(208, 30);
+            this.txtTenDM.Size = new System.Drawing.Size(208, 26);
             this.txtTenDM.TabIndex = 0;
             // 
             // dataGridViewCategory
@@ -207,15 +207,15 @@ namespace Csharp_Entity_Store_Management
             this.label1.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label1, 4);
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(447, 34);
+            this.label1.Location = new System.Drawing.Point(476, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(310, 32);
+            this.label1.Size = new System.Drawing.Size(251, 26);
             this.label1.TabIndex = 10;
             this.label1.Text = "QUẢN LÝ DANH MỤC";
             // 
             // frmManagementCategory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1228, 727);
             this.Controls.Add(this.tableLayoutPanel1);

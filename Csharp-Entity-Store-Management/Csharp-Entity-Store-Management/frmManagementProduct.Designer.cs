@@ -79,7 +79,7 @@ namespace Csharp_Entity_Store_Management
             this.cbLoai.Location = new System.Drawing.Point(218, 112);
             this.cbLoai.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbLoai.Name = "cbLoai";
-            this.cbLoai.Size = new System.Drawing.Size(147, 30);
+            this.cbLoai.Size = new System.Drawing.Size(147, 28);
             this.cbLoai.TabIndex = 20;
             // 
             // label6
@@ -87,11 +87,12 @@ namespace Csharp_Entity_Store_Management
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label6, 4);
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(433, 10);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.label6.Location = new System.Drawing.Point(452, 11);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(299, 32);
+            this.label6.Size = new System.Drawing.Size(262, 29);
             this.label6.TabIndex = 17;
             this.label6.Text = "QUẢN LÝ SẢN PHẨM";
             // 
@@ -99,11 +100,13 @@ namespace Csharp_Entity_Store_Management
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 120);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.label4.Location = new System.Drawing.Point(4, 121);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.label4.Size = new System.Drawing.Size(143, 22);
+            this.label4.Size = new System.Drawing.Size(133, 20);
             this.label4.TabIndex = 16;
             this.label4.Text = "Loại hàng:";
             // 
@@ -111,11 +114,13 @@ namespace Csharp_Entity_Store_Management
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(584, 120);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.label5.Location = new System.Drawing.Point(584, 121);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.label5.Size = new System.Drawing.Size(129, 22);
+            this.label5.Size = new System.Drawing.Size(118, 20);
             this.label5.TabIndex = 15;
             this.label5.Text = "Đơn giá:";
             // 
@@ -123,11 +128,13 @@ namespace Csharp_Entity_Store_Management
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(584, 69);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.label3.Location = new System.Drawing.Point(584, 70);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.label3.Size = new System.Drawing.Size(138, 22);
+            this.label3.Size = new System.Drawing.Size(126, 20);
             this.label3.TabIndex = 19;
             this.label3.Text = "Số lượng:";
             // 
@@ -135,49 +142,52 @@ namespace Csharp_Entity_Store_Management
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 69);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.label2.Location = new System.Drawing.Point(4, 70);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(96, 22);
+            this.label2.Size = new System.Drawing.Size(90, 20);
             this.label2.TabIndex = 14;
             this.label2.Text = "Tên:";
             // 
             // txtDonGia
             // 
             this.txtDonGia.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtDonGia.Location = new System.Drawing.Point(765, 116);
+            this.txtDonGia.Location = new System.Drawing.Point(765, 118);
             this.txtDonGia.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.Size = new System.Drawing.Size(121, 30);
+            this.txtDonGia.Size = new System.Drawing.Size(121, 26);
             this.txtDonGia.TabIndex = 12;
             this.txtDonGia.Validating += new System.ComponentModel.CancelEventHandler(this.check_DonGia);
             // 
             // txtSoLuong
             // 
             this.txtSoLuong.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtSoLuong.Location = new System.Drawing.Point(765, 65);
+            this.txtSoLuong.Location = new System.Drawing.Point(765, 67);
             this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(121, 30);
+            this.txtSoLuong.Size = new System.Drawing.Size(121, 26);
             this.txtSoLuong.TabIndex = 11;
             this.txtSoLuong.Validating += new System.ComponentModel.CancelEventHandler(this.check_soLuong);
             // 
             // txtTen
             // 
             this.txtTen.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtTen.Location = new System.Drawing.Point(218, 65);
+            this.txtTen.Location = new System.Drawing.Point(218, 67);
             this.txtTen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(147, 30);
+            this.txtTen.Size = new System.Drawing.Size(147, 26);
             this.txtTen.TabIndex = 10;
             this.txtTen.Validating += new System.ComponentModel.CancelEventHandler(this.check_ten);
             // 
             // btnXoa
             // 
             this.btnXoa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnXoa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnXoa.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnXoa.BackColor = System.Drawing.Color.Red;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Location = new System.Drawing.Point(307, 16);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnXoa.Name = "btnXoa";
@@ -190,8 +200,9 @@ namespace Csharp_Entity_Store_Management
             // btnThem
             // 
             this.btnThem.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnThem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnThem.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnThem.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Location = new System.Drawing.Point(17, 16);
             this.btnThem.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnThem.Name = "btnThem";
@@ -204,8 +215,9 @@ namespace Csharp_Entity_Store_Management
             // btnTim
             // 
             this.btnTim.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnTim.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTim.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnTim.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnTim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTim.ForeColor = System.Drawing.Color.White;
             this.btnTim.Location = new System.Drawing.Point(452, 16);
             this.btnTim.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnTim.Name = "btnTim";
@@ -218,8 +230,9 @@ namespace Csharp_Entity_Store_Management
             // btnCapNhat
             // 
             this.btnCapNhat.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCapNhat.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCapNhat.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnCapNhat.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCapNhat.ForeColor = System.Drawing.Color.White;
             this.btnCapNhat.Location = new System.Drawing.Point(162, 16);
             this.btnCapNhat.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCapNhat.Name = "btnCapNhat";
@@ -262,6 +275,8 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.Controls.Add(this.label3, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtSoLuong, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 2, 3);
+            this.tableLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLayoutPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
@@ -299,7 +314,7 @@ namespace Csharp_Entity_Store_Management
             // 
             // frmManagementProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1190, 681);
             this.Controls.Add(this.tableLayoutPanel1);
