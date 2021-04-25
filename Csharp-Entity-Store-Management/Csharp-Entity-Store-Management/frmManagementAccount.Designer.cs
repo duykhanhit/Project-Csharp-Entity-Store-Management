@@ -59,144 +59,162 @@ namespace Csharp_Entity_Store_Management
             this.lblFilterDC = new System.Windows.Forms.Label();
             this.lblFilterVitri = new System.Windows.Forms.Label();
             this.cbxPosition = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAccount)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTenTK
             // 
+            this.lblTenTK.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblTenTK.AutoSize = true;
             this.lblTenTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenTK.Location = new System.Drawing.Point(36, 69);
+            this.lblTenTK.Location = new System.Drawing.Point(4, 100);
             this.lblTenTK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTenTK.Name = "lblTenTK";
-            this.lblTenTK.Size = new System.Drawing.Size(123, 20);
+            this.lblTenTK.Size = new System.Drawing.Size(151, 25);
             this.lblTenTK.TabIndex = 15;
             this.lblTenTK.Text = "Tên tài khoản:";
             // 
             // lblMK
             // 
+            this.lblMK.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblMK.AutoSize = true;
             this.lblMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMK.Location = new System.Drawing.Point(36, 122);
+            this.lblMK.Location = new System.Drawing.Point(4, 144);
             this.lblMK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMK.Name = "lblMK";
-            this.lblMK.Size = new System.Drawing.Size(88, 20);
+            this.lblMK.Size = new System.Drawing.Size(108, 25);
             this.lblMK.TabIndex = 16;
             this.lblMK.Text = "Mật khẩu:";
             // 
             // lblQuyen
             // 
+            this.lblQuyen.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblQuyen.AutoSize = true;
             this.lblQuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuyen.Location = new System.Drawing.Point(508, 168);
+            this.lblQuyen.Location = new System.Drawing.Point(629, 189);
             this.lblQuyen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuyen.Name = "lblQuyen";
-            this.lblQuyen.Size = new System.Drawing.Size(65, 20);
+            this.lblQuyen.Size = new System.Drawing.Size(83, 25);
             this.lblQuyen.TabIndex = 17;
             this.lblQuyen.Text = "Quyền:";
             // 
             // lblHoVaTen
             // 
+            this.lblHoVaTen.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblHoVaTen.AutoSize = true;
             this.lblHoVaTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoVaTen.Location = new System.Drawing.Point(36, 170);
+            this.lblHoVaTen.Location = new System.Drawing.Point(4, 189);
             this.lblHoVaTen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHoVaTen.Name = "lblHoVaTen";
-            this.lblHoVaTen.Size = new System.Drawing.Size(91, 20);
+            this.lblHoVaTen.Size = new System.Drawing.Size(111, 25);
             this.lblHoVaTen.TabIndex = 18;
             this.lblHoVaTen.Text = "Họ và tên:";
             // 
             // lblDC
             // 
+            this.lblDC.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblDC.AutoSize = true;
             this.lblDC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDC.Location = new System.Drawing.Point(508, 26);
+            this.lblDC.Location = new System.Drawing.Point(629, 55);
             this.lblDC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDC.Name = "lblDC";
-            this.lblDC.Size = new System.Drawing.Size(69, 20);
+            this.lblDC.Size = new System.Drawing.Size(85, 25);
             this.lblDC.TabIndex = 19;
             this.lblDC.Text = "Địa chỉ:";
             // 
             // lblViTri
             // 
+            this.lblViTri.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblViTri.AutoSize = true;
             this.lblViTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblViTri.Location = new System.Drawing.Point(508, 77);
+            this.lblViTri.Location = new System.Drawing.Point(629, 100);
             this.lblViTri.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblViTri.Name = "lblViTri";
-            this.lblViTri.Size = new System.Drawing.Size(51, 20);
+            this.lblViTri.Size = new System.Drawing.Size(63, 25);
             this.lblViTri.TabIndex = 20;
             this.lblViTri.Text = "Vị trí:";
             // 
             // lblDT
             // 
+            this.lblDT.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblDT.AutoSize = true;
             this.lblDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDT.Location = new System.Drawing.Point(508, 124);
+            this.lblDT.Location = new System.Drawing.Point(629, 144);
             this.lblDT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDT.Name = "lblDT";
-            this.lblDT.Size = new System.Drawing.Size(96, 20);
+            this.lblDT.Size = new System.Drawing.Size(116, 25);
             this.lblDT.TabIndex = 21;
             this.lblDT.Text = "Điện thoại:";
             // 
             // txtTenTK
             // 
-            this.txtTenTK.Location = new System.Drawing.Point(168, 69);
+            this.txtTenTK.Location = new System.Drawing.Point(230, 95);
             this.txtTenTK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTenTK.Name = "txtTenTK";
-            this.txtTenTK.Size = new System.Drawing.Size(219, 26);
+            this.txtTenTK.Size = new System.Drawing.Size(219, 30);
             this.txtTenTK.TabIndex = 0;
             // 
             // txtMK
             // 
-            this.txtMK.Location = new System.Drawing.Point(168, 116);
+            this.txtMK.Location = new System.Drawing.Point(230, 140);
             this.txtMK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMK.Name = "txtMK";
-            this.txtMK.Size = new System.Drawing.Size(219, 26);
+            this.txtMK.Size = new System.Drawing.Size(219, 30);
             this.txtMK.TabIndex = 1;
             // 
             // txtHoVaTen
             // 
-            this.txtHoVaTen.Location = new System.Drawing.Point(168, 164);
+            this.txtHoVaTen.Location = new System.Drawing.Point(230, 184);
             this.txtHoVaTen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtHoVaTen.Name = "txtHoVaTen";
-            this.txtHoVaTen.Size = new System.Drawing.Size(219, 26);
+            this.txtHoVaTen.Size = new System.Drawing.Size(219, 30);
             this.txtHoVaTen.TabIndex = 2;
             // 
             // txtDC
             // 
-            this.txtDC.Location = new System.Drawing.Point(618, 20);
+            this.txtDC.Location = new System.Drawing.Point(798, 50);
             this.txtDC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDC.Name = "txtDC";
-            this.txtDC.Size = new System.Drawing.Size(235, 26);
+            this.txtDC.Size = new System.Drawing.Size(235, 30);
             this.txtDC.TabIndex = 3;
             // 
             // txtViTri
             // 
-            this.txtViTri.Location = new System.Drawing.Point(618, 69);
+            this.txtViTri.Location = new System.Drawing.Point(798, 95);
             this.txtViTri.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtViTri.Name = "txtViTri";
-            this.txtViTri.Size = new System.Drawing.Size(235, 26);
+            this.txtViTri.Size = new System.Drawing.Size(235, 30);
             this.txtViTri.TabIndex = 4;
             // 
             // txtDT
             // 
-            this.txtDT.Location = new System.Drawing.Point(618, 114);
+            this.txtDT.Location = new System.Drawing.Point(798, 140);
             this.txtDT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDT.Name = "txtDT";
-            this.txtDT.Size = new System.Drawing.Size(235, 26);
+            this.txtDT.Size = new System.Drawing.Size(235, 30);
             this.txtDT.TabIndex = 5;
             // 
             // dataGridViewAccount
             // 
+            this.dataGridViewAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewAccount.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAccount.Location = new System.Drawing.Point(40, 335);
+            this.tableLayoutPanel1.SetColumnSpan(this.dataGridViewAccount, 4);
+            this.dataGridViewAccount.Location = new System.Drawing.Point(4, 332);
             this.dataGridViewAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridViewAccount.Name = "dataGridViewAccount";
             this.dataGridViewAccount.RowHeadersVisible = false;
             this.dataGridViewAccount.RowHeadersWidth = 78;
-            this.dataGridViewAccount.Size = new System.Drawing.Size(813, 218);
+            this.dataGridViewAccount.Size = new System.Drawing.Size(1244, 337);
             this.dataGridViewAccount.TabIndex = 13;
             this.dataGridViewAccount.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAccount_CellClick);
             // 
@@ -204,28 +222,29 @@ namespace Csharp_Entity_Store_Management
             // 
             this.cbxQuyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxQuyen.FormattingEnabled = true;
-            this.cbxQuyen.Location = new System.Drawing.Point(618, 160);
+            this.cbxQuyen.Location = new System.Drawing.Point(798, 184);
             this.cbxQuyen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxQuyen.Name = "cbxQuyen";
-            this.cbxQuyen.Size = new System.Drawing.Size(235, 28);
+            this.cbxQuyen.Size = new System.Drawing.Size(235, 33);
             this.cbxQuyen.TabIndex = 23;
             // 
             // txtAccountID
             // 
-            this.txtAccountID.Location = new System.Drawing.Point(168, 25);
+            this.txtAccountID.Location = new System.Drawing.Point(230, 50);
             this.txtAccountID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAccountID.Name = "txtAccountID";
-            this.txtAccountID.Size = new System.Drawing.Size(219, 26);
+            this.txtAccountID.Size = new System.Drawing.Size(219, 30);
             this.txtAccountID.TabIndex = 22;
             // 
             // lblAccountID
             // 
+            this.lblAccountID.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblAccountID.AutoSize = true;
             this.lblAccountID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccountID.Location = new System.Drawing.Point(36, 24);
+            this.lblAccountID.Location = new System.Drawing.Point(4, 55);
             this.lblAccountID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAccountID.Name = "lblAccountID";
-            this.lblAccountID.Size = new System.Drawing.Size(117, 20);
+            this.lblAccountID.Size = new System.Drawing.Size(143, 25);
             this.lblAccountID.TabIndex = 14;
             this.lblAccountID.Text = "Mã tài khoản:";
             // 
@@ -236,10 +255,10 @@ namespace Csharp_Entity_Store_Management
             this.btnViewAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewAll.ForeColor = System.Drawing.Color.White;
             this.btnViewAll.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnViewAll.Location = new System.Drawing.Point(497, 574);
+            this.btnViewAll.Location = new System.Drawing.Point(4, 5);
             this.btnViewAll.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnViewAll.Name = "btnViewAll";
-            this.btnViewAll.Size = new System.Drawing.Size(113, 37);
+            this.btnViewAll.Size = new System.Drawing.Size(142, 37);
             this.btnViewAll.TabIndex = 11;
             this.btnViewAll.Text = "Xem tất cả";
             this.btnViewAll.UseVisualStyleBackColor = false;
@@ -247,15 +266,16 @@ namespace Csharp_Entity_Store_Management
             // 
             // btnClear
             // 
+            this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnClear.BackColor = System.Drawing.Color.OrangeRed;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClear.Location = new System.Drawing.Point(645, 235);
+            this.btnClear.Location = new System.Drawing.Point(629, 229);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(98, 37);
+            this.btnClear.Size = new System.Drawing.Size(98, 38);
             this.btnClear.TabIndex = 8;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -268,10 +288,10 @@ namespace Csharp_Entity_Store_Management
             this.btnDelAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelAccount.ForeColor = System.Drawing.Color.White;
             this.btnDelAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelAccount.Location = new System.Drawing.Point(618, 575);
+            this.btnDelAccount.Location = new System.Drawing.Point(154, 5);
             this.btnDelAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDelAccount.Name = "btnDelAccount";
-            this.btnDelAccount.Size = new System.Drawing.Size(98, 37);
+            this.btnDelAccount.Size = new System.Drawing.Size(142, 37);
             this.btnDelAccount.TabIndex = 9;
             this.btnDelAccount.Text = "Xóa";
             this.btnDelAccount.UseVisualStyleBackColor = false;
@@ -284,10 +304,10 @@ namespace Csharp_Entity_Store_Management
             this.btnEditAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditAccount.ForeColor = System.Drawing.Color.White;
             this.btnEditAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditAccount.Location = new System.Drawing.Point(728, 576);
+            this.btnEditAccount.Location = new System.Drawing.Point(304, 5);
             this.btnEditAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEditAccount.Name = "btnEditAccount";
-            this.btnEditAccount.Size = new System.Drawing.Size(98, 35);
+            this.btnEditAccount.Size = new System.Drawing.Size(144, 35);
             this.btnEditAccount.TabIndex = 7;
             this.btnEditAccount.Text = "Cập nhật";
             this.btnEditAccount.UseVisualStyleBackColor = false;
@@ -295,15 +315,16 @@ namespace Csharp_Entity_Store_Management
             // 
             // btnAddAccount
             // 
+            this.btnAddAccount.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnAddAccount.BackColor = System.Drawing.Color.SeaGreen;
             this.btnAddAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddAccount.ForeColor = System.Drawing.Color.White;
             this.btnAddAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddAccount.Location = new System.Drawing.Point(755, 235);
+            this.btnAddAccount.Location = new System.Drawing.Point(798, 229);
             this.btnAddAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAddAccount.Name = "btnAddAccount";
-            this.btnAddAccount.Size = new System.Drawing.Size(98, 37);
+            this.btnAddAccount.Size = new System.Drawing.Size(98, 38);
             this.btnAddAccount.TabIndex = 10;
             this.btnAddAccount.Text = "Thêm";
             this.btnAddAccount.UseVisualStyleBackColor = false;
@@ -311,10 +332,11 @@ namespace Csharp_Entity_Store_Management
             // 
             // txtSearchKeyword
             // 
+            this.txtSearchKeyword.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtSearchKeyword.ForeColor = System.Drawing.Color.Silver;
-            this.txtSearchKeyword.Location = new System.Drawing.Point(107, 235);
+            this.txtSearchKeyword.Location = new System.Drawing.Point(3, 233);
             this.txtSearchKeyword.Name = "txtSearchKeyword";
-            this.txtSearchKeyword.Size = new System.Drawing.Size(157, 26);
+            this.txtSearchKeyword.Size = new System.Drawing.Size(220, 30);
             this.txtSearchKeyword.TabIndex = 26;
             this.txtSearchKeyword.Text = "Nhập tên tài khoản";
             // 
@@ -323,9 +345,9 @@ namespace Csharp_Entity_Store_Management
             this.btnSearch.BackColor = System.Drawing.Color.MediumPurple;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(281, 235);
+            this.btnSearch.Location = new System.Drawing.Point(229, 227);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(89, 26);
+            this.btnSearch.Size = new System.Drawing.Size(108, 42);
             this.btnSearch.TabIndex = 27;
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -333,96 +355,183 @@ namespace Csharp_Entity_Store_Management
             // 
             // cbxRole
             // 
+            this.cbxRole.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cbxRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxRole.FormattingEnabled = true;
-            this.cbxRole.Location = new System.Drawing.Point(107, 283);
+            this.cbxRole.Location = new System.Drawing.Point(327, 3);
             this.cbxRole.Name = "cbxRole";
-            this.cbxRole.Size = new System.Drawing.Size(71, 28);
+            this.cbxRole.Size = new System.Drawing.Size(71, 33);
             this.cbxRole.TabIndex = 28;
             this.cbxRole.SelectedValueChanged += new System.EventHandler(this.cbxRole_SelectedValueChanged);
             // 
             // lblFilterQuyen
             // 
+            this.lblFilterQuyen.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblFilterQuyen.AutoSize = true;
-            this.lblFilterQuyen.Location = new System.Drawing.Point(36, 291);
+            this.lblFilterQuyen.Location = new System.Drawing.Point(244, 12);
             this.lblFilterQuyen.Name = "lblFilterQuyen";
-            this.lblFilterQuyen.Size = new System.Drawing.Size(59, 20);
+            this.lblFilterQuyen.Size = new System.Drawing.Size(77, 25);
             this.lblFilterQuyen.TabIndex = 29;
             this.lblFilterQuyen.Text = "Quyền:";
             // 
             // cbxAddress
             // 
+            this.cbxAddress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cbxAddress.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxAddress.FormattingEnabled = true;
-            this.cbxAddress.Location = new System.Drawing.Point(479, 283);
+            this.cbxAddress.Location = new System.Drawing.Point(547, 3);
             this.cbxAddress.Name = "cbxAddress";
-            this.cbxAddress.Size = new System.Drawing.Size(128, 28);
+            this.cbxAddress.Size = new System.Drawing.Size(128, 33);
             this.cbxAddress.TabIndex = 30;
             this.cbxAddress.SelectedValueChanged += new System.EventHandler(this.cbxAddress_SelectedValueChanged);
             // 
             // lblFilterDC
             // 
+            this.lblFilterDC.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblFilterDC.AutoSize = true;
-            this.lblFilterDC.Location = new System.Drawing.Point(412, 291);
+            this.lblFilterDC.Location = new System.Drawing.Point(464, 12);
             this.lblFilterDC.Name = "lblFilterDC";
-            this.lblFilterDC.Size = new System.Drawing.Size(61, 20);
+            this.lblFilterDC.Size = new System.Drawing.Size(77, 25);
             this.lblFilterDC.TabIndex = 31;
             this.lblFilterDC.Text = "Địa chỉ:";
             // 
             // lblFilterVitri
             // 
+            this.lblFilterVitri.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblFilterVitri.AutoSize = true;
-            this.lblFilterVitri.Location = new System.Drawing.Point(213, 291);
+            this.lblFilterVitri.Location = new System.Drawing.Point(25, 12);
             this.lblFilterVitri.Name = "lblFilterVitri";
-            this.lblFilterVitri.Size = new System.Drawing.Size(48, 20);
+            this.lblFilterVitri.Size = new System.Drawing.Size(61, 25);
             this.lblFilterVitri.TabIndex = 32;
             this.lblFilterVitri.Text = "Vị trí: ";
             // 
             // cbxPosition
             // 
+            this.cbxPosition.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cbxPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxPosition.FormattingEnabled = true;
-            this.cbxPosition.Location = new System.Drawing.Point(281, 283);
+            this.cbxPosition.Location = new System.Drawing.Point(92, 3);
             this.cbxPosition.Name = "cbxPosition";
-            this.cbxPosition.Size = new System.Drawing.Size(106, 28);
+            this.cbxPosition.Size = new System.Drawing.Size(106, 33);
             this.cbxPosition.TabIndex = 33;
             this.cbxPosition.SelectedValueChanged += new System.EventHandler(this.cbxPosition_SelectedValueChanged);
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.08242F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.87553F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.54079F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.50126F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.lblAccountID, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtAccountID, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.dataGridViewAccount, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.lblTenTK, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtTenTK, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lblMK, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtMK, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lblHoVaTen, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btnSearch, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.btnClear, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.txtHoVaTen, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.cbxQuyen, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btnAddAccount, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.txtSearchKeyword, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.lblDC, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtDC, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblViTri, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtViTri, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lblQuyen, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.txtDT, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lblDT, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 3, 8);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 9;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.598442F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.598442F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.448477F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.598442F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.051823F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.080214F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.53807F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.08609F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1252, 733);
+            this.tableLayoutPanel1.TabIndex = 34;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.ColumnCount = 6;
+            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel2, 4);
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.223114F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.5939F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.426967F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.0321F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.784912F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.26003F));
+            this.tableLayoutPanel2.Controls.Add(this.cbxPosition, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.cbxAddress, 5, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblFilterDC, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblFilterVitri, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblFilterQuyen, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.cbxRole, 3, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 275);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1246, 49);
+            this.tableLayoutPanel2.TabIndex = 35;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.Controls.Add(this.btnViewAll, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnDelAccount, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnEditAccount, 2, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(797, 677);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(452, 53);
+            this.tableLayoutPanel3.TabIndex = 36;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label1, 4);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(470, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(312, 32);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "QUẢN LÝ TÀI KHOẢN";
+            // 
             // frmManagementAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(883, 625);
-            this.Controls.Add(this.cbxPosition);
-            this.Controls.Add(this.lblFilterVitri);
-            this.Controls.Add(this.lblFilterDC);
-            this.Controls.Add(this.cbxAddress);
-            this.Controls.Add(this.lblFilterQuyen);
-            this.Controls.Add(this.cbxRole);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtSearchKeyword);
-            this.Controls.Add(this.btnViewAll);
-            this.Controls.Add(this.lblAccountID);
-            this.Controls.Add(this.txtAccountID);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.cbxQuyen);
-            this.Controls.Add(this.dataGridViewAccount);
-            this.Controls.Add(this.btnDelAccount);
-            this.Controls.Add(this.btnEditAccount);
-            this.Controls.Add(this.btnAddAccount);
-            this.Controls.Add(this.txtDT);
-            this.Controls.Add(this.txtViTri);
-            this.Controls.Add(this.txtDC);
-            this.Controls.Add(this.txtHoVaTen);
-            this.Controls.Add(this.txtMK);
-            this.Controls.Add(this.txtTenTK);
-            this.Controls.Add(this.lblDT);
-            this.Controls.Add(this.lblViTri);
-            this.Controls.Add(this.lblDC);
-            this.Controls.Add(this.lblHoVaTen);
-            this.Controls.Add(this.lblQuyen);
-            this.Controls.Add(this.lblMK);
-            this.Controls.Add(this.lblTenTK);
+            this.ClientSize = new System.Drawing.Size(1276, 757);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -431,8 +540,12 @@ namespace Csharp_Entity_Store_Management
             this.Text = "frmManagementAccount";
             this.Load += new System.EventHandler(this.frmManagementAccount_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAccount)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -468,5 +581,9 @@ namespace Csharp_Entity_Store_Management
         private System.Windows.Forms.Label lblFilterDC;
         private System.Windows.Forms.Label lblFilterVitri;
         private System.Windows.Forms.ComboBox cbxPosition;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label label1;
     }
 }

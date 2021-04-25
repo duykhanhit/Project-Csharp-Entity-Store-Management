@@ -68,6 +68,7 @@ namespace Csharp_Entity_Store_Management
                 txtCustomerPhone.ReadOnly = false;
                 txtCustomerName.Clear();
                 txtCustomerAddress.Clear();
+                txtCheckPhone.Clear();
                 btnAddCustomer.Visible = true;
                 txtCustomerPhone.Text = phone;
                 return;

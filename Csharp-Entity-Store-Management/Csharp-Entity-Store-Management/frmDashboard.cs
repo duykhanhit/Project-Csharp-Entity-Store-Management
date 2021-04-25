@@ -54,9 +54,10 @@ namespace Csharp_Entity_Store_Management
             frmManagementProduct frm = new frmManagementProduct();
             frm.TopLevel = false;
             panel.Controls.Add(frm);
-            panel.AutoScroll = true;
+            //panel.AutoScroll = true;
             panel.BorderStyle = BorderStyle.FixedSingle;
             frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
             frm.Show();
         }
 
@@ -79,9 +80,10 @@ namespace Csharp_Entity_Store_Management
             frmManagementAccount frm = new frmManagementAccount();
             frm.TopLevel = false;
             panel.Controls.Add(frm);
-            panel.AutoScroll = true;
+            //panel.AutoScroll = true;
             panel.BorderStyle = BorderStyle.FixedSingle;
             frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
             frm.Show();
         }
 
@@ -91,9 +93,10 @@ namespace Csharp_Entity_Store_Management
             frmManagementCategory frm = new frmManagementCategory();
             frm.TopLevel = false;
             panel.Controls.Add(frm);
-            panel.AutoScroll = true;
+            //panel.AutoScroll = true;
             panel.BorderStyle = BorderStyle.FixedSingle;
             frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
             frm.Show();
         }
 
@@ -103,9 +106,10 @@ namespace Csharp_Entity_Store_Management
             frmManagementStockIn frm = new frmManagementStockIn();
             frm.TopLevel = false;
             panel.Controls.Add(frm);
-            panel.AutoScroll = true;
+            //panel.AutoScroll = true;
             panel.BorderStyle = BorderStyle.FixedSingle;
             frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
             frm.Show();
         }
 
@@ -115,9 +119,10 @@ namespace Csharp_Entity_Store_Management
             frmManagementSuppiler frm = new frmManagementSuppiler();
             frm.TopLevel = false;
             panel.Controls.Add(frm);
-            panel.AutoScroll = true;
+            //panel.AutoScroll = true;
             panel.BorderStyle = BorderStyle.FixedSingle;
             frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
             frm.Show();
         }
 
