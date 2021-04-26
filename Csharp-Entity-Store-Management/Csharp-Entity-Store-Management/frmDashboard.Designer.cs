@@ -50,10 +50,10 @@ namespace Csharp_Entity_Store_Management
             this.panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel.Location = new System.Drawing.Point(221, 74);
+            this.panel.Location = new System.Drawing.Point(225, 77);
             this.panel.Name = "panel";
             this.tableLayoutPanel1.SetRowSpan(this.panel, 2);
-            this.panel.Size = new System.Drawing.Size(1230, 641);
+            this.panel.Size = new System.Drawing.Size(1253, 666);
             this.panel.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -67,13 +67,13 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblUsername, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(-4, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1454, 718);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1481, 746);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // tableLayoutPanel2
@@ -81,6 +81,7 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.DodgerBlue;
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.btnLogout, 0, 7);
@@ -91,7 +92,7 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel2.Controls.Add(this.btnOrderManagement, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.btnCategoryManagement, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.btnAccountManagement, 0, 3);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 74);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 77);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 8;
             this.tableLayoutPanel1.SetRowSpan(this.tableLayoutPanel2, 2);
@@ -103,7 +104,7 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(212, 641);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(216, 666);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // btnLogout
@@ -111,13 +112,18 @@ namespace Csharp_Entity_Store_Management
             this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogout.Location = new System.Drawing.Point(0, 560);
+            this.btnLogout.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Location = new System.Drawing.Point(0, 581);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(0);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(212, 81);
+            this.btnLogout.Size = new System.Drawing.Size(216, 85);
             this.btnLogout.TabIndex = 1;
             this.btnLogout.Text = "Đăng xuất";
-            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnDashboard
@@ -125,26 +131,36 @@ namespace Csharp_Entity_Store_Management
             this.btnDashboard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDashboard.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
             this.btnDashboard.Location = new System.Drawing.Point(0, 0);
             this.btnDashboard.Margin = new System.Windows.Forms.Padding(0);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(212, 80);
+            this.btnDashboard.Size = new System.Drawing.Size(216, 83);
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.UseVisualStyleBackColor = false;
             // 
             // btnSuppilerManagement
             // 
             this.btnSuppilerManagement.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSuppilerManagement.Location = new System.Drawing.Point(0, 480);
+            this.btnSuppilerManagement.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnSuppilerManagement.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnSuppilerManagement.FlatAppearance.BorderSize = 0;
+            this.btnSuppilerManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuppilerManagement.ForeColor = System.Drawing.Color.White;
+            this.btnSuppilerManagement.Location = new System.Drawing.Point(0, 498);
             this.btnSuppilerManagement.Margin = new System.Windows.Forms.Padding(0);
             this.btnSuppilerManagement.Name = "btnSuppilerManagement";
-            this.btnSuppilerManagement.Size = new System.Drawing.Size(212, 80);
+            this.btnSuppilerManagement.Size = new System.Drawing.Size(216, 83);
             this.btnSuppilerManagement.TabIndex = 0;
             this.btnSuppilerManagement.Text = "Quản lý nhà cung cấp";
-            this.btnSuppilerManagement.UseVisualStyleBackColor = true;
+            this.btnSuppilerManagement.UseVisualStyleBackColor = false;
             this.btnSuppilerManagement.Click += new System.EventHandler(this.btnSuppilerManagement_Click);
             // 
             // btnProductManagement
@@ -152,13 +168,18 @@ namespace Csharp_Entity_Store_Management
             this.btnProductManagement.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnProductManagement.Location = new System.Drawing.Point(0, 80);
+            this.btnProductManagement.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnProductManagement.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnProductManagement.FlatAppearance.BorderSize = 0;
+            this.btnProductManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductManagement.ForeColor = System.Drawing.Color.White;
+            this.btnProductManagement.Location = new System.Drawing.Point(0, 83);
             this.btnProductManagement.Margin = new System.Windows.Forms.Padding(0);
             this.btnProductManagement.Name = "btnProductManagement";
-            this.btnProductManagement.Size = new System.Drawing.Size(212, 80);
+            this.btnProductManagement.Size = new System.Drawing.Size(216, 83);
             this.btnProductManagement.TabIndex = 0;
             this.btnProductManagement.Text = "Quản lý sản phẩm";
-            this.btnProductManagement.UseVisualStyleBackColor = true;
+            this.btnProductManagement.UseVisualStyleBackColor = false;
             this.btnProductManagement.Click += new System.EventHandler(this.btnProductManagement_Click);
             // 
             // btnStockInManagement
@@ -166,13 +187,18 @@ namespace Csharp_Entity_Store_Management
             this.btnStockInManagement.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStockInManagement.Location = new System.Drawing.Point(0, 400);
+            this.btnStockInManagement.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnStockInManagement.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnStockInManagement.FlatAppearance.BorderSize = 0;
+            this.btnStockInManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStockInManagement.ForeColor = System.Drawing.Color.White;
+            this.btnStockInManagement.Location = new System.Drawing.Point(0, 415);
             this.btnStockInManagement.Margin = new System.Windows.Forms.Padding(0);
             this.btnStockInManagement.Name = "btnStockInManagement";
-            this.btnStockInManagement.Size = new System.Drawing.Size(212, 80);
+            this.btnStockInManagement.Size = new System.Drawing.Size(216, 83);
             this.btnStockInManagement.TabIndex = 0;
             this.btnStockInManagement.Text = "Quản lý nhập kho";
-            this.btnStockInManagement.UseVisualStyleBackColor = true;
+            this.btnStockInManagement.UseVisualStyleBackColor = false;
             this.btnStockInManagement.Click += new System.EventHandler(this.btnStockInManagement_Click);
             // 
             // btnOrderManagement
@@ -180,13 +206,18 @@ namespace Csharp_Entity_Store_Management
             this.btnOrderManagement.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOrderManagement.Location = new System.Drawing.Point(0, 160);
+            this.btnOrderManagement.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnOrderManagement.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnOrderManagement.FlatAppearance.BorderSize = 0;
+            this.btnOrderManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrderManagement.ForeColor = System.Drawing.Color.White;
+            this.btnOrderManagement.Location = new System.Drawing.Point(0, 166);
             this.btnOrderManagement.Margin = new System.Windows.Forms.Padding(0);
             this.btnOrderManagement.Name = "btnOrderManagement";
-            this.btnOrderManagement.Size = new System.Drawing.Size(212, 80);
+            this.btnOrderManagement.Size = new System.Drawing.Size(216, 83);
             this.btnOrderManagement.TabIndex = 0;
             this.btnOrderManagement.Text = "Quản lý hoá đơn";
-            this.btnOrderManagement.UseVisualStyleBackColor = true;
+            this.btnOrderManagement.UseVisualStyleBackColor = false;
             this.btnOrderManagement.Click += new System.EventHandler(this.btnOrderManagement_Click);
             // 
             // btnCategoryManagement
@@ -194,13 +225,18 @@ namespace Csharp_Entity_Store_Management
             this.btnCategoryManagement.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCategoryManagement.Location = new System.Drawing.Point(0, 320);
+            this.btnCategoryManagement.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnCategoryManagement.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnCategoryManagement.FlatAppearance.BorderSize = 0;
+            this.btnCategoryManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategoryManagement.ForeColor = System.Drawing.Color.White;
+            this.btnCategoryManagement.Location = new System.Drawing.Point(0, 332);
             this.btnCategoryManagement.Margin = new System.Windows.Forms.Padding(0);
             this.btnCategoryManagement.Name = "btnCategoryManagement";
-            this.btnCategoryManagement.Size = new System.Drawing.Size(212, 80);
+            this.btnCategoryManagement.Size = new System.Drawing.Size(216, 83);
             this.btnCategoryManagement.TabIndex = 0;
             this.btnCategoryManagement.Text = "Quản lý danh mục";
-            this.btnCategoryManagement.UseVisualStyleBackColor = true;
+            this.btnCategoryManagement.UseVisualStyleBackColor = false;
             this.btnCategoryManagement.Click += new System.EventHandler(this.btnCategoryManagement_Click);
             // 
             // btnAccountManagement
@@ -208,13 +244,18 @@ namespace Csharp_Entity_Store_Management
             this.btnAccountManagement.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAccountManagement.Location = new System.Drawing.Point(0, 240);
+            this.btnAccountManagement.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAccountManagement.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnAccountManagement.FlatAppearance.BorderSize = 0;
+            this.btnAccountManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccountManagement.ForeColor = System.Drawing.Color.White;
+            this.btnAccountManagement.Location = new System.Drawing.Point(0, 249);
             this.btnAccountManagement.Margin = new System.Windows.Forms.Padding(0);
             this.btnAccountManagement.Name = "btnAccountManagement";
-            this.btnAccountManagement.Size = new System.Drawing.Size(212, 80);
+            this.btnAccountManagement.Size = new System.Drawing.Size(216, 83);
             this.btnAccountManagement.TabIndex = 0;
             this.btnAccountManagement.Text = "Quản lý tài khoản";
-            this.btnAccountManagement.UseVisualStyleBackColor = true;
+            this.btnAccountManagement.UseVisualStyleBackColor = false;
             this.btnAccountManagement.Click += new System.EventHandler(this.btnAccountManagement_Click);
             // 
             // lblUsername
@@ -222,7 +263,7 @@ namespace Csharp_Entity_Store_Management
             this.lblUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(764, 19);
+            this.lblUsername.Location = new System.Drawing.Point(780, 21);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(143, 32);
             this.lblUsername.TabIndex = 1;

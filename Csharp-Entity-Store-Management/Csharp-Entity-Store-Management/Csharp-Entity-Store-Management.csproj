@@ -226,6 +226,7 @@
     <Content Include="Resources\close.ico" />
     <Content Include="Resources\delete.ico" />
     <Content Include="Resources\delete_user.ico" />
+    <None Include="Resources\download.png" />
     <Content Include="Resources\edit.ico" />
     <Content Include="Resources\edit_user.ico" />
     <Content Include="Resources\search_user.ico" />
