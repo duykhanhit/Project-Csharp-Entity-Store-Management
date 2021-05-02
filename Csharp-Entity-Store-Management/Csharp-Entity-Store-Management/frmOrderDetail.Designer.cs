@@ -40,20 +40,20 @@ namespace Csharp_Entity_Store_Management
             this.lbTotalMoney = new System.Windows.Forms.Label();
             this.lbDate = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnPrint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListProduct)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.25F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label1.Location = new System.Drawing.Point(533, 53);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(588, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(80, 10, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 31);
+            this.label1.Size = new System.Drawing.Size(224, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Chi tiết hóa đơn";
             // 
@@ -62,7 +62,7 @@ namespace Csharp_Entity_Store_Management
             this.lbOrderID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbOrderID.AutoSize = true;
             this.lbOrderID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbOrderID.Location = new System.Drawing.Point(1009, 59);
+            this.lbOrderID.Location = new System.Drawing.Point(1093, 59);
             this.lbOrderID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbOrderID.Name = "lbOrderID";
             this.lbOrderID.Size = new System.Drawing.Size(101, 20);
@@ -75,8 +75,8 @@ namespace Csharp_Entity_Store_Management
             this.lbCustomerName.AutoSize = true;
             this.lbCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCustomerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbCustomerName.Location = new System.Drawing.Point(4, 159);
-            this.lbCustomerName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCustomerName.Location = new System.Drawing.Point(120, 159);
+            this.lbCustomerName.Margin = new System.Windows.Forms.Padding(120, 0, 4, 0);
             this.lbCustomerName.Name = "lbCustomerName";
             this.lbCustomerName.Size = new System.Drawing.Size(131, 20);
             this.lbCustomerName.TabIndex = 2;
@@ -88,8 +88,8 @@ namespace Csharp_Entity_Store_Management
             this.lbCustomerAddress.AutoSize = true;
             this.lbCustomerAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCustomerAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbCustomerAddress.Location = new System.Drawing.Point(4, 223);
-            this.lbCustomerAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCustomerAddress.Location = new System.Drawing.Point(120, 223);
+            this.lbCustomerAddress.Margin = new System.Windows.Forms.Padding(120, 0, 4, 0);
             this.lbCustomerAddress.Name = "lbCustomerAddress";
             this.lbCustomerAddress.Size = new System.Drawing.Size(65, 20);
             this.lbCustomerAddress.TabIndex = 3;
@@ -101,8 +101,8 @@ namespace Csharp_Entity_Store_Management
             this.lbCustomerPhone.AutoSize = true;
             this.lbCustomerPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCustomerPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbCustomerPhone.Location = new System.Drawing.Point(4, 288);
-            this.lbCustomerPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCustomerPhone.Location = new System.Drawing.Point(120, 288);
+            this.lbCustomerPhone.Margin = new System.Windows.Forms.Padding(120, 0, 4, 0);
             this.lbCustomerPhone.Name = "lbCustomerPhone";
             this.lbCustomerPhone.Size = new System.Drawing.Size(110, 20);
             this.lbCustomerPhone.TabIndex = 4;
@@ -114,8 +114,8 @@ namespace Csharp_Entity_Store_Management
             this.lbUserID.AutoSize = true;
             this.lbUserID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUserID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbUserID.Location = new System.Drawing.Point(427, 159);
-            this.lbUserID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbUserID.Location = new System.Drawing.Point(628, 159);
+            this.lbUserID.Margin = new System.Windows.Forms.Padding(120, 0, 4, 0);
             this.lbUserID.Name = "lbUserID";
             this.lbUserID.Size = new System.Drawing.Size(111, 20);
             this.lbUserID.TabIndex = 5;
@@ -127,8 +127,8 @@ namespace Csharp_Entity_Store_Management
             this.lbUsername.AutoSize = true;
             this.lbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbUsername.Location = new System.Drawing.Point(427, 223);
-            this.lbUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbUsername.Location = new System.Drawing.Point(628, 223);
+            this.lbUsername.Margin = new System.Windows.Forms.Padding(120, 0, 4, 0);
             this.lbUsername.Name = "lbUsername";
             this.lbUsername.Size = new System.Drawing.Size(116, 20);
             this.lbUsername.TabIndex = 6;
@@ -156,7 +156,7 @@ namespace Csharp_Entity_Store_Management
             this.lbTotalMoney.AutoSize = true;
             this.lbTotalMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTotalMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbTotalMoney.Location = new System.Drawing.Point(851, 603);
+            this.lbTotalMoney.Location = new System.Drawing.Point(1020, 603);
             this.lbTotalMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTotalMoney.Name = "lbTotalMoney";
             this.lbTotalMoney.Size = new System.Drawing.Size(111, 24);
@@ -169,7 +169,7 @@ namespace Csharp_Entity_Store_Management
             this.lbDate.AutoSize = true;
             this.lbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbDate.Location = new System.Drawing.Point(169, 59);
+            this.lbDate.Location = new System.Drawing.Point(212, 59);
             this.lbDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(84, 20);
@@ -182,9 +182,9 @@ namespace Csharp_Entity_Store_Management
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Controls.Add(this.lbTotalMoney, 2, 5);
             this.tableLayoutPanel1.Controls.Add(this.lbOrderID, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.lbDate, 0, 0);
@@ -195,18 +195,34 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.Controls.Add(this.lbCustomerName, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lbUserID, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.lbUsername, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnPrint, 2, 2);
             this.tableLayoutPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.37517F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.612403F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.23256F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.922481F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.68992F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.832418F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.44703F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.644717F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.26696F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.955837F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.82335F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.86211F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1272, 645);
             this.tableLayoutPanel1.TabIndex = 10;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPrint.AutoSize = true;
+            this.btnPrint.Image = global::Csharp_Entity_Store_Management.Properties.Resources.printer;
+            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrint.Location = new System.Drawing.Point(1080, 208);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(128, 50);
+            this.btnPrint.TabIndex = 10;
+            this.btnPrint.Text = "In hóa đơn";
+            this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // frmOrderDetail
             // 
@@ -240,5 +256,6 @@ namespace Csharp_Entity_Store_Management
         private System.Windows.Forms.Label lbTotalMoney;
         private System.Windows.Forms.Label lbDate;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button btnPrint;
     }
 }
