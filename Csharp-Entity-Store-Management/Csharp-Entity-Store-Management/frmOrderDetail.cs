@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
+using System.Globalization;
 
 namespace Csharp_Entity_Store_Management
 {
@@ -33,7 +34,7 @@ namespace Csharp_Entity_Store_Management
         {
             Order order = data.Orders.Where(p => p.orderID == orderID).SingleOrDefault();
             lbOrderID.Text = lbOrderID.Text + order.orderID;
-            lbTotalMoney.Text = lbTotalMoney.Text + order.totalAmount+" vnđ";
+            lbTotalMoney.Text = lbTotalMoney.Text+ string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", order.totalAmount) +" vnđ";
             String[] date = order.createdAt.ToString().Split(' ');
             lbDate.Text = lbDate.Text + date[0];
             User user = data.Users.Where(p => p.userID == order.userID).SingleOrDefault();
@@ -95,9 +96,8 @@ namespace Csharp_Entity_Store_Management
                 table.WidthPercentage = 100;
                 table.HorizontalAlignment = Element.ALIGN_LEFT;
                 //Font chữ
-                
-                String path2 = @"G:\Onlineeeeeeeeee\CSharp\BTL\Store_managment\Project-Csharp-Entity-Store-Management\Csharp-Entity-Store-Management\Csharp-Entity-Store-Management\Resources\font.ttf";
-                String path1 = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + @"\Resources\font.ttf";//về trước folder resource
+                //String path2 = @"G:\Onlineeeeeeeeee\CSharp\BTL\Store_managment\Project-Csharp-Entity-Store-Management\Csharp-Entity-Store-Management\Csharp-Entity-Store-Management\Resources\font.ttf";
+                //String path1 = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + @"\Resources\font.ttf";//về trước folder resource
                 string path = Path.Combine(System.IO.Path.GetFullPath(@"..\..\"), "Resources")+@"\font.ttf";
                 BaseFont baseFont = BaseFont.CreateFont(path, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
                 iTextSharp.text.Font font = new iTextSharp.text.Font(baseFont, 10, iTextSharp.text.Font.NORMAL);
@@ -167,9 +167,35 @@ namespace Csharp_Entity_Store_Management
                 pdfPCell8.PaddingLeft = 30;
                 pdfPCell8.HorizontalAlignment = Element.ALIGN_LEFT;
                 table.AddCell(pdfPCell8);
-
+                //table sản phẩm
+                PdfPTable tableProduct = new PdfPTable(dgvListProduct.ColumnCount);
+                tableProduct.DefaultCell.Padding = 10;
+                tableProduct.WidthPercentage = 100;
+                tableProduct.HorizontalAlignment = Element.ALIGN_CENTER;
+                tableProduct.DefaultCell.BorderWidth = 1;
+                //add headertext
+                foreach(DataGridViewColumn column in dgvListProduct.Columns)
+                {
+                    PdfPCell pdfPCell = new PdfPCell(new Phrase(column.HeaderText, font));
+                    pdfPCell.HorizontalAlignment = Element.ALIGN_CENTER;
+                    tableProduct.AddCell(pdfPCell);
+                }
+                foreach (DataGridViewRow row in dgvListProduct.Rows)
+                {
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        PdfPCell pdfPCell = new PdfPCell(new Phrase(cell.Value.ToString(), font));
+                        pdfPCell.HorizontalAlignment = Element.ALIGN_CENTER;
+                        tableProduct.AddCell(pdfPCell);
+                    }
+                }
+                //Tổng tiền
+                Paragraph para = new Paragraph(lbTotalMoney.Text, font);
+                para.Alignment = Element.ALIGN_RIGHT;
                 //thêm table và đóng
                 document.Add(table);
+                document.Add(tableProduct);
+                document.Add(para);
                 document.Close();
                 stream.Close();
             }
