@@ -79,7 +79,7 @@ namespace Csharp_Entity_Store_Management
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn 1 hóa đơn để xóa!", "Thông báo");
+                MessageBox.Show("Vui lòng chọn 1 hóa đơn để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -93,7 +93,7 @@ namespace Csharp_Entity_Store_Management
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn 1 hóa đơn để xem!", "Thông báo");
+                MessageBox.Show("Vui lòng chọn 1 hóa đơn để xem!", "Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
         }
 
