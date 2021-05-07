@@ -217,12 +217,12 @@ namespace Csharp_Entity_Store_Management
                 stream.Close();
                 MessageBox.Show("In hóa đơn thành công!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                OpenFileDialog openFileDialog = new OpenFileDialog();
-                openFileDialog.Filter = "pdf files (*.pdf)|*.pdf|All files (*.*)|*.*";
-                if (openFileDialog.ShowDialog().Equals(DialogResult.OK))
-                {
-                    openFileDialog.OpenFile();
-                }
+                //OpenFileDialog openFileDialog = new OpenFileDialog();
+                //openFileDialog.Filter = "pdf files (*.pdf)|*.pdf|All files (*.*)|*.*";
+                //if (openFileDialog.ShowDialog().Equals(DialogResult.OK))
+                //{
+                //    openFileDialog.OpenFile();
+                //}
 
 
             }
