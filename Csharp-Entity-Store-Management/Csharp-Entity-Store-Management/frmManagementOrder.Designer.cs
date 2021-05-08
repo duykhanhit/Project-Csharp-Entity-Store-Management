@@ -66,7 +66,7 @@ namespace Csharp_Entity_Store_Management
             this.OrderManagement.Name = "OrderManagement";
             this.OrderManagement.Padding = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.SetRowSpan(this.OrderManagement, 2);
-            this.OrderManagement.Size = new System.Drawing.Size(1349, 670);
+            this.OrderManagement.Size = new System.Drawing.Size(1309, 680);
             this.OrderManagement.TabIndex = 3;
             this.OrderManagement.TabStop = false;
             // 
@@ -90,7 +90,7 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1331, 642);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1291, 652);
             this.tableLayoutPanel2.TabIndex = 8;
             // 
             // dgvOrder
@@ -100,13 +100,13 @@ namespace Csharp_Entity_Store_Management
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvOrder.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvOrder.Location = new System.Drawing.Point(6, 326);
+            this.dgvOrder.Location = new System.Drawing.Point(6, 331);
             this.dgvOrder.Margin = new System.Windows.Forms.Padding(6);
             this.dgvOrder.Name = "dgvOrder";
             this.dgvOrder.RowHeadersVisible = false;
             this.dgvOrder.RowHeadersWidth = 51;
             this.tableLayoutPanel2.SetRowSpan(this.dgvOrder, 2);
-            this.dgvOrder.Size = new System.Drawing.Size(898, 310);
+            this.dgvOrder.Size = new System.Drawing.Size(870, 315);
             this.dgvOrder.TabIndex = 0;
             this.dgvOrder.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cellClickItem);
             // 
@@ -117,9 +117,9 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel2.SetColumnSpan(this.label1, 2);
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label1.Location = new System.Drawing.Point(541, 49);
+            this.label1.Location = new System.Drawing.Point(494, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(249, 29);
+            this.label1.Size = new System.Drawing.Size(302, 33);
             this.label1.TabIndex = 8;
             this.label1.Text = "QUẢN LÝ HOÁ ĐƠN";
             // 
@@ -132,9 +132,9 @@ namespace Csharp_Entity_Store_Management
             this.grbOrderDetail.Controls.Add(this.lbUserID);
             this.grbOrderDetail.Controls.Add(this.lbCreateAt);
             this.grbOrderDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.grbOrderDetail.Location = new System.Drawing.Point(913, 131);
+            this.grbOrderDetail.Location = new System.Drawing.Point(885, 133);
             this.grbOrderDetail.Name = "grbOrderDetail";
-            this.grbOrderDetail.Size = new System.Drawing.Size(397, 186);
+            this.grbOrderDetail.Size = new System.Drawing.Size(397, 189);
             this.grbOrderDetail.TabIndex = 7;
             this.grbOrderDetail.TabStop = false;
             this.grbOrderDetail.Text = "Thông tin hoá đơn";
@@ -145,7 +145,7 @@ namespace Csharp_Entity_Store_Management
             this.lbOrderID.Location = new System.Drawing.Point(9, 26);
             this.lbOrderID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbOrderID.Name = "lbOrderID";
-            this.lbOrderID.Size = new System.Drawing.Size(101, 20);
+            this.lbOrderID.Size = new System.Drawing.Size(127, 25);
             this.lbOrderID.TabIndex = 3;
             this.lbOrderID.Text = "Mã hóa đơn: ";
             // 
@@ -155,7 +155,7 @@ namespace Csharp_Entity_Store_Management
             this.lbCusID.Location = new System.Drawing.Point(9, 88);
             this.lbCusID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbCusID.Name = "lbCusID";
-            this.lbCusID.Size = new System.Drawing.Size(126, 20);
+            this.lbCusID.Size = new System.Drawing.Size(158, 25);
             this.lbCusID.TabIndex = 5;
             this.lbCusID.Text = "Mã khách hàng: ";
             // 
@@ -165,7 +165,7 @@ namespace Csharp_Entity_Store_Management
             this.lbUserID.Location = new System.Drawing.Point(9, 119);
             this.lbUserID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbUserID.Name = "lbUserID";
-            this.lbUserID.Size = new System.Drawing.Size(107, 20);
+            this.lbUserID.Size = new System.Drawing.Size(136, 25);
             this.lbUserID.TabIndex = 6;
             this.lbUserID.Text = "Mã nhân viên:";
             // 
@@ -175,7 +175,7 @@ namespace Csharp_Entity_Store_Management
             this.lbCreateAt.Location = new System.Drawing.Point(9, 57);
             this.lbCreateAt.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbCreateAt.Name = "lbCreateAt";
-            this.lbCreateAt.Size = new System.Drawing.Size(74, 20);
+            this.lbCreateAt.Size = new System.Drawing.Size(95, 25);
             this.lbCreateAt.TabIndex = 4;
             this.lbCreateAt.Text = "Ngày lập:";
             // 
@@ -192,13 +192,13 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel3.Controls.Add(this.label4, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.dtpFrom, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.dtpTo, 1, 2);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 131);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 133);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(904, 186);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(876, 189);
             this.tableLayoutPanel3.TabIndex = 9;
             // 
             // label2
@@ -207,7 +207,7 @@ namespace Csharp_Entity_Store_Management
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 20);
+            this.label2.Size = new System.Drawing.Size(120, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Lọc hóa đơn";
             // 
@@ -216,9 +216,9 @@ namespace Csharp_Entity_Store_Management
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label3.Location = new System.Drawing.Point(148, 37);
+            this.label3.Location = new System.Drawing.Point(133, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 37);
+            this.label3.Size = new System.Drawing.Size(84, 37);
             this.label3.TabIndex = 1;
             this.label3.Text = "Từ ngày";
             // 
@@ -227,9 +227,9 @@ namespace Csharp_Entity_Store_Management
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label4.Location = new System.Drawing.Point(594, 37);
+            this.label4.Location = new System.Drawing.Point(565, 37);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 37);
+            this.label4.Size = new System.Drawing.Size(96, 37);
             this.label4.TabIndex = 2;
             this.label4.Text = "Đến ngày";
             // 
@@ -238,9 +238,9 @@ namespace Csharp_Entity_Store_Management
             this.dtpFrom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.dtpFrom.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.dtpFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFrom.Location = new System.Drawing.Point(80, 77);
+            this.dtpFrom.Location = new System.Drawing.Point(75, 77);
             this.dtpFrom.Name = "dtpFrom";
-            this.dtpFrom.Size = new System.Drawing.Size(200, 26);
+            this.dtpFrom.Size = new System.Drawing.Size(200, 30);
             this.dtpFrom.TabIndex = 3;
             this.dtpFrom.ValueChanged += new System.EventHandler(this.onDateFromChange);
             // 
@@ -249,9 +249,9 @@ namespace Csharp_Entity_Store_Management
             this.dtpTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.dtpTo.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.dtpTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpTo.Location = new System.Drawing.Point(532, 77);
+            this.dtpTo.Location = new System.Drawing.Point(513, 77);
             this.dtpTo.Name = "dtpTo";
-            this.dtpTo.Size = new System.Drawing.Size(200, 26);
+            this.dtpTo.Size = new System.Drawing.Size(200, 30);
             this.dtpTo.TabIndex = 4;
             this.dtpTo.ValueChanged += new System.EventHandler(this.onDateChange);
             // 
@@ -261,7 +261,7 @@ namespace Csharp_Entity_Store_Management
             this.btnShowAOrder.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnShowAOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowAOrder.ForeColor = System.Drawing.Color.White;
-            this.btnShowAOrder.Location = new System.Drawing.Point(1024, 430);
+            this.btnShowAOrder.Location = new System.Drawing.Point(990, 438);
             this.btnShowAOrder.Margin = new System.Windows.Forms.Padding(6);
             this.btnShowAOrder.Name = "btnShowAOrder";
             this.btnShowAOrder.Size = new System.Drawing.Size(192, 44);
@@ -279,20 +279,20 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.OrderManagement, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(18, 19);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(13, 14);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1361, 682);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1321, 692);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // frmManagementOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 720);
+            this.ClientSize = new System.Drawing.Size(1347, 720);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
