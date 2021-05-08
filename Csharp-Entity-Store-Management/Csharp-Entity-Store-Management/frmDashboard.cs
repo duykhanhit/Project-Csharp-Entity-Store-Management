@@ -27,6 +27,15 @@ namespace Csharp_Entity_Store_Management
 
             panel.Visible = false;
 
+            loadPanel();
+            frmStatistics frm = new frmStatistics();
+            frm.TopLevel = false;
+            panel.Controls.Add(frm);
+            //panel.AutoScroll = true;
+            panel.BorderStyle = BorderStyle.None;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+            frm.Show();
         }
 
         private void loadPanel()
@@ -42,7 +51,7 @@ namespace Csharp_Entity_Store_Management
             frm.TopLevel = false;
             panel.Controls.Add(frm);
             panel.AutoScroll = true;
-            panel.BorderStyle = BorderStyle.FixedSingle;
+            panel.BorderStyle = BorderStyle.None;
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Dock = DockStyle.Fill;
             frm.Show();
@@ -55,7 +64,7 @@ namespace Csharp_Entity_Store_Management
             frm.TopLevel = false;
             panel.Controls.Add(frm);
             //panel.AutoScroll = true;
-            panel.BorderStyle = BorderStyle.FixedSingle;
+            panel.BorderStyle = BorderStyle.None;
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Dock = DockStyle.Fill;
             frm.Show();
@@ -68,7 +77,7 @@ namespace Csharp_Entity_Store_Management
             frm.TopLevel = false;
             panel.Controls.Add(frm);
             //panel.AutoScroll = true;
-            panel.BorderStyle = BorderStyle.FixedSingle;
+            panel.BorderStyle = BorderStyle.None;
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Dock = DockStyle.Fill;
             frm.Show();
@@ -81,7 +90,7 @@ namespace Csharp_Entity_Store_Management
             frm.TopLevel = false;
             panel.Controls.Add(frm);
             //panel.AutoScroll = true;
-            panel.BorderStyle = BorderStyle.FixedSingle;
+            panel.BorderStyle = BorderStyle.None;
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Dock = DockStyle.Fill;
             frm.Show();
@@ -94,7 +103,7 @@ namespace Csharp_Entity_Store_Management
             frm.TopLevel = false;
             panel.Controls.Add(frm);
             //panel.AutoScroll = true;
-            panel.BorderStyle = BorderStyle.FixedSingle;
+            panel.BorderStyle = BorderStyle.None;
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Dock = DockStyle.Fill;
             frm.Show();
@@ -107,7 +116,7 @@ namespace Csharp_Entity_Store_Management
             frm.TopLevel = false;
             panel.Controls.Add(frm);
             //panel.AutoScroll = true;
-            panel.BorderStyle = BorderStyle.FixedSingle;
+            panel.BorderStyle = BorderStyle.None;
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Dock = DockStyle.Fill;
             frm.Show();
@@ -120,7 +129,7 @@ namespace Csharp_Entity_Store_Management
             frm.TopLevel = false;
             panel.Controls.Add(frm);
             //panel.AutoScroll = true;
-            panel.BorderStyle = BorderStyle.FixedSingle;
+            panel.BorderStyle = BorderStyle.None;
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Dock = DockStyle.Fill;
             frm.Show();
@@ -132,6 +141,11 @@ namespace Csharp_Entity_Store_Management
             frmLogin frm = new frmLogin();
             frm.Closed += (s, args) => this.Close();
             frm.Show();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            frmDashboard_Load(sender, e);
         }
     }
 }
