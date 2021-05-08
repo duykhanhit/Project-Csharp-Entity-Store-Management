@@ -44,7 +44,6 @@ namespace Csharp_Entity_Store_Management
             this.label4 = new System.Windows.Forms.Label();
             this.dtpFrom = new System.Windows.Forms.DateTimePicker();
             this.dtpTo = new System.Windows.Forms.DateTimePicker();
-            this.btnDeleteAOrder = new System.Windows.Forms.Button();
             this.btnShowAOrder = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.OrderManagement.SuspendLayout();
@@ -83,7 +82,6 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.grbOrderDetail, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.btnDeleteAOrder, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.btnShowAOrder, 1, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(9, 19);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -257,28 +255,13 @@ namespace Csharp_Entity_Store_Management
             this.dtpTo.TabIndex = 4;
             this.dtpTo.ValueChanged += new System.EventHandler(this.onDateChange);
             // 
-            // btnDeleteAOrder
-            // 
-            this.btnDeleteAOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDeleteAOrder.BackColor = System.Drawing.Color.Red;
-            this.btnDeleteAOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteAOrder.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteAOrder.Location = new System.Drawing.Point(1024, 539);
-            this.btnDeleteAOrder.Margin = new System.Windows.Forms.Padding(6);
-            this.btnDeleteAOrder.Name = "btnDeleteAOrder";
-            this.btnDeleteAOrder.Size = new System.Drawing.Size(192, 44);
-            this.btnDeleteAOrder.TabIndex = 2;
-            this.btnDeleteAOrder.Text = "Xóa đơn hàng";
-            this.btnDeleteAOrder.UseVisualStyleBackColor = false;
-            this.btnDeleteAOrder.Click += new System.EventHandler(this.btnDeleteAOrder_Click);
-            // 
             // btnShowAOrder
             // 
-            this.btnShowAOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnShowAOrder.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnShowAOrder.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnShowAOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowAOrder.ForeColor = System.Drawing.Color.White;
-            this.btnShowAOrder.Location = new System.Drawing.Point(1024, 378);
+            this.btnShowAOrder.Location = new System.Drawing.Point(1024, 430);
             this.btnShowAOrder.Margin = new System.Windows.Forms.Padding(6);
             this.btnShowAOrder.Name = "btnShowAOrder";
             this.btnShowAOrder.Size = new System.Drawing.Size(192, 44);
@@ -348,7 +331,6 @@ namespace Csharp_Entity_Store_Management
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dtpFrom;
         private System.Windows.Forms.DateTimePicker dtpTo;
-        private System.Windows.Forms.Button btnDeleteAOrder;
         private System.Windows.Forms.Button btnShowAOrder;
     }
 }

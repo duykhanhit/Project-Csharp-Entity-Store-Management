@@ -66,6 +66,7 @@ namespace Csharp_Entity_Store_Management
             dgvListProduct.Columns[3].HeaderText = "Đơn giá";
             dgvListProduct.Columns[4].HeaderText = "Giảm giá";
             dgvListProduct.Columns[5].HeaderText = "Thành tiền";
+            dgvListProduct.Columns[5].DefaultCellStyle.Format = "#,### vnđ";
 
 
         }
