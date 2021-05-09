@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -132,6 +133,7 @@ namespace Csharp_Entity_Store_Management
             dgvProducts.Columns[1].HeaderText = "Tên sản phẩm";
             dgvProducts.Columns[2].HeaderText = "Số lượng còn";
             dgvProducts.Columns[3].HeaderText = "Giá bán (VNĐ)";
+            dgvProducts.Columns[3].DefaultCellStyle.Format = "#,### vnđ";
         }
 
         private void setDataDgvProducts()
@@ -161,6 +163,8 @@ namespace Csharp_Entity_Store_Management
             dgvCarts.Columns[3].HeaderText = "Số lượng";
             dgvCarts.Columns[4].HeaderText = "Giảm giá (%)";
             dgvCarts.Columns[5].HeaderText = "Thành tiền (VNĐ)";
+            dgvCarts.Columns[2].DefaultCellStyle.Format = "#,### vnđ";
+            dgvCarts.Columns[5].DefaultCellStyle.Format = "#,### vnđ";
         }
 
         private void filterProductByCategory(string categoryName)
@@ -262,7 +266,7 @@ namespace Csharp_Entity_Store_Management
                 lblDetailID.Text = ID;
                 grbProductDetail.Visible = true;
                 lblDetailName.Text = name;
-                lblDetailPrice.Text = price;
+                lblDetailPrice.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", long.Parse(price)) + " vnđ";
                 lblDetailTotal.Text = product.stockOnHand.ToString();
                 txtQuantityDetail.Text = quantity;
             }
@@ -365,7 +369,7 @@ namespace Csharp_Entity_Store_Management
                 sum += productInCarts[i].totalAmount;
             }
 
-            lblTotalAmount.Text = sum + " VNĐ";
+            lblTotalAmount.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", sum) + " vnđ";
 
             return sum;
         }
@@ -498,6 +502,7 @@ namespace Csharp_Entity_Store_Management
             frm.OrderID = ID;
             //frm.Closed += (s, args) => this.Close();
             frm.ShowDialog();
+            productInCarts = new List<ProductInCart>();
             this.frmSelling_Load(sender, e);
         }
     }
