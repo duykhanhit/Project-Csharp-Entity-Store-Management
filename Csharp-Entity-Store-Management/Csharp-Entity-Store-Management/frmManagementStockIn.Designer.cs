@@ -29,7 +29,6 @@ namespace Csharp_Entity_Store_Management
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.dataNhapKho = new System.Windows.Forms.DataGridView();
             this.btnNhap = new System.Windows.Forms.Button();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
@@ -38,11 +37,11 @@ namespace Csharp_Entity_Store_Management
             this.cbNCC = new System.Windows.Forms.ComboBox();
             this.cbTen = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnImport = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataNhapKho)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,10 +69,10 @@ namespace Csharp_Entity_Store_Management
             this.btnNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhap.ForeColor = System.Drawing.Color.White;
-            this.btnNhap.Location = new System.Drawing.Point(760, 143);
+            this.btnNhap.Location = new System.Drawing.Point(760, 77);
             this.btnNhap.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnNhap.Name = "btnNhap";
-            this.btnNhap.Size = new System.Drawing.Size(147, 61);
+            this.btnNhap.Size = new System.Drawing.Size(147, 60);
             this.btnNhap.TabIndex = 14;
             this.btnNhap.Text = "Nhập kho";
             this.btnNhap.UseVisualStyleBackColor = false;
@@ -88,7 +87,6 @@ namespace Csharp_Entity_Store_Management
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(199, 26);
             this.txtSoLuong.TabIndex = 13;
-            this.txtSoLuong.Validating += new System.ComponentModel.CancelEventHandler(this.check_SoLuong);
             // 
             // label3
             // 
@@ -124,7 +122,7 @@ namespace Csharp_Entity_Store_Management
             this.cbNCC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbNCC.FormattingEnabled = true;
-            this.cbNCC.Location = new System.Drawing.Point(382, 163);
+            this.cbNCC.Location = new System.Drawing.Point(382, 159);
             this.cbNCC.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbNCC.Name = "cbNCC";
             this.cbNCC.Size = new System.Drawing.Size(199, 28);
@@ -136,7 +134,7 @@ namespace Csharp_Entity_Store_Management
             this.cbTen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTen.FormattingEnabled = true;
-            this.cbTen.Location = new System.Drawing.Point(382, 96);
+            this.cbTen.Location = new System.Drawing.Point(382, 93);
             this.cbTen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbTen.Name = "cbTen";
             this.cbTen.Size = new System.Drawing.Size(199, 28);
@@ -156,10 +154,6 @@ namespace Csharp_Entity_Store_Management
             this.label1.TabIndex = 8;
             this.label1.Text = "Mặt hàng:";
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -170,7 +164,6 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.Controls.Add(this.dataNhapKho, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.btnNhap, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtSoLuong, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
@@ -178,6 +171,9 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.cbTen, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnNhap, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnImport, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnExport, 2, 3);
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
@@ -204,6 +200,40 @@ namespace Csharp_Entity_Store_Management
             this.label4.TabIndex = 16;
             this.label4.Text = "QUẢN LÝ NHẬP KHO";
             // 
+            // btnImport
+            // 
+            this.btnImport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnImport.BackColor = System.Drawing.Color.Blue;
+            this.btnImport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImport.ForeColor = System.Drawing.Color.White;
+            this.btnImport.Location = new System.Drawing.Point(760, 143);
+            this.btnImport.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnImport.Name = "btnImport";
+            this.btnImport.Size = new System.Drawing.Size(147, 61);
+            this.btnImport.TabIndex = 14;
+            this.btnImport.Text = "Import";
+            this.btnImport.UseVisualStyleBackColor = false;
+            this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
+            // 
+            // btnExport
+            // 
+            this.btnExport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnExport.BackColor = System.Drawing.Color.Red;
+            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExport.ForeColor = System.Drawing.Color.White;
+            this.btnExport.Location = new System.Drawing.Point(760, 210);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(147, 55);
+            this.btnExport.TabIndex = 14;
+            this.btnExport.Text = "Export";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
             // frmManagementStockIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -216,7 +246,6 @@ namespace Csharp_Entity_Store_Management
             this.Text = "frmManagementStockIn";
             this.Load += new System.EventHandler(this.frmManagementStockIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataNhapKho)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -233,8 +262,9 @@ namespace Csharp_Entity_Store_Management
         private System.Windows.Forms.ComboBox cbNCC;
         private System.Windows.Forms.ComboBox cbTen;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnImport;
+        private System.Windows.Forms.Button btnExport;
     }
 }

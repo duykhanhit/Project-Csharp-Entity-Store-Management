@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Excel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -55,12 +56,23 @@ namespace Csharp_Entity_Store_Management
         {
             try
             {
-                Product sp = new Product() { name = txtTen.Text, stockOnHand = Convert.ToInt32(txtSoLuong.Text), price = long.Parse(txtDonGia.Text), categoryID = Convert.ToInt32(cbLoai.SelectedValue), createdAt=DateTime.Now,updatedAt=DateTime.Now };
-                db.Products.Add(sp);
+                Product spThem = db.Products.Where(q => q.name.Equals(txtTen.Text)).SingleOrDefault();
+                if (spThem != null)
+                {
+                    spThem.stockOnHand += Convert.ToInt32(txtSoLuong.Text);
+                    spThem.price = long.Parse(txtDonGia.Text);
+                    spThem.categoryID = Convert.ToInt32(cbLoai.SelectedValue);
+
+                    spThem.updatedAt = DateTime.Now;
+                }
+                else {
+                    Product sp = new Product() { name = txtTen.Text, stockOnHand = Convert.ToInt32(txtSoLuong.Text), price = long.Parse(txtDonGia.Text), categoryID = Convert.ToInt32(cbLoai.SelectedValue), createdAt = DateTime.Now, updatedAt = DateTime.Now };
+                    db.Products.Add(sp);
+                }
+               
                 db.SaveChanges();
                 loadData();
                 addBinding();
-
             }
             catch (Exception ex)
             {
@@ -159,25 +171,39 @@ namespace Csharp_Entity_Store_Management
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (txtTen.Text == "")
+            int a;
+            if (string.IsNullOrWhiteSpace(txtTen.Text))
             {
-                txtTen.Focus();
-                errorProvider1.SetError(txtTen, "Name can not be empty.");
+                MessageBox.Show("Tên sản phẩm không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
-                if (txtSoLuong.Text == "")
+            if (string.IsNullOrWhiteSpace(txtSoLuong.Text))
             {
-                txtSoLuong.Focus();
-                errorProvider2.SetError(txtSoLuong, "Soluong can not be empty.");
+                MessageBox.Show("Số lượng sản phẩm không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (!int.TryParse(txtSoLuong.Text, out a))
+            {
+                MessageBox.Show("Số lương phải là số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (a <= 0)
+            {
+                MessageBox.Show("Số lượng phải lớn hơn 0", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
-                 if (txtDonGia.Text == "")
+            if (string.IsNullOrWhiteSpace(txtDonGia.Text))
             {
-                txtDonGia.Focus();
-                errorProvider3.SetError(txtDonGia, "Dongia can not be empty.");
+                MessageBox.Show("Đơn giá sản phẩm không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (!int.TryParse(txtDonGia.Text, out a))
+            {
+                MessageBox.Show("Đơn giá phải là số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (a <= 0)
+            {
+                MessageBox.Show("Đơn giá phải lớn hơn 0", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
-                    addProduct();
+                addProduct();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -187,79 +213,144 @@ namespace Csharp_Entity_Store_Management
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            updateProduct();
+            int a;
+            if (string.IsNullOrWhiteSpace(txtTen.Text))
+            {
+                MessageBox.Show("Tên sản phẩm không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            if (string.IsNullOrWhiteSpace(txtSoLuong.Text))
+            {
+                MessageBox.Show("Số lượng sản phẩm không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (!int.TryParse(txtSoLuong.Text, out a))
+            {
+                MessageBox.Show("Số lương phải là số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (a <= 0)
+            {
+                MessageBox.Show("Số lượng phải lớn hơn 0", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            if (string.IsNullOrWhiteSpace(txtDonGia.Text))
+            {
+                MessageBox.Show("Đơn giá sản phẩm không được để trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (!int.TryParse(txtDonGia.Text, out a))
+            {
+                MessageBox.Show("Đơn giá phải là số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (a <= 0)
+            {
+                MessageBox.Show("Đơn giá phải lớn hơn 0", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+                updateProduct();
         }
 
         private void btnTim_Click(object sender, EventArgs e)
         {
             findProduct();
         }
-        private void check_ten(object sender, CancelEventArgs e)
+
+        private void btnExport_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtTen.Text))
+            if(dataSanPham.Rows.Count>0)
             {
-                txtTen.Focus();
-                errorProvider1.SetError(txtTen, "Name can not be empty.");
-            }
-            else
-            {
-                e.Cancel = false;
-                errorProvider1.SetError(txtTen, "");
+                Microsoft.Office.Interop.Excel.Application excelApp = new Microsoft.Office.Interop.Excel.Application();
+                excelApp.Application.Workbooks.Add(Type.Missing);
+                for(int i = 1; i < dataSanPham.Columns.Count + 1; i++)
+                {
+                    excelApp.Cells[1, i] = dataSanPham.Columns[i - 1].HeaderText;
+                }
+                for (int i = 0; i < dataSanPham.Rows.Count; i++)
+                {
+                    for (int j=0;j< dataSanPham.Columns.Count ; j++)
+                        {
+                        
+                        excelApp.Cells[i + 2, j + 1] = dataSanPham.Rows[i].Cells[j].Value.ToString();
+                        }
+                    
+                }
+                excelApp.Columns.AutoFit();
+                excelApp.Visible = true;
             }
         }
 
-        private void check_soLuong(object sender, CancelEventArgs e)
+        private void btnImport_Click(object sender, EventArgs e)
         {
+            _Application importApp;
+            _Workbook importWorkbook;
+            _Worksheet importWorksheet;
+            Range importRange;
 
-            int a;
-            if (string.IsNullOrWhiteSpace(txtSoLuong.Text))
+            try
             {
-                txtSoLuong.Focus();
-                errorProvider2.SetError(txtSoLuong, "Soluong can not be empty.");
+                importApp = new Microsoft.Office.Interop.Excel.Application();
+                OpenFileDialog importOpenFileDialog = new OpenFileDialog();
+                importOpenFileDialog.Title = "Import Excel file to data";
+                importOpenFileDialog.Filter = "Choose Excel File | *.xlsx; *.xls; *.xlm";
+                if (importOpenFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    importWorkbook = importApp.Workbooks.Open(importOpenFileDialog.FileName);
+                    importWorksheet = importWorkbook.ActiveSheet;
+                    importRange = importWorksheet.UsedRange;
+
+                    //Start Importing from the second row. Since the first row is column header
+                    for (int excelWorkSheetRowIndex = 2; excelWorkSheetRowIndex < importRange.Rows.Count + 1; excelWorkSheetRowIndex++)
+                    {
+                        if (Convert.ToString(importWorksheet.Cells[excelWorkSheetRowIndex, 1].Value) == null)
+                            break;
+                        string tenSP =Convert.ToString(importWorksheet.Cells[excelWorkSheetRowIndex, 1].Value);
+                        string loaiSP=Convert.ToString(importWorksheet.Cells[excelWorkSheetRowIndex, 2].Value);
+                        Category loaiThem = db.Categories.Where(q => q.name.Equals(loaiSP)).SingleOrDefault();
+                        if(loaiThem==null)
+                        {
+                            MessageBox.Show("Lỗi dữ liệu!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            break;
+                        }    
+                        try
+                        {
+                            Product spThem = db.Products.Where(q => q.name.Equals(tenSP)).SingleOrDefault();
+                            if (spThem != null)
+                            {
+                                spThem.stockOnHand += Convert.ToInt32(importWorksheet.Cells[excelWorkSheetRowIndex, 3].Value);
+                                spThem.price = long.Parse(importWorksheet.Cells[excelWorkSheetRowIndex, 4].Value.ToString());
+                                spThem.categoryID = loaiThem.categoryID;
+                                spThem.updatedAt = DateTime.Now;
+                            }
+                            else
+                            {
+                                Product sp = new Product() { name = tenSP, stockOnHand = Convert.ToInt32(importWorksheet.Cells[excelWorkSheetRowIndex, 3].Value), price = long.Parse(importWorksheet.Cells[excelWorkSheetRowIndex, 4].Value.ToString()), categoryID = loaiThem.categoryID, createdAt = DateTime.Now, updatedAt = DateTime.Now };
+                                db.Products.Add(sp);
+                            }
+
+                            db.SaveChanges();
+
+                }
+                        catch (Exception ex)
+                {
+
+                    MessageBox.Show("Có lỗi: " + ex.Message, "Cảnh báo");
+                }
+                //dgvImportExcelToDatagridGridView1.Rows.Add(importWorksheet.Cells[excelWorkSheetRowIndex, 1].Value, importExcelToDataGridViewWorksheet.Cells[excelWorkSheetRowIndex, 2].Value, importExcelToDataGridViewWorksheet.Cells[excelWorkSheetRowIndex, 3].Value, importExcelToDataGridViewWorksheet.Cells[excelWorkSheetRowIndex, 4].Value, importExcelToDataGridViewWorksheet.Cells[excelWorkSheetRowIndex, 5].Value, importExcelToDataGridViewWorksheet.Cells[excelWorkSheetRowIndex, 6].Value, importExcelToDataGridViewWorksheet.Cells[excelWorkSheetRowIndex, 7].Value, excelWorkSheetImage);
             }
-            else if (!int.TryParse(txtSoLuong.Text, out a))
+                }
+            }
+            catch (Exception ex)
             {
-                txtSoLuong.Focus();
-                errorProvider2.SetError(txtSoLuong, "soluong can not be number.");
+                MessageBox.Show("Error: " + ex.Message, "Cảnh báo");
             }
-            else if (a <= 0)
-            {
-                txtSoLuong.Focus();
-                errorProvider2.SetError(txtSoLuong, "so luong >0");
-            }
-            else
-            {
-                e.Cancel = false;
-                errorProvider2.SetError(txtSoLuong, "");
-            }
+            loadData();
+            addBinding();
         }
+        
 
-        private void check_DonGia(object sender, CancelEventArgs e)
+        private void btnXem_Click(object sender, EventArgs e)
         {
-            int a;
-            if (string.IsNullOrWhiteSpace(txtDonGia.Text))
-            {
-                txtDonGia.Focus();
-                errorProvider3.SetError(txtDonGia, "Dongia can not be empty.");
-            }
-            else if (!int.TryParse(txtDonGia.Text, out a))
-            {
-                txtDonGia.Focus();
-                errorProvider3.SetError(txtDonGia, "Dongia can not be number.");
-            }
-            else if (a <= 0)
-            {
-                txtDonGia.Focus();
-                errorProvider3.SetError(txtDonGia, "Dongia >0");
-            }
-            else
-            {
-                e.Cancel = false;
-                errorProvider3.SetError(txtDonGia, "");
-            }
+            loadData();
+            addBinding();
         }
         #endregion
-
-
     }
 }
