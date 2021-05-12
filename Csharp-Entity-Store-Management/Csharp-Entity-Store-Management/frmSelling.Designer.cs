@@ -706,6 +706,7 @@ namespace Csharp_Entity_Store_Management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1376, 742);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.lblUserName);
@@ -714,7 +715,7 @@ namespace Csharp_Entity_Store_Management
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmSelling";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmSelling";
+            this.Text = "Bán hàng";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmSelling_Load);
             this.groupBox1.ResumeLayout(false);

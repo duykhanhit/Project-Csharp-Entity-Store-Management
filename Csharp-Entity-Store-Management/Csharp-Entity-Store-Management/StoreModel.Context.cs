@@ -12,8 +12,7 @@ namespace Csharp_Entity_Store_Management
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-
-
+    
     public partial class StoreEntities : DbContext
     {
         public StoreEntities()

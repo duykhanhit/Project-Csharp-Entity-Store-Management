@@ -53,7 +53,7 @@ namespace Csharp_Entity_Store_Management
             this.label1.Location = new System.Drawing.Point(588, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(80, 10, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 36);
+            this.label1.Size = new System.Drawing.Size(285, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "Chi tiết hóa đơn";
             // 
@@ -62,10 +62,10 @@ namespace Csharp_Entity_Store_Management
             this.lbOrderID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbOrderID.AutoSize = true;
             this.lbOrderID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbOrderID.Location = new System.Drawing.Point(1093, 59);
+            this.lbOrderID.Location = new System.Drawing.Point(1080, 56);
             this.lbOrderID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbOrderID.Name = "lbOrderID";
-            this.lbOrderID.Size = new System.Drawing.Size(101, 20);
+            this.lbOrderID.Size = new System.Drawing.Size(127, 25);
             this.lbOrderID.TabIndex = 1;
             this.lbOrderID.Text = "Mã hóa đơn: ";
             // 
@@ -75,10 +75,10 @@ namespace Csharp_Entity_Store_Management
             this.lbCustomerName.AutoSize = true;
             this.lbCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCustomerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbCustomerName.Location = new System.Drawing.Point(120, 159);
+            this.lbCustomerName.Location = new System.Drawing.Point(120, 156);
             this.lbCustomerName.Margin = new System.Windows.Forms.Padding(120, 0, 4, 0);
             this.lbCustomerName.Name = "lbCustomerName";
-            this.lbCustomerName.Size = new System.Drawing.Size(131, 20);
+            this.lbCustomerName.Size = new System.Drawing.Size(165, 25);
             this.lbCustomerName.TabIndex = 2;
             this.lbCustomerName.Text = "Tên khách hàng: ";
             // 
@@ -88,10 +88,10 @@ namespace Csharp_Entity_Store_Management
             this.lbCustomerAddress.AutoSize = true;
             this.lbCustomerAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCustomerAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbCustomerAddress.Location = new System.Drawing.Point(120, 223);
+            this.lbCustomerAddress.Location = new System.Drawing.Point(120, 220);
             this.lbCustomerAddress.Margin = new System.Windows.Forms.Padding(120, 0, 4, 0);
             this.lbCustomerAddress.Name = "lbCustomerAddress";
-            this.lbCustomerAddress.Size = new System.Drawing.Size(65, 20);
+            this.lbCustomerAddress.Size = new System.Drawing.Size(82, 25);
             this.lbCustomerAddress.TabIndex = 3;
             this.lbCustomerAddress.Text = "Địa chỉ: ";
             // 
@@ -101,10 +101,10 @@ namespace Csharp_Entity_Store_Management
             this.lbCustomerPhone.AutoSize = true;
             this.lbCustomerPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCustomerPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbCustomerPhone.Location = new System.Drawing.Point(120, 288);
+            this.lbCustomerPhone.Location = new System.Drawing.Point(120, 285);
             this.lbCustomerPhone.Margin = new System.Windows.Forms.Padding(120, 0, 4, 0);
             this.lbCustomerPhone.Name = "lbCustomerPhone";
-            this.lbCustomerPhone.Size = new System.Drawing.Size(110, 20);
+            this.lbCustomerPhone.Size = new System.Drawing.Size(137, 25);
             this.lbCustomerPhone.TabIndex = 4;
             this.lbCustomerPhone.Text = "Số điện thoại: ";
             // 
@@ -114,10 +114,10 @@ namespace Csharp_Entity_Store_Management
             this.lbUserID.AutoSize = true;
             this.lbUserID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUserID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbUserID.Location = new System.Drawing.Point(628, 159);
+            this.lbUserID.Location = new System.Drawing.Point(628, 156);
             this.lbUserID.Margin = new System.Windows.Forms.Padding(120, 0, 4, 0);
             this.lbUserID.Name = "lbUserID";
-            this.lbUserID.Size = new System.Drawing.Size(111, 20);
+            this.lbUserID.Size = new System.Drawing.Size(141, 25);
             this.lbUserID.TabIndex = 5;
             this.lbUserID.Text = "Mã nhân viên: ";
             // 
@@ -127,10 +127,10 @@ namespace Csharp_Entity_Store_Management
             this.lbUsername.AutoSize = true;
             this.lbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbUsername.Location = new System.Drawing.Point(628, 223);
+            this.lbUsername.Location = new System.Drawing.Point(628, 220);
             this.lbUsername.Margin = new System.Windows.Forms.Padding(120, 0, 4, 0);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(116, 20);
+            this.lbUsername.Size = new System.Drawing.Size(148, 25);
             this.lbUsername.TabIndex = 6;
             this.lbUsername.Text = "Tên nhân viên: ";
             // 
@@ -156,10 +156,10 @@ namespace Csharp_Entity_Store_Management
             this.lbTotalMoney.AutoSize = true;
             this.lbTotalMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTotalMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbTotalMoney.Location = new System.Drawing.Point(1020, 603);
+            this.lbTotalMoney.Location = new System.Drawing.Point(1020, 601);
             this.lbTotalMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTotalMoney.Name = "lbTotalMoney";
-            this.lbTotalMoney.Size = new System.Drawing.Size(111, 24);
+            this.lbTotalMoney.Size = new System.Drawing.Size(138, 29);
             this.lbTotalMoney.TabIndex = 8;
             this.lbTotalMoney.Text = "Tổng tiền: ";
             // 
@@ -169,10 +169,10 @@ namespace Csharp_Entity_Store_Management
             this.lbDate.AutoSize = true;
             this.lbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbDate.Location = new System.Drawing.Point(212, 59);
+            this.lbDate.Location = new System.Drawing.Point(200, 56);
             this.lbDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(84, 20);
+            this.lbDate.Size = new System.Drawing.Size(107, 25);
             this.lbDate.TabIndex = 9;
             this.lbDate.Text = "Ngày bán: ";
             // 
@@ -213,28 +213,36 @@ namespace Csharp_Entity_Store_Management
             // 
             this.btnPrint.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPrint.AutoSize = true;
+            this.btnPrint.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnPrint.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnPrint.FlatAppearance.BorderSize = 0;
+            this.btnPrint.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.btnPrint.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrint.ForeColor = System.Drawing.Color.White;
             this.btnPrint.Image = global::Csharp_Entity_Store_Management.Properties.Resources.printer;
             this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrint.Location = new System.Drawing.Point(1080, 208);
+            this.btnPrint.Location = new System.Drawing.Point(1073, 208);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(128, 50);
+            this.btnPrint.Size = new System.Drawing.Size(142, 50);
             this.btnPrint.TabIndex = 10;
             this.btnPrint.Text = "In hóa đơn";
             this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.UseVisualStyleBackColor = false;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // frmOrderDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1296, 669);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmOrderDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmOrderDetail";
+            this.Text = "Chi tiết hoá đơn";
             this.Load += new System.EventHandler(this.frmOrderDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListProduct)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

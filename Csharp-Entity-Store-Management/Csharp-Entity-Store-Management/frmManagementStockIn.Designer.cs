@@ -63,16 +63,15 @@ namespace Csharp_Entity_Store_Management
             // 
             // btnNhap
             // 
-            this.btnNhap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnNhap.BackColor = System.Drawing.Color.SeaGreen;
             this.btnNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhap.ForeColor = System.Drawing.Color.White;
-            this.btnNhap.Location = new System.Drawing.Point(760, 77);
+            this.btnNhap.Location = new System.Drawing.Point(825, 84);
             this.btnNhap.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnNhap.Name = "btnNhap";
-            this.btnNhap.Size = new System.Drawing.Size(147, 60);
+            this.btnNhap.Size = new System.Drawing.Size(115, 45);
             this.btnNhap.TabIndex = 14;
             this.btnNhap.Text = "Nhập kho";
             this.btnNhap.UseVisualStyleBackColor = false;
@@ -82,10 +81,10 @@ namespace Csharp_Entity_Store_Management
             // 
             this.txtSoLuong.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoLuong.Location = new System.Drawing.Point(382, 224);
+            this.txtSoLuong.Location = new System.Drawing.Point(381, 222);
             this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(199, 26);
+            this.txtSoLuong.Size = new System.Drawing.Size(228, 30);
             this.txtSoLuong.TabIndex = 13;
             // 
             // label3
@@ -94,11 +93,11 @@ namespace Csharp_Entity_Store_Management
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label3.Location = new System.Drawing.Point(4, 227);
+            this.label3.Location = new System.Drawing.Point(4, 225);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(80, 0, 0, 0);
-            this.label3.Size = new System.Drawing.Size(156, 20);
+            this.label3.Size = new System.Drawing.Size(176, 25);
             this.label3.TabIndex = 12;
             this.label3.Text = "Số lượng:";
             // 
@@ -108,11 +107,11 @@ namespace Csharp_Entity_Store_Management
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label2.Location = new System.Drawing.Point(4, 163);
+            this.label2.Location = new System.Drawing.Point(4, 161);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(80, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(191, 20);
+            this.label2.Size = new System.Drawing.Size(219, 25);
             this.label2.TabIndex = 11;
             this.label2.Text = "Nhà cung cấp:";
             // 
@@ -122,10 +121,10 @@ namespace Csharp_Entity_Store_Management
             this.cbNCC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbNCC.FormattingEnabled = true;
-            this.cbNCC.Location = new System.Drawing.Point(382, 159);
+            this.cbNCC.Location = new System.Drawing.Point(381, 157);
             this.cbNCC.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbNCC.Name = "cbNCC";
-            this.cbNCC.Size = new System.Drawing.Size(199, 28);
+            this.cbNCC.Size = new System.Drawing.Size(228, 33);
             this.cbNCC.TabIndex = 10;
             // 
             // cbTen
@@ -134,10 +133,10 @@ namespace Csharp_Entity_Store_Management
             this.cbTen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTen.FormattingEnabled = true;
-            this.cbTen.Location = new System.Drawing.Point(382, 93);
+            this.cbTen.Location = new System.Drawing.Point(381, 90);
             this.cbTen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbTen.Name = "cbTen";
-            this.cbTen.Size = new System.Drawing.Size(199, 28);
+            this.cbTen.Size = new System.Drawing.Size(228, 33);
             this.cbTen.TabIndex = 9;
             // 
             // label1
@@ -146,11 +145,11 @@ namespace Csharp_Entity_Store_Management
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label1.Location = new System.Drawing.Point(4, 97);
+            this.label1.Location = new System.Drawing.Point(4, 94);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(80, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(160, 20);
+            this.label1.Size = new System.Drawing.Size(180, 25);
             this.label1.TabIndex = 8;
             this.label1.Text = "Mặt hàng:";
             // 
@@ -161,8 +160,8 @@ namespace Csharp_Entity_Store_Management
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.57495F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.17989F));
             this.tableLayoutPanel1.Controls.Add(this.dataNhapKho, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtSoLuong, 1, 3);
@@ -194,24 +193,23 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.SetColumnSpan(this.label4, 4);
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label4.Location = new System.Drawing.Point(435, 22);
+            this.label4.Location = new System.Drawing.Point(408, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(263, 29);
+            this.label4.Size = new System.Drawing.Size(318, 33);
             this.label4.TabIndex = 16;
             this.label4.Text = "QUẢN LÝ NHẬP KHO";
             // 
             // btnImport
             // 
-            this.btnImport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnImport.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnImport.BackColor = System.Drawing.Color.Blue;
             this.btnImport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImport.ForeColor = System.Drawing.Color.White;
-            this.btnImport.Location = new System.Drawing.Point(760, 143);
+            this.btnImport.Location = new System.Drawing.Point(825, 151);
             this.btnImport.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(147, 61);
+            this.btnImport.Size = new System.Drawing.Size(115, 45);
             this.btnImport.TabIndex = 14;
             this.btnImport.Text = "Import";
             this.btnImport.UseVisualStyleBackColor = false;
@@ -219,16 +217,15 @@ namespace Csharp_Entity_Store_Management
             // 
             // btnExport
             // 
-            this.btnExport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnExport.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnExport.BackColor = System.Drawing.Color.Red;
             this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExport.ForeColor = System.Drawing.Color.White;
-            this.btnExport.Location = new System.Drawing.Point(760, 210);
+            this.btnExport.Location = new System.Drawing.Point(825, 215);
             this.btnExport.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(147, 55);
+            this.btnExport.Size = new System.Drawing.Size(115, 45);
             this.btnExport.TabIndex = 14;
             this.btnExport.Text = "Export";
             this.btnExport.UseVisualStyleBackColor = false;
@@ -236,14 +233,15 @@ namespace Csharp_Entity_Store_Management
             // 
             // frmManagementStockIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1158, 656);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmManagementStockIn";
-            this.Text = "frmManagementStockIn";
+            this.Text = "Quản lý nhập kho";
             this.Load += new System.EventHandler(this.frmManagementStockIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataNhapKho)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
