@@ -98,7 +98,7 @@ namespace Csharp_Entity_Store_Management
                 if (usr == null)
                 {
                     User usr1 = StoreEntities.Users.FirstOrDefault(u => u.phone.Equals(user.phone));
-                    if(usr1 == null)
+                    if (usr1 == null)
                     {
                         StoreEntities.Users.Add(user);
                         StoreEntities.SaveChanges();
@@ -140,18 +140,38 @@ namespace Csharp_Entity_Store_Management
 
         private void btnDelAccount_Click(object sender, EventArgs e)
         {
-            int removeID = int.Parse(txtAccountID.Text);
+            int removeID = 0;
+            try
+            {
+                removeID = int.Parse(txtAccountID.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Mã tài khoản không chính xác!", "Cảnh báo",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             User user = StoreEntities.Users.
                 SingleOrDefault(u => u.userID == removeID);
-            StoreEntities.Entry(user).State = System.Data.Entity.EntityState.Deleted;
-
-            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn xóa?", "Cảnh báo",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (dialogResult.Equals(DialogResult.Yes))
+            if (user != null)
             {
-                StoreEntities.SaveChanges();
-                ClearTextBoxes();
-                LoadData();
+                if (user.userID == frmLogin.currentUser.userID)
+                {
+                    MessageBox.Show("Không thể xóa tài khoản đang đăng nhập!", "Cảnh báo",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    StoreEntities.Entry(user).State = System.Data.Entity.EntityState.Deleted;
+
+                    DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn xóa?", "Cảnh báo",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (dialogResult.Equals(DialogResult.Yes))
+                    {
+                        StoreEntities.SaveChanges();
+                        ClearTextBoxes();
+                        LoadData();
+                    }
+                }
             }
         }
 

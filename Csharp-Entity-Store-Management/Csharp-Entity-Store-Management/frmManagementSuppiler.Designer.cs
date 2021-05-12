@@ -45,9 +45,9 @@ namespace Csharp_Entity_Store_Management
             this.cbxAddress = new System.Windows.Forms.ComboBox();
             this.btnViewAll = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnExport = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnImport = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSupplier)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -57,11 +57,11 @@ namespace Csharp_Entity_Store_Management
             this.lblMaNCC.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblMaNCC.AutoSize = true;
             this.lblMaNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaNCC.Location = new System.Drawing.Point(4, 93);
+            this.lblMaNCC.Location = new System.Drawing.Point(4, 95);
             this.lblMaNCC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMaNCC.Name = "lblMaNCC";
             this.lblMaNCC.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.lblMaNCC.Size = new System.Drawing.Size(145, 25);
+            this.lblMaNCC.Size = new System.Drawing.Size(122, 20);
             this.lblMaNCC.TabIndex = 3;
             this.lblMaNCC.Text = "Mã NCC:";
             // 
@@ -70,11 +70,11 @@ namespace Csharp_Entity_Store_Management
             this.lblTenNCC.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblTenNCC.AutoSize = true;
             this.lblTenNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenNCC.Location = new System.Drawing.Point(4, 158);
+            this.lblTenNCC.Location = new System.Drawing.Point(4, 160);
             this.lblTenNCC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTenNCC.Name = "lblTenNCC";
             this.lblTenNCC.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.lblTenNCC.Size = new System.Drawing.Size(152, 25);
+            this.lblTenNCC.Size = new System.Drawing.Size(127, 20);
             this.lblTenNCC.TabIndex = 4;
             this.lblTenNCC.Text = "Tên NCC:";
             // 
@@ -83,39 +83,39 @@ namespace Csharp_Entity_Store_Management
             this.lblDC.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblDC.AutoSize = true;
             this.lblDC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDC.Location = new System.Drawing.Point(4, 221);
+            this.lblDC.Location = new System.Drawing.Point(4, 223);
             this.lblDC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDC.Name = "lblDC";
             this.lblDC.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.lblDC.Size = new System.Drawing.Size(127, 25);
+            this.lblDC.Size = new System.Drawing.Size(111, 20);
             this.lblDC.TabIndex = 5;
             this.lblDC.Text = "Địa chỉ:";
             // 
             // txtMaNCC
             // 
             this.txtMaNCC.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtMaNCC.Location = new System.Drawing.Point(324, 90);
+            this.txtMaNCC.Location = new System.Drawing.Point(324, 92);
             this.txtMaNCC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMaNCC.Name = "txtMaNCC";
-            this.txtMaNCC.Size = new System.Drawing.Size(270, 30);
+            this.txtMaNCC.Size = new System.Drawing.Size(270, 26);
             this.txtMaNCC.TabIndex = 2;
             // 
             // txtTenNCC
             // 
             this.txtTenNCC.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtTenNCC.Location = new System.Drawing.Point(324, 155);
+            this.txtTenNCC.Location = new System.Drawing.Point(324, 157);
             this.txtTenNCC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTenNCC.Name = "txtTenNCC";
-            this.txtTenNCC.Size = new System.Drawing.Size(270, 30);
+            this.txtTenNCC.Size = new System.Drawing.Size(270, 26);
             this.txtTenNCC.TabIndex = 0;
             // 
             // txtDCNCC
             // 
             this.txtDCNCC.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtDCNCC.Location = new System.Drawing.Point(324, 218);
+            this.txtDCNCC.Location = new System.Drawing.Point(324, 220);
             this.txtDCNCC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDCNCC.Name = "txtDCNCC";
-            this.txtDCNCC.Size = new System.Drawing.Size(270, 30);
+            this.txtDCNCC.Size = new System.Drawing.Size(270, 26);
             this.txtDCNCC.TabIndex = 1;
             // 
             // dataGridViewSupplier
@@ -207,9 +207,9 @@ namespace Csharp_Entity_Store_Management
             // 
             this.txtSearchKeyword.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtSearchKeyword.ForeColor = System.Drawing.Color.Silver;
-            this.txtSearchKeyword.Location = new System.Drawing.Point(3, 279);
+            this.txtSearchKeyword.Location = new System.Drawing.Point(3, 281);
             this.txtSearchKeyword.Name = "txtSearchKeyword";
-            this.txtSearchKeyword.Size = new System.Drawing.Size(250, 30);
+            this.txtSearchKeyword.Size = new System.Drawing.Size(250, 26);
             this.txtSearchKeyword.TabIndex = 12;
             this.txtSearchKeyword.Text = "  Nhập tên NCC";
             // 
@@ -232,9 +232,9 @@ namespace Csharp_Entity_Store_Management
             this.cbxAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxAddress.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxAddress.FormattingEnabled = true;
-            this.cbxAddress.Location = new System.Drawing.Point(643, 281);
+            this.cbxAddress.Location = new System.Drawing.Point(643, 283);
             this.cbxAddress.Name = "cbxAddress";
-            this.cbxAddress.Size = new System.Drawing.Size(172, 33);
+            this.cbxAddress.Size = new System.Drawing.Size(172, 28);
             this.cbxAddress.TabIndex = 14;
             this.cbxAddress.SelectedValueChanged += new System.EventHandler(this.cbxAddress_SelectedValueChanged);
             // 
@@ -245,7 +245,7 @@ namespace Csharp_Entity_Store_Management
             this.btnViewAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewAll.ForeColor = System.Drawing.Color.White;
-            this.btnViewAll.Location = new System.Drawing.Point(821, 83);
+            this.btnViewAll.Location = new System.Drawing.Point(821, 271);
             this.btnViewAll.Name = "btnViewAll";
             this.btnViewAll.Size = new System.Drawing.Size(115, 45);
             this.btnViewAll.TabIndex = 15;
@@ -263,7 +263,6 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.90625F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.09375F));
-            this.tableLayoutPanel1.Controls.Add(this.btnExport, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblMaNCC, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtMaNCC, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.cbxAddress, 2, 4);
@@ -277,10 +276,11 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnClear, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnAddSupplier, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnViewAll, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnDelSupplier, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnEditSupplier, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnImport, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btnViewAll, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btnImport, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnExport, 3, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
@@ -294,43 +294,49 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1280, 688);
             this.tableLayoutPanel1.TabIndex = 16;
             // 
-            // btnExport
-            // 
-            this.btnExport.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnExport.Location = new System.Drawing.Point(643, 83);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(115, 45);
-            this.btnExport.TabIndex = 17;
-            this.btnExport.Text = "Export";
-            this.btnExport.UseVisualStyleBackColor = true;
-            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
-            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label1, 4);
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(451, 20);
+            this.label1.Location = new System.Drawing.Point(487, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(378, 32);
+            this.label1.Size = new System.Drawing.Size(306, 26);
             this.label1.TabIndex = 16;
             this.label1.Text = "QUẢN LÝ NHÀ CUNG CẤP";
             // 
             // btnImport
             // 
             this.btnImport.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnImport.Location = new System.Drawing.Point(821, 271);
+            this.btnImport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(220)))), ((int)(((byte)(0)))));
+            this.btnImport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImport.ForeColor = System.Drawing.Color.White;
+            this.btnImport.Location = new System.Drawing.Point(643, 83);
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(115, 45);
             this.btnImport.TabIndex = 18;
             this.btnImport.Text = "Import";
-            this.btnImport.UseVisualStyleBackColor = true;
+            this.btnImport.UseVisualStyleBackColor = false;
             this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
+            // 
+            // btnExport
+            // 
+            this.btnExport.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnExport.BackColor = System.Drawing.Color.Crimson;
+            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExport.ForeColor = System.Drawing.Color.White;
+            this.btnExport.Location = new System.Drawing.Point(821, 83);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(115, 45);
+            this.btnExport.TabIndex = 17;
+            this.btnExport.Text = "Export";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // frmManagementSuppiler
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1304, 712);

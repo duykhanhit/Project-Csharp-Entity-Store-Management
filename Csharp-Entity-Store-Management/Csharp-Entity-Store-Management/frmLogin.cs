@@ -12,6 +12,7 @@ namespace Csharp_Entity_Store_Management
 {
     public partial class frmLogin : Form
     {
+        public static User currentUser;
         public frmLogin()
         {
             InitializeComponent();
@@ -36,7 +37,7 @@ namespace Csharp_Entity_Store_Management
                 MessageBox.Show("Sai mật khẩu!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
+            currentUser = account;
             this.Hide();
 
             if (account.role.Equals("admin"))
