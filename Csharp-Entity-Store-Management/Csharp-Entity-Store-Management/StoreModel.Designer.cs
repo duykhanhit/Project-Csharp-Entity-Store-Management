@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'E:\Subject\CSharp\Csharp-Entity-Store-Management\Csharp-Entity-Store-Management\StoreModel.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\CSharp\BTL\Final\Project-Csharp-Entity-Store-Management\Csharp-Entity-Store-Management\Csharp-Entity-Store-Management\StoreModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

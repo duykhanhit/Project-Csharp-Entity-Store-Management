@@ -79,7 +79,7 @@ namespace Csharp_Entity_Store_Management
             this.cbLoai.Location = new System.Drawing.Point(218, 112);
             this.cbLoai.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbLoai.Name = "cbLoai";
-            this.cbLoai.Size = new System.Drawing.Size(147, 28);
+            this.cbLoai.Size = new System.Drawing.Size(147, 33);
             this.cbLoai.TabIndex = 20;
             // 
             // label6
@@ -89,10 +89,10 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.SetColumnSpan(this.label6, 4);
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label6.Location = new System.Drawing.Point(452, 11);
+            this.label6.Location = new System.Drawing.Point(424, 9);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(262, 29);
+            this.label6.Size = new System.Drawing.Size(317, 33);
             this.label6.TabIndex = 17;
             this.label6.Text = "QUẢN LÝ SẢN PHẨM";
             // 
@@ -102,11 +102,11 @@ namespace Csharp_Entity_Store_Management
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label4.Location = new System.Drawing.Point(4, 121);
+            this.label4.Location = new System.Drawing.Point(4, 119);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.label4.Size = new System.Drawing.Size(133, 20);
+            this.label4.Size = new System.Drawing.Size(154, 25);
             this.label4.TabIndex = 16;
             this.label4.Text = "Loại hàng:";
             // 
@@ -116,11 +116,11 @@ namespace Csharp_Entity_Store_Management
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label5.Location = new System.Drawing.Point(584, 121);
+            this.label5.Location = new System.Drawing.Point(584, 119);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.label5.Size = new System.Drawing.Size(118, 20);
+            this.label5.Size = new System.Drawing.Size(135, 25);
             this.label5.TabIndex = 15;
             this.label5.Text = "Đơn giá:";
             // 
@@ -130,11 +130,11 @@ namespace Csharp_Entity_Store_Management
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label3.Location = new System.Drawing.Point(584, 70);
+            this.label3.Location = new System.Drawing.Point(584, 68);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.label3.Size = new System.Drawing.Size(126, 20);
+            this.label3.Size = new System.Drawing.Size(146, 25);
             this.label3.TabIndex = 19;
             this.label3.Text = "Số lượng:";
             // 
@@ -144,39 +144,39 @@ namespace Csharp_Entity_Store_Management
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label2.Location = new System.Drawing.Point(4, 70);
+            this.label2.Location = new System.Drawing.Point(4, 68);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(90, 20);
+            this.label2.Size = new System.Drawing.Size(103, 25);
             this.label2.TabIndex = 14;
             this.label2.Text = "Tên:";
             // 
             // txtDonGia
             // 
             this.txtDonGia.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtDonGia.Location = new System.Drawing.Point(765, 118);
+            this.txtDonGia.Location = new System.Drawing.Point(765, 116);
             this.txtDonGia.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.Size = new System.Drawing.Size(121, 26);
+            this.txtDonGia.Size = new System.Drawing.Size(121, 30);
             this.txtDonGia.TabIndex = 12;
             // 
             // txtSoLuong
             // 
             this.txtSoLuong.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtSoLuong.Location = new System.Drawing.Point(765, 67);
+            this.txtSoLuong.Location = new System.Drawing.Point(765, 65);
             this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(121, 26);
+            this.txtSoLuong.Size = new System.Drawing.Size(121, 30);
             this.txtSoLuong.TabIndex = 11;
             // 
             // txtTen
             // 
             this.txtTen.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtTen.Location = new System.Drawing.Point(218, 67);
+            this.txtTen.Location = new System.Drawing.Point(218, 65);
             this.txtTen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(147, 26);
+            this.txtTen.Size = new System.Drawing.Size(147, 30);
             this.txtTen.TabIndex = 10;
             // 
             // btnXoa
@@ -354,7 +354,7 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(200, 80);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
@@ -375,14 +375,15 @@ namespace Csharp_Entity_Store_Management
             // 
             // frmManagementProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1190, 681);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmManagementProduct";
-            this.Text = "frmManagementProduct";
+            this.Text = "Quản lý sản phẩm";
             this.Load += new System.EventHandler(this.frmManagementProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataSanPham)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

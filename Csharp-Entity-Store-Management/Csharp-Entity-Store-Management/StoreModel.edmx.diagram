@@ -6,13 +6,13 @@
     <edmx:Diagrams>
       <Diagram DiagramId="3575c6400bd8407eb20e55bb1d8fb49c" Name="Diagram1">
         <EntityTypeShape EntityType="store_managementModel.Category" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="store_managementModel.Customer" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="store_managementModel.Order" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="store_managementModel.Customer" Width="1.5" PointX="0.875" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="store_managementModel.Order" Width="1.5" PointX="5.125" PointY="7.875" IsExpanded="true" />
         <EntityTypeShape EntityType="store_managementModel.OrderDetail" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
         <EntityTypeShape EntityType="store_managementModel.Product" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
         <EntityTypeShape EntityType="store_managementModel.StockIn" Width="1.5" PointX="8.25" PointY="4.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="store_managementModel.Supplier" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="store_managementModel.User" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="store_managementModel.Supplier" Width="1.5" PointX="10.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="store_managementModel.User" Width="1.5" PointX="9.625" PointY="7.625" IsExpanded="true" />
         <AssociationConnector Association="store_managementModel.FK__Product__categor__4AB81AF0" ManuallyRouted="false" />
         <AssociationConnector Association="store_managementModel.FK__Order__customerI__46E78A0C" ManuallyRouted="false" />
         <AssociationConnector Association="store_managementModel.FK__Order__userID__48CFD27E" ManuallyRouted="false" />

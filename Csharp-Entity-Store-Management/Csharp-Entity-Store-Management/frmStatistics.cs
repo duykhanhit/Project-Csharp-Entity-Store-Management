@@ -84,7 +84,7 @@ namespace Csharp_Entity_Store_Management
                 total = a.Sum(t => t.totalAmount)
             }).SingleOrDefault();
 
-            lblTotalRevenue.Text =  string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", totalAmount.total) + " vnđ";
+            lblTotalRevenue.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", totalAmount.total) + " vnđ";
         }
     }
 }
