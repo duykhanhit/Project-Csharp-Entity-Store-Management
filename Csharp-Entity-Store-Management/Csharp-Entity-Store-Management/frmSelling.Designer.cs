@@ -76,6 +76,7 @@ namespace Csharp_Entity_Store_Management
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
@@ -627,6 +628,7 @@ namespace Csharp_Entity_Store_Management
             this.grbAddCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grbAddCustomer.Controls.Add(this.btnUpdate);
             this.grbAddCustomer.Controls.Add(this.btnAddCustomer);
             this.grbAddCustomer.Controls.Add(this.txtCustomerPhone);
             this.grbAddCustomer.Controls.Add(this.txtCustomerAddress);
@@ -646,7 +648,7 @@ namespace Csharp_Entity_Store_Management
             this.btnAddCustomer.BackColor = System.Drawing.Color.SeaGreen;
             this.btnAddCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddCustomer.ForeColor = System.Drawing.Color.White;
-            this.btnAddCustomer.Location = new System.Drawing.Point(145, 151);
+            this.btnAddCustomer.Location = new System.Drawing.Point(176, 153);
             this.btnAddCustomer.Name = "btnAddCustomer";
             this.btnAddCustomer.Size = new System.Drawing.Size(94, 42);
             this.btnAddCustomer.TabIndex = 6;
@@ -702,6 +704,20 @@ namespace Csharp_Entity_Store_Management
             this.label2.TabIndex = 0;
             this.label2.Text = "Tên:";
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(176, 153);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(94, 42);
+            this.btnUpdate.TabIndex = 6;
+            this.btnUpdate.Text = "Sửa";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Visible = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // frmSelling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -717,6 +733,7 @@ namespace Csharp_Entity_Store_Management
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bán hàng";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.logout);
             this.Load += new System.EventHandler(this.frmSelling_Load);
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
@@ -793,5 +810,6 @@ namespace Csharp_Entity_Store_Management
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
