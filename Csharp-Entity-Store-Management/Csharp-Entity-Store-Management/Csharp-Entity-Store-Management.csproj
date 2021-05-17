@@ -97,6 +97,12 @@
     <Compile Include="frmManagementCategory.Designer.cs">
       <DependentUpon>frmManagementCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManagementCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagementCustomer.Designer.cs">
+      <DependentUpon>frmManagementCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmManagementOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagementCategory.resx">
       <DependentUpon>frmManagementCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagementCustomer.resx">
+      <DependentUpon>frmManagementCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmManagementOrder.resx">
       <DependentUpon>frmManagementOrder.cs</DependentUpon>

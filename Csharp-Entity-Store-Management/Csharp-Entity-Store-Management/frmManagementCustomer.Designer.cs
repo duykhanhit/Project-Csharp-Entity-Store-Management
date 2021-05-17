@@ -49,7 +49,7 @@ namespace Csharp_Entity_Store_Management
             this.txtCusID.Name = "txtCusID";
             this.txtCusID.ReadOnly = true;
             this.txtCusID.Size = new System.Drawing.Size(201, 26);
-            this.txtCusID.TabIndex = 0;
+            this.txtCusID.TabIndex = 9;
             // 
             // txtPhone
             // 
@@ -58,7 +58,7 @@ namespace Csharp_Entity_Store_Management
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.ReadOnly = true;
             this.txtPhone.Size = new System.Drawing.Size(201, 26);
-            this.txtPhone.TabIndex = 0;
+            this.txtPhone.TabIndex = 10;
             // 
             // txtCusName
             // 
@@ -66,7 +66,7 @@ namespace Csharp_Entity_Store_Management
             this.txtCusName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCusName.Name = "txtCusName";
             this.txtCusName.Size = new System.Drawing.Size(201, 26);
-            this.txtCusName.TabIndex = 0;
+            this.txtCusName.TabIndex = 5;
             // 
             // txtCusAddress
             // 
@@ -74,7 +74,7 @@ namespace Csharp_Entity_Store_Management
             this.txtCusAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCusAddress.Name = "txtCusAddress";
             this.txtCusAddress.Size = new System.Drawing.Size(201, 26);
-            this.txtCusAddress.TabIndex = 0;
+            this.txtCusAddress.TabIndex = 6;
             // 
             // lblCusID
             // 
@@ -93,7 +93,7 @@ namespace Csharp_Entity_Store_Management
             this.lblCusPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCusPhone.Name = "lblCusPhone";
             this.lblCusPhone.Size = new System.Drawing.Size(106, 20);
-            this.lblCusPhone.TabIndex = 1;
+            this.lblCusPhone.TabIndex = 2;
             this.lblCusPhone.Text = "Số điện thoại:";
             // 
             // lblCusName
@@ -103,7 +103,7 @@ namespace Csharp_Entity_Store_Management
             this.lblCusName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCusName.Name = "lblCusName";
             this.lblCusName.Size = new System.Drawing.Size(61, 20);
-            this.lblCusName.TabIndex = 1;
+            this.lblCusName.TabIndex = 3;
             this.lblCusName.Text = "Họ tên:";
             // 
             // lblCusAddress
@@ -113,7 +113,7 @@ namespace Csharp_Entity_Store_Management
             this.lblCusAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCusAddress.Name = "lblCusAddress";
             this.lblCusAddress.Size = new System.Drawing.Size(61, 20);
-            this.lblCusAddress.TabIndex = 1;
+            this.lblCusAddress.TabIndex = 4;
             this.lblCusAddress.Text = "Địa chỉ:";
             // 
             // btnUpdate
@@ -125,7 +125,7 @@ namespace Csharp_Entity_Store_Management
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(112, 35);
-            this.btnUpdate.TabIndex = 2;
+            this.btnUpdate.TabIndex = 7;
             this.btnUpdate.Text = "Cập nhật";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -139,7 +139,7 @@ namespace Csharp_Entity_Store_Management
             this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(112, 35);
-            this.btnClose.TabIndex = 2;
+            this.btnClose.TabIndex = 8;
             this.btnClose.Text = "Đóng";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -151,7 +151,7 @@ namespace Csharp_Entity_Store_Management
             this.lblHeading.Location = new System.Drawing.Point(31, 29);
             this.lblHeading.Name = "lblHeading";
             this.lblHeading.Size = new System.Drawing.Size(335, 25);
-            this.lblHeading.TabIndex = 3;
+            this.lblHeading.TabIndex = 0;
             this.lblHeading.Text = "Cập nhật thông tin khách hàng";
             // 
             // frmManagementCustomer
