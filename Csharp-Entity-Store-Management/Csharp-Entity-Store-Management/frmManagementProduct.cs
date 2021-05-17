@@ -46,7 +46,7 @@ namespace Csharp_Entity_Store_Management
             dataSanPham.Columns[2].HeaderText = "Loại hàng";
             dataSanPham.Columns[3].HeaderText = "Số lượng";
             dataSanPham.Columns[4].HeaderText = "Đơn giá";
-            
+            dataSanPham.Columns[4].DefaultCellStyle.Format = "#,### vnđ";
             dataSanPham.Columns[5].HeaderText = "Ngày nhập";
            
             dataSanPham.Columns[6].HeaderText = "Ngày cập nhật";
