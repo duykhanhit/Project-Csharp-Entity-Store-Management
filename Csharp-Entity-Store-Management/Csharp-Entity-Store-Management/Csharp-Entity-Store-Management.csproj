@@ -252,6 +252,7 @@
     <Content Include="Resources\edit_user.ico" />
     <None Include="Resources\printer1.png" />
     <None Include="Resources\logogooo.PNG" />
+    <None Include="Resources\logoo.png" />
     <Content Include="Resources\search_user.ico" />
     <Content Include="Resources\user_add.ico" />
     <Content Include="Resources\view_all.ico" />
