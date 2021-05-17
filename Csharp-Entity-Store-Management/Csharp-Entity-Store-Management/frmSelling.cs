@@ -27,30 +27,7 @@ namespace Csharp_Entity_Store_Management
 
         private void frmSelling_Load(object sender, EventArgs e)
         {
-            grbAddCustomer.Visible = false;
-            //grbCustomerDetail.Visible = false;
-            grbProductDetail.Visible = false;
-            dgvCarts.Visible = false;
-            lblDetailID.Visible = false;
-            lblUserName.Text = "Xin chào: " + user.fullname;
 
-            setDataDgvProducts();
-
-            var categories = db.Categories.Select(c => new
-            {
-                //categoryID = c.categoryID,
-                name = c.name
-            }).ToList();
-
-            //cbbCategories.DataSource = categories.ToList();
-            //cbbCategories.DisplayMember = "name";
-            //cbbCategories.ValueMember = "categoryID";
-            cbbCategories.Items.Add("Tất cả");
-            foreach(var category in categories)
-            {
-                cbbCategories.Items.Add(category.name);
-            }
-            cbbCategories.SelectedIndex = 0;
         }
 
         private void btnCheckPhone_Click(object sender, EventArgs e)
@@ -59,25 +36,14 @@ namespace Csharp_Entity_Store_Management
             //grbCustomerDetail.Visible = false;
 
             string phone = txtCheckPhone.Text;
-            var customer = db.Customers.Select(c => c).Where(c => c.phone == phone).SingleOrDefault();
 
-            if(customer == null)
+            if(phone.Length == 0)
             {
-                grbAddCustomer.Visible = true;
-                txtCustomerName.ReadOnly = false;
-                txtCustomerAddress.ReadOnly = false;
-                txtCustomerPhone.ReadOnly = false;
-                txtCustomerName.Clear();
-                txtCustomerAddress.Clear();
-                txtCheckPhone.Clear();
-                btnAddCustomer.Visible = true;
-                txtCustomerPhone.Text = phone;
+                MessageBox.Show("Chưa nhập số điện thoại khách hàng!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            txtCheckPhone.Clear();
 
-            setCustomerDetail(customer);
-            //lblCustomerCreatedAt.Text = customer.createdAt.ToString();
+            getAndSetCusomer(phone);
         }
 
         private void btnAddCustomer_Click(object sender, EventArgs e)
@@ -107,7 +73,7 @@ namespace Csharp_Entity_Store_Management
 
             db.Customers.Add(customer);
             db.SaveChanges();
-
+            btnUpdate.Visible = true;
             grbAddCustomer.Visible = false;
             setCustomerDetail(customer);
             //lblCustomerCreatedAt.Text = System.DateTime.Now.ToString();
@@ -504,6 +470,46 @@ namespace Csharp_Entity_Store_Management
             frm.ShowDialog();
             productInCarts = new List<ProductInCart>();
             this.frmSelling_Load(sender, e);
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string phone = txtCustomerPhone.Text;
+            frmManagementCustomer frm = new frmManagementCustomer();
+            frm.PhoneNumber = phone;
+            frm.ShowDialog();
+            getAndSetCusomer(phone);
+        }
+
+        private void getAndSetCusomer(string phone)
+        {
+            Customer customer = db.Customers.Select(c => c).Where(c => c.phone == phone).SingleOrDefault();
+
+            if (customer == null)
+            {
+                grbAddCustomer.Visible = true;
+                txtCustomerName.ReadOnly = false;
+                txtCustomerAddress.ReadOnly = false;
+                txtCustomerPhone.ReadOnly = false;
+                txtCustomerName.Clear();
+                txtCustomerAddress.Clear();
+                txtCheckPhone.Clear();
+                btnAddCustomer.Visible = true;
+                txtCustomerPhone.Text = phone;
+                return;
+            }
+            txtCheckPhone.Clear();
+            btnUpdate.Visible = true;
+            setCustomerDetail(customer);
+            db = new StoreEntities();
+        }
+
+        private void logout(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            frmLogin frm = new frmLogin();
+            frm.Closed += (s, args) => this.Close();
+            frm.Show();
         }
     }
 }

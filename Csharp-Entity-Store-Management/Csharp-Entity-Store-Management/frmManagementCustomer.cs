@@ -13,8 +13,8 @@ namespace Csharp_Entity_Store_Management
     public partial class frmManagementCustomer : Form
     {
         StoreEntities storeEntities;
-        public int CustomerID { get; set; }
         public string PhoneNumber { get; set; }
+        Customer customer;
         public frmManagementCustomer()
         {
             InitializeComponent();
@@ -28,14 +28,8 @@ namespace Csharp_Entity_Store_Management
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            int updateID = CustomerID;
-            Customer customer = storeEntities.Customers.
-                SingleOrDefault(c => c.customerID == updateID);
-
-            customer.customerID = CustomerID;
             customer.name = txtCusName.Text;
             customer.address = txtCusAddress.Text;
-            customer.phone = PhoneNumber;
             
 
             if (string.IsNullOrEmpty(customer.name) || string.IsNullOrEmpty(customer.name)
@@ -53,8 +47,13 @@ namespace Csharp_Entity_Store_Management
 
         private void frmManagementCustomer_Load(object sender, EventArgs e)
         {
-            CustomerID = 1;
-            PhoneNumber = "0377317662";
+            customer = storeEntities.Customers.
+                SingleOrDefault(c => c.phone == PhoneNumber);
+
+            txtCusID.Text = customer.customerID.ToString();
+            txtPhone.Text = customer.phone;
+            txtCusName.Text = customer.name;
+            txtCusAddress.Text = customer.address;
         }
     }
 }
