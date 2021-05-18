@@ -17,25 +17,8 @@ namespace Csharp_Entity_Store_Management
         public frmManagementProduct()
         {
             InitializeComponent();
-            loadData();
-            addBinding();
         }
         #region methods
-        void addBinding()
-        {
-            txtTen.DataBindings.Clear();
-            cbLoai.DataBindings.Clear();
-            txtSoLuong.DataBindings.Clear();
-            txtDonGia.DataBindings.Clear();
-            
-
-            txtTen.DataBindings.Add(new Binding("Text", dataSanPham.DataSource, "tensp", true, DataSourceUpdateMode.Never));
-            cbLoai.DataBindings.Add(new Binding("Text", dataSanPham.DataSource, "loai", true, DataSourceUpdateMode.Never));
-            txtSoLuong.DataBindings.Add(new Binding("Text", dataSanPham.DataSource, "soluong", true, DataSourceUpdateMode.Never));
-            txtDonGia.DataBindings.Add(new Binding("Text", dataSanPham.DataSource, "dongia", true, DataSourceUpdateMode.Never));
-         
-
-        }
         void loadData()
         {
             var result = from c in db.Products select new { ID = c.productID, tensp = c.name, loai = c.Category.name, soluong = c.stockOnHand, dongia = c.price, ngaytao = c.createdAt, ngaycapnhat = c.updatedAt };
@@ -50,6 +33,10 @@ namespace Csharp_Entity_Store_Management
             dataSanPham.Columns[5].HeaderText = "Ngày nhập";
            
             dataSanPham.Columns[6].HeaderText = "Ngày cập nhật";
+            txtTen.Clear();
+            txtSoLuong.Clear();
+            txtDonGia.Clear();
+            txtTen.Focus();
             
         }
         void addProduct()
@@ -72,7 +59,6 @@ namespace Csharp_Entity_Store_Management
                
                 db.SaveChanges();
                 loadData();
-                addBinding();
             }
             catch (Exception ex)
             {
@@ -103,7 +89,7 @@ namespace Csharp_Entity_Store_Management
                     db.SaveChanges();
                 }
                 loadData();
-                addBinding();
+
 
             }
             catch (Exception ex)
@@ -129,7 +115,7 @@ namespace Csharp_Entity_Store_Management
                 spSua.updatedAt = DateTime.Now;
                 db.SaveChanges();
                 loadData();
-                addBinding();
+            
 
             }
             catch (Exception ex)
@@ -155,13 +141,13 @@ namespace Csharp_Entity_Store_Management
             
             dataSanPham.Columns[6].HeaderText = "Ngày cập nhật";
             
-            addBinding();
+         
         }
         #endregion
         #region Events
         private void frmManagementProduct_Load(object sender, EventArgs e)
         {
-            //loadData();
+            loadData();
             var resultLoai = from c in db.Categories select c;
             cbLoai.DataSource = resultLoai.ToList();
             cbLoai.DisplayMember = "name";
@@ -342,15 +328,22 @@ namespace Csharp_Entity_Store_Management
                 MessageBox.Show("Error: " + ex.Message, "Cảnh báo");
             }
             loadData();
-            addBinding();
         }
         
 
         private void btnXem_Click(object sender, EventArgs e)
         {
             loadData();
-            addBinding();
         }
         #endregion
+
+        private void dataSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int d = e.RowIndex;
+            txtTen.Text = dataSanPham.Rows[d].Cells[1].Value.ToString();
+            cbLoai.Text = dataSanPham.Rows[d].Cells[2].Value.ToString();
+            txtSoLuong.Text = dataSanPham.Rows[d].Cells[3].Value.ToString();
+            txtDonGia.Text= dataSanPham.Rows[d].Cells[4].Value.ToString();
+        }
     }
 }
