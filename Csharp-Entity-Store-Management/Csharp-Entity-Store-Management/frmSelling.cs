@@ -27,7 +27,30 @@ namespace Csharp_Entity_Store_Management
 
         private void frmSelling_Load(object sender, EventArgs e)
         {
+            grbAddCustomer.Visible = false;
+            //grbCustomerDetail.Visible = false;
+            grbProductDetail.Visible = false;
+            dgvCarts.Visible = false;
+            lblDetailID.Visible = false;
+            lblUserName.Text = "Xin chào: " + user.fullname;
 
+            setDataDgvProducts();
+
+            var categories = db.Categories.Select(c => new
+            {
+                //categoryID = c.categoryID,
+                name = c.name
+            }).ToList();
+
+            //cbbCategories.DataSource = categories.ToList();
+            //cbbCategories.DisplayMember = "name";
+            //cbbCategories.ValueMember = "categoryID";
+            cbbCategories.Items.Add("Tất cả");
+            foreach (var category in categories)
+            {
+                cbbCategories.Items.Add(category.name);
+            }
+            cbbCategories.SelectedIndex = 0;
         }
 
         private void btnCheckPhone_Click(object sender, EventArgs e)
@@ -376,7 +399,11 @@ namespace Csharp_Entity_Store_Management
 
         private void txtQuantityDetail_TextChanged(object sender, EventArgs e)
         {
-            int quantity = int.Parse(txtQuantityDetail.Text);
+            string text = txtQuantityDetail.Text;
+            if(text.Length == 0){
+                text = "0";
+            }
+            int quantity = int.Parse(text);
             if(quantity == 0)
             {
                 btnDeleteProduct_Click(sender, e);
