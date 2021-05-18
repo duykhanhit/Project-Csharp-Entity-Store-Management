@@ -32,8 +32,8 @@ namespace Csharp_Entity_Store_Management
             dataNhapKho.Columns[3].HeaderText = "Ngày nhập";
    
             dataNhapKho.Columns[4].HeaderText = "Ngày cập nhật";
-        
 
+            txtSoLuong.Clear();
 
         }
         void addStockIn()
@@ -54,6 +54,8 @@ namespace Csharp_Entity_Store_Management
                     stThem.quantity += Convert.ToInt32(txtSoLuong.Text);
 
                 }
+                Product spThem = db.Products.Find(idSpThem);
+                spThem.stockOnHand += Convert.ToInt32(txtSoLuong.Text);
                 db.SaveChanges();
                 loadData();
             }
@@ -102,7 +104,6 @@ namespace Csharp_Entity_Store_Management
         private void dataNhapKho_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int d = e.RowIndex;
-            cbTen.Focus();
             cbTen.SelectedValue = Convert.ToInt32(dataNhapKho.Rows[d].Cells[1].Value.ToString());
             cbNCC.SelectedValue = Convert.ToInt32(dataNhapKho.Rows[d].Cells[0].Value.ToString());
             txtSoLuong.Text = dataNhapKho.Rows[d].Cells[2].Value.ToString();
