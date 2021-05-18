@@ -70,21 +70,45 @@ namespace Csharp_Entity_Store_Management
                 SL = a.Sum(t => t.stockOnHand)
             });
 
-            lblInventoryNumber.Text = totalProductOnHand.SingleOrDefault().SL.ToString() + " Sản phẩm";
+            var text1 = totalProductOnHand.SingleOrDefault();
+
+            if(text1 == null)
+            {
+                lblInventoryNumber.Text =  "0 Sản phẩm";
+            }
+            else
+            {
+                lblInventoryNumber.Text = text1.SL + " Sản phẩm";
+            }
 
             var totalProduct = db.OrderDetails.GroupBy(x => 1).Select(a => new
             {
                 Sl = a.Sum(t => t.quantity)
             }).SingleOrDefault();
 
-            lblSellNumber.Text = totalProduct.Sl.ToString() + " Sản phẩm";
+            if (totalProduct == null)
+            {
+                lblSellNumber.Text = "0 Sản phẩm";
+            }
+            else
+            {
+                lblSellNumber.Text = totalProduct.Sl + " Sản phẩm";
+            }
 
             var totalAmount = db.Orders.GroupBy(x => 1).Select(a => new
             {
                 total = a.Sum(t => t.totalAmount)
             }).SingleOrDefault();
 
-            lblTotalRevenue.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", totalAmount.total) + " vnđ";
+            if(totalAmount == null)
+            {
+                lblTotalRevenue.Text = 0 + " vnđ";
+            }
+            else
+            {
+                lblTotalRevenue.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", totalAmount.total) + " vnđ";
+            }
+
         }
     }
 }
