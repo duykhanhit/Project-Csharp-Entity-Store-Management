@@ -38,8 +38,8 @@ namespace Csharp_Entity_Store_Management
                 return;
             }
             currentUser = account;
-            this.Hide();
 
+            this.Hide();
             if (account.role.Equals("admin"))
             {
                 frmDashboard frmDashboard = new frmDashboard();
@@ -56,6 +56,7 @@ namespace Csharp_Entity_Store_Management
                 MessageBox.Show("Đăng nhập thành công với quyền nhân viên!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 frmSelling.Show();
             }
+
 
 
         }

@@ -117,9 +117,9 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel2.SetColumnSpan(this.label1, 2);
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label1.Location = new System.Drawing.Point(494, 48);
+            this.label1.Location = new System.Drawing.Point(521, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(302, 33);
+            this.label1.Size = new System.Drawing.Size(249, 29);
             this.label1.TabIndex = 8;
             this.label1.Text = "QUẢN LÝ HOÁ ĐƠN";
             // 
@@ -145,7 +145,7 @@ namespace Csharp_Entity_Store_Management
             this.lbOrderID.Location = new System.Drawing.Point(9, 26);
             this.lbOrderID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbOrderID.Name = "lbOrderID";
-            this.lbOrderID.Size = new System.Drawing.Size(127, 25);
+            this.lbOrderID.Size = new System.Drawing.Size(101, 20);
             this.lbOrderID.TabIndex = 3;
             this.lbOrderID.Text = "Mã hóa đơn: ";
             // 
@@ -155,7 +155,7 @@ namespace Csharp_Entity_Store_Management
             this.lbCusID.Location = new System.Drawing.Point(9, 88);
             this.lbCusID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbCusID.Name = "lbCusID";
-            this.lbCusID.Size = new System.Drawing.Size(158, 25);
+            this.lbCusID.Size = new System.Drawing.Size(126, 20);
             this.lbCusID.TabIndex = 5;
             this.lbCusID.Text = "Mã khách hàng: ";
             // 
@@ -165,7 +165,7 @@ namespace Csharp_Entity_Store_Management
             this.lbUserID.Location = new System.Drawing.Point(9, 119);
             this.lbUserID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbUserID.Name = "lbUserID";
-            this.lbUserID.Size = new System.Drawing.Size(136, 25);
+            this.lbUserID.Size = new System.Drawing.Size(107, 20);
             this.lbUserID.TabIndex = 6;
             this.lbUserID.Text = "Mã nhân viên:";
             // 
@@ -175,7 +175,7 @@ namespace Csharp_Entity_Store_Management
             this.lbCreateAt.Location = new System.Drawing.Point(9, 57);
             this.lbCreateAt.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbCreateAt.Name = "lbCreateAt";
-            this.lbCreateAt.Size = new System.Drawing.Size(95, 25);
+            this.lbCreateAt.Size = new System.Drawing.Size(74, 20);
             this.lbCreateAt.TabIndex = 4;
             this.lbCreateAt.Text = "Ngày lập:";
             // 
@@ -207,7 +207,7 @@ namespace Csharp_Entity_Store_Management
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 25);
+            this.label2.Size = new System.Drawing.Size(97, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Lọc hóa đơn";
             // 
@@ -216,9 +216,9 @@ namespace Csharp_Entity_Store_Management
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label3.Location = new System.Drawing.Point(133, 37);
+            this.label3.Location = new System.Drawing.Point(142, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 37);
+            this.label3.Size = new System.Drawing.Size(65, 37);
             this.label3.TabIndex = 1;
             this.label3.Text = "Từ ngày";
             // 
@@ -227,9 +227,9 @@ namespace Csharp_Entity_Store_Management
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label4.Location = new System.Drawing.Point(565, 37);
+            this.label4.Location = new System.Drawing.Point(574, 37);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 37);
+            this.label4.Size = new System.Drawing.Size(77, 37);
             this.label4.TabIndex = 2;
             this.label4.Text = "Đến ngày";
             // 
@@ -240,7 +240,7 @@ namespace Csharp_Entity_Store_Management
             this.dtpFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFrom.Location = new System.Drawing.Point(75, 77);
             this.dtpFrom.Name = "dtpFrom";
-            this.dtpFrom.Size = new System.Drawing.Size(200, 30);
+            this.dtpFrom.Size = new System.Drawing.Size(200, 26);
             this.dtpFrom.TabIndex = 3;
             this.dtpFrom.ValueChanged += new System.EventHandler(this.onDateFromChange);
             // 
@@ -251,7 +251,7 @@ namespace Csharp_Entity_Store_Management
             this.dtpTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpTo.Location = new System.Drawing.Point(513, 77);
             this.dtpTo.Name = "dtpTo";
-            this.dtpTo.Size = new System.Drawing.Size(200, 30);
+            this.dtpTo.Size = new System.Drawing.Size(200, 26);
             this.dtpTo.TabIndex = 4;
             this.dtpTo.ValueChanged += new System.EventHandler(this.onDateChange);
             // 
@@ -290,7 +290,7 @@ namespace Csharp_Entity_Store_Management
             // 
             // frmManagementOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1347, 720);
