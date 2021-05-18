@@ -504,12 +504,23 @@ namespace Csharp_Entity_Store_Management
             db = new StoreEntities();
         }
 
-        private void logout(object sender, FormClosedEventArgs e)
+
+       
+
+        private void btlLogout_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            frmLogin frm = new frmLogin();
-            frm.Closed += (s, args) => this.Close();
-            frm.Show();
+            DialogResult result = MessageBox.Show("Bạn có thực sự muốn đăng xuất không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (DialogResult.Yes.Equals(result))
+            {
+                frmLogin frm = new frmLogin();
+                frm.Closed += (s, args) => this.Close();
+                frm.Show();
+                this.Hide();
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }
