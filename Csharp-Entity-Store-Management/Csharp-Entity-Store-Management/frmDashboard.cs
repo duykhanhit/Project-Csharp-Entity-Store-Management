@@ -189,13 +189,13 @@ namespace Csharp_Entity_Store_Management
         {
             switch (index)
             {
-                case 1: btnDashboard.BackColor = Color.Blue; break;
-                case 2: btnProductManagement.BackColor = Color.Blue; break;
-                case 3: btnOrderManagement.BackColor = Color.Blue; break;
-                case 4: btnAccountManagement.BackColor = Color.Blue; break;
-                case 5: btnCategoryManagement.BackColor = Color.Blue; break;
-                case 6: btnStockInManagement.BackColor = Color.Blue; break;
-                case 7: btnSuppilerManagement.BackColor = Color.Blue; break;
+                case 1: btnDashboard.BackColor = Color.FromArgb(6, 82, 221); break;
+                case 2: btnProductManagement.BackColor = Color.FromArgb(6, 82, 221); break;
+                case 3: btnOrderManagement.BackColor = Color.FromArgb(6, 82, 221); break;
+                case 4: btnAccountManagement.BackColor = Color.FromArgb(6, 82, 221); break;
+                case 5: btnCategoryManagement.BackColor = Color.FromArgb(6, 82, 221); break;
+                case 6: btnStockInManagement.BackColor = Color.FromArgb(6, 82, 221); break;
+                case 7: btnSuppilerManagement.BackColor = Color.FromArgb(6, 82, 221); break;
             }
         }
     }
