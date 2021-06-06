@@ -28,13 +28,13 @@ namespace Csharp_Entity_Store_Management
 
             if (account == null)
             {
-                MessageBox.Show("Không tồn tại tài khoản!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Không tồn tại tài khoản!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             if (!account.password.Equals(password))
             {
-                MessageBox.Show("Sai mật khẩu!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Sai mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             currentUser = account;
@@ -45,7 +45,7 @@ namespace Csharp_Entity_Store_Management
                 frmDashboard frmDashboard = new frmDashboard();
                 frmDashboard.User = account;
                 frmDashboard.Closed += (s, args) => this.Close();
-                MessageBox.Show("Đăng nhập thành công với quyền quản trị!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Đăng nhập thành công với quyền quản trị!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 frmDashboard.Show();
             }
             else
@@ -53,12 +53,15 @@ namespace Csharp_Entity_Store_Management
                 frmSelling frmSelling = new frmSelling();
                 frmSelling.User = account;
                 frmSelling.Closed += (s, args) => this.Close();
-                MessageBox.Show("Đăng nhập thành công với quyền nhân viên!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Đăng nhập thành công với quyền nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 frmSelling.Show();
             }
 
+        }
 
-
+        private void frmLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) btnLogin.PerformClick();
         }
     }
 }

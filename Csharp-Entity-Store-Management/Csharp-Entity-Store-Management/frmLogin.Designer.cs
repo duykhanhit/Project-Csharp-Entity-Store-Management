@@ -47,7 +47,7 @@ namespace Csharp_Entity_Store_Management
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(62, 179);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(340, 38);
+            this.label1.Size = new System.Drawing.Size(267, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "ĐĂNG NHẬP HỆ THỐNG";
             // 
@@ -57,7 +57,7 @@ namespace Csharp_Entity_Store_Management
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(25, 231);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 28);
+            this.label2.Size = new System.Drawing.Size(78, 21);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tài khoản:";
             // 
@@ -67,7 +67,7 @@ namespace Csharp_Entity_Store_Management
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(25, 311);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 28);
+            this.label3.Size = new System.Drawing.Size(78, 21);
             this.label3.TabIndex = 2;
             this.label3.Text = "Mật khẩu:";
             // 
@@ -76,7 +76,7 @@ namespace Csharp_Entity_Store_Management
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(30, 259);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(333, 43);
+            this.txtUsername.Size = new System.Drawing.Size(333, 36);
             this.txtUsername.TabIndex = 1;
             // 
             // txtPassword
@@ -85,7 +85,7 @@ namespace Csharp_Entity_Store_Management
             this.txtPassword.Location = new System.Drawing.Point(30, 339);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(333, 47);
+            this.txtPassword.Size = new System.Drawing.Size(333, 39);
             this.txtPassword.TabIndex = 2;
             // 
             // btnLogin
@@ -106,7 +106,7 @@ namespace Csharp_Entity_Store_Management
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(30, 412);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(154, 29);
+            this.checkBox1.Size = new System.Drawing.Size(126, 24);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.Text = "Nhớ tài khoản";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -116,7 +116,7 @@ namespace Csharp_Entity_Store_Management
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Location = new System.Drawing.Point(206, 412);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(157, 25);
+            this.linkLabel1.Size = new System.Drawing.Size(127, 20);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Quên mật khẩu?";
@@ -133,7 +133,8 @@ namespace Csharp_Entity_Store_Management
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AcceptButton = this.btnLogin;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(390, 548);
@@ -151,6 +152,7 @@ namespace Csharp_Entity_Store_Management
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmLogin_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

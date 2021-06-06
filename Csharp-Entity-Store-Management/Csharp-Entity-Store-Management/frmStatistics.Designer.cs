@@ -31,19 +31,19 @@ namespace Csharp_Entity_Store_Management
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTotalRevenue = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblSellNumber = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblInventoryNumber = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.dgvCustomers = new System.Windows.Forms.DataGridView();
             this.dgvProducts = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblTotalRevenue = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblSellNumber = new System.Windows.Forms.Label();
-            this.lblInventoryNumber = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -96,6 +96,27 @@ namespace Csharp_Entity_Store_Management
             this.panel1.Size = new System.Drawing.Size(362, 126);
             this.panel1.TabIndex = 0;
             // 
+            // lblTotalRevenue
+            // 
+            this.lblTotalRevenue.AutoSize = true;
+            this.lblTotalRevenue.ForeColor = System.Drawing.Color.White;
+            this.lblTotalRevenue.Location = new System.Drawing.Point(15, 74);
+            this.lblTotalRevenue.Name = "lblTotalRevenue";
+            this.lblTotalRevenue.Size = new System.Drawing.Size(49, 21);
+            this.lblTotalRevenue.TabIndex = 1;
+            this.lblTotalRevenue.Text = "0 vnđ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(15, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(156, 21);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "TỔNG DOANH THU";
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -110,6 +131,27 @@ namespace Csharp_Entity_Store_Management
             this.panel2.Size = new System.Drawing.Size(360, 126);
             this.panel2.TabIndex = 1;
             // 
+            // lblSellNumber
+            // 
+            this.lblSellNumber.AutoSize = true;
+            this.lblSellNumber.ForeColor = System.Drawing.Color.White;
+            this.lblSellNumber.Location = new System.Drawing.Point(18, 74);
+            this.lblSellNumber.Name = "lblSellNumber";
+            this.lblSellNumber.Size = new System.Drawing.Size(19, 21);
+            this.lblSellNumber.TabIndex = 1;
+            this.lblSellNumber.Text = "0";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(18, 22);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(130, 21);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "SỐ LƯỢNG BÁN";
+            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -123,6 +165,27 @@ namespace Csharp_Entity_Store_Management
             this.panel3.Size = new System.Drawing.Size(365, 126);
             this.panel3.TabIndex = 2;
             // 
+            // lblInventoryNumber
+            // 
+            this.lblInventoryNumber.AutoSize = true;
+            this.lblInventoryNumber.ForeColor = System.Drawing.Color.White;
+            this.lblInventoryNumber.Location = new System.Drawing.Point(13, 74);
+            this.lblInventoryNumber.Name = "lblInventoryNumber";
+            this.lblInventoryNumber.Size = new System.Drawing.Size(19, 21);
+            this.lblInventoryNumber.TabIndex = 2;
+            this.lblInventoryNumber.Text = "0";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(13, 22);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(168, 21);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "SỐ LƯỢNG TỒN KHO";
+            // 
             // dgvCustomers
             // 
             this.dgvCustomers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -133,6 +196,7 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.SetColumnSpan(this.dgvCustomers, 3);
             this.dgvCustomers.Location = new System.Drawing.Point(3, 280);
             this.dgvCustomers.Name = "dgvCustomers";
+            this.dgvCustomers.RowHeadersVisible = false;
             this.dgvCustomers.RowHeadersWidth = 51;
             this.dgvCustomers.RowTemplate.Height = 24;
             this.dgvCustomers.Size = new System.Drawing.Size(545, 402);
@@ -148,6 +212,7 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.SetColumnSpan(this.dgvProducts, 3);
             this.dgvProducts.Location = new System.Drawing.Point(676, 280);
             this.dgvProducts.Name = "dgvProducts";
+            this.dgvProducts.RowHeadersVisible = false;
             this.dgvProducts.RowHeadersWidth = 51;
             this.dgvProducts.RowTemplate.Height = 24;
             this.dgvProducts.Size = new System.Drawing.Size(548, 402);
@@ -160,9 +225,9 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.SetColumnSpan(this.label1, 3);
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(130, 223);
+            this.label1.Location = new System.Drawing.Point(161, 227);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(291, 38);
+            this.label1.Size = new System.Drawing.Size(228, 30);
             this.label1.TabIndex = 5;
             this.label1.Text = "Danh sách khách VIP";
             // 
@@ -173,9 +238,9 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.SetColumnSpan(this.label2, 3);
             this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(813, 223);
+            this.label2.Location = new System.Drawing.Point(843, 227);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(273, 38);
+            this.label2.Size = new System.Drawing.Size(214, 30);
             this.label2.TabIndex = 6;
             this.label2.Text = "Sản phẩm bán chạy";
             // 
@@ -186,78 +251,15 @@ namespace Csharp_Entity_Store_Management
             this.tableLayoutPanel1.SetColumnSpan(this.label3, 7);
             this.label3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(534, 19);
+            this.label3.Location = new System.Drawing.Point(551, 23);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 38);
+            this.label3.Size = new System.Drawing.Size(125, 30);
             this.label3.TabIndex = 7;
             this.label3.Text = "THỐNG KÊ";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(15, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(197, 28);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "TỔNG DOANH THU";
-            // 
-            // lblTotalRevenue
-            // 
-            this.lblTotalRevenue.AutoSize = true;
-            this.lblTotalRevenue.ForeColor = System.Drawing.Color.White;
-            this.lblTotalRevenue.Location = new System.Drawing.Point(15, 74);
-            this.lblTotalRevenue.Name = "lblTotalRevenue";
-            this.lblTotalRevenue.Size = new System.Drawing.Size(65, 28);
-            this.lblTotalRevenue.TabIndex = 1;
-            this.lblTotalRevenue.Text = "label5";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(18, 22);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(165, 28);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "SỐ LƯỢNG BÁN";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(13, 22);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(214, 28);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "SỐ LƯỢNG TỒN KHO";
-            // 
-            // lblSellNumber
-            // 
-            this.lblSellNumber.AutoSize = true;
-            this.lblSellNumber.ForeColor = System.Drawing.Color.White;
-            this.lblSellNumber.Location = new System.Drawing.Point(18, 74);
-            this.lblSellNumber.Name = "lblSellNumber";
-            this.lblSellNumber.Size = new System.Drawing.Size(65, 28);
-            this.lblSellNumber.TabIndex = 1;
-            this.lblSellNumber.Text = "label8";
-            // 
-            // lblInventoryNumber
-            // 
-            this.lblInventoryNumber.AutoSize = true;
-            this.lblInventoryNumber.ForeColor = System.Drawing.Color.White;
-            this.lblInventoryNumber.Location = new System.Drawing.Point(13, 74);
-            this.lblInventoryNumber.Name = "lblInventoryNumber";
-            this.lblInventoryNumber.Size = new System.Drawing.Size(65, 28);
-            this.lblInventoryNumber.TabIndex = 2;
-            this.lblInventoryNumber.Text = "label9";
-            // 
             // frmStatistics
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1251, 709);
