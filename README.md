@@ -1,5 +1,5 @@
-<p align="center"># BÀI TẬP LỚN CSHARP QUẢN LÝ CỬA HÀNG BÁN TẠP HOÁ </p>
-<p align="center">### NHÓM SINH VIÊN CÔNG NGHỆ THÔNG TIN TRƯỜNG ĐHCN HÀ NỘI THỰC HIỆN! </p>
+# <p align="center">BÀI TẬP LỚN CSHARP QUẢN LÝ CỬA HÀNG BÁN TẠP HOÁ </p>
+### <p align="center">NHÓM SINH VIÊN CÔNG NGHỆ THÔNG TIN TRƯỜNG ĐHCN HÀ NỘI THỰC HIỆN! </p>
 <p align="center">
   <img width="300" height="150" src="https://thichchiase.com/wp-content/uploads/2020/04/fa9d4f7cf28b6f009570751504b5fbe1-1200x675.png">
 </p>
