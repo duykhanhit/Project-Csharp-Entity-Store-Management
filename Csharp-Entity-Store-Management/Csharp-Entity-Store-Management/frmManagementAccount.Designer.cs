@@ -74,10 +74,10 @@ namespace Csharp_Entity_Store_Management
             this.lblTenTK.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblTenTK.AutoSize = true;
             this.lblTenTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenTK.Location = new System.Drawing.Point(4, 100);
+            this.lblTenTK.Location = new System.Drawing.Point(4, 102);
             this.lblTenTK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTenTK.Name = "lblTenTK";
-            this.lblTenTK.Size = new System.Drawing.Size(137, 25);
+            this.lblTenTK.Size = new System.Drawing.Size(109, 20);
             this.lblTenTK.TabIndex = 15;
             this.lblTenTK.Text = "Tên tài khoản:";
             // 
@@ -86,10 +86,10 @@ namespace Csharp_Entity_Store_Management
             this.lblMK.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblMK.AutoSize = true;
             this.lblMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMK.Location = new System.Drawing.Point(4, 144);
+            this.lblMK.Location = new System.Drawing.Point(4, 147);
             this.lblMK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMK.Name = "lblMK";
-            this.lblMK.Size = new System.Drawing.Size(99, 25);
+            this.lblMK.Size = new System.Drawing.Size(79, 20);
             this.lblMK.TabIndex = 16;
             this.lblMK.Text = "Mật khẩu:";
             // 
@@ -98,10 +98,10 @@ namespace Csharp_Entity_Store_Management
             this.lblQuyen.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblQuyen.AutoSize = true;
             this.lblQuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuyen.Location = new System.Drawing.Point(629, 189);
+            this.lblQuyen.Location = new System.Drawing.Point(629, 191);
             this.lblQuyen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuyen.Name = "lblQuyen";
-            this.lblQuyen.Size = new System.Drawing.Size(77, 25);
+            this.lblQuyen.Size = new System.Drawing.Size(59, 20);
             this.lblQuyen.TabIndex = 17;
             this.lblQuyen.Text = "Quyền:";
             // 
@@ -110,10 +110,10 @@ namespace Csharp_Entity_Store_Management
             this.lblHoVaTen.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblHoVaTen.AutoSize = true;
             this.lblHoVaTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoVaTen.Location = new System.Drawing.Point(4, 189);
+            this.lblHoVaTen.Location = new System.Drawing.Point(4, 191);
             this.lblHoVaTen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHoVaTen.Name = "lblHoVaTen";
-            this.lblHoVaTen.Size = new System.Drawing.Size(101, 25);
+            this.lblHoVaTen.Size = new System.Drawing.Size(81, 20);
             this.lblHoVaTen.TabIndex = 18;
             this.lblHoVaTen.Text = "Họ và tên:";
             // 
@@ -122,10 +122,10 @@ namespace Csharp_Entity_Store_Management
             this.lblDC.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblDC.AutoSize = true;
             this.lblDC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDC.Location = new System.Drawing.Point(629, 55);
+            this.lblDC.Location = new System.Drawing.Point(629, 57);
             this.lblDC.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDC.Name = "lblDC";
-            this.lblDC.Size = new System.Drawing.Size(77, 25);
+            this.lblDC.Size = new System.Drawing.Size(61, 20);
             this.lblDC.TabIndex = 19;
             this.lblDC.Text = "Địa chỉ:";
             // 
@@ -134,10 +134,10 @@ namespace Csharp_Entity_Store_Management
             this.lblViTri.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblViTri.AutoSize = true;
             this.lblViTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblViTri.Location = new System.Drawing.Point(629, 100);
+            this.lblViTri.Location = new System.Drawing.Point(629, 102);
             this.lblViTri.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblViTri.Name = "lblViTri";
-            this.lblViTri.Size = new System.Drawing.Size(56, 25);
+            this.lblViTri.Size = new System.Drawing.Size(44, 20);
             this.lblViTri.TabIndex = 20;
             this.lblViTri.Text = "Vị trí:";
             // 
@@ -146,10 +146,10 @@ namespace Csharp_Entity_Store_Management
             this.lblDT.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblDT.AutoSize = true;
             this.lblDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDT.Location = new System.Drawing.Point(629, 144);
+            this.lblDT.Location = new System.Drawing.Point(629, 147);
             this.lblDT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDT.Name = "lblDT";
-            this.lblDT.Size = new System.Drawing.Size(105, 25);
+            this.lblDT.Size = new System.Drawing.Size(85, 20);
             this.lblDT.TabIndex = 21;
             this.lblDT.Text = "Điện thoại:";
             // 
@@ -158,7 +158,7 @@ namespace Csharp_Entity_Store_Management
             this.txtTenTK.Location = new System.Drawing.Point(230, 95);
             this.txtTenTK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTenTK.Name = "txtTenTK";
-            this.txtTenTK.Size = new System.Drawing.Size(219, 30);
+            this.txtTenTK.Size = new System.Drawing.Size(219, 26);
             this.txtTenTK.TabIndex = 0;
             // 
             // txtMK
@@ -166,7 +166,7 @@ namespace Csharp_Entity_Store_Management
             this.txtMK.Location = new System.Drawing.Point(230, 140);
             this.txtMK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMK.Name = "txtMK";
-            this.txtMK.Size = new System.Drawing.Size(219, 30);
+            this.txtMK.Size = new System.Drawing.Size(219, 26);
             this.txtMK.TabIndex = 1;
             // 
             // txtHoVaTen
@@ -174,7 +174,7 @@ namespace Csharp_Entity_Store_Management
             this.txtHoVaTen.Location = new System.Drawing.Point(230, 184);
             this.txtHoVaTen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtHoVaTen.Name = "txtHoVaTen";
-            this.txtHoVaTen.Size = new System.Drawing.Size(219, 30);
+            this.txtHoVaTen.Size = new System.Drawing.Size(219, 26);
             this.txtHoVaTen.TabIndex = 2;
             // 
             // txtDC
@@ -182,7 +182,7 @@ namespace Csharp_Entity_Store_Management
             this.txtDC.Location = new System.Drawing.Point(798, 50);
             this.txtDC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDC.Name = "txtDC";
-            this.txtDC.Size = new System.Drawing.Size(235, 30);
+            this.txtDC.Size = new System.Drawing.Size(235, 26);
             this.txtDC.TabIndex = 3;
             // 
             // txtViTri
@@ -190,7 +190,7 @@ namespace Csharp_Entity_Store_Management
             this.txtViTri.Location = new System.Drawing.Point(798, 95);
             this.txtViTri.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtViTri.Name = "txtViTri";
-            this.txtViTri.Size = new System.Drawing.Size(235, 30);
+            this.txtViTri.Size = new System.Drawing.Size(235, 26);
             this.txtViTri.TabIndex = 4;
             // 
             // txtDT
@@ -198,7 +198,7 @@ namespace Csharp_Entity_Store_Management
             this.txtDT.Location = new System.Drawing.Point(798, 140);
             this.txtDT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDT.Name = "txtDT";
-            this.txtDT.Size = new System.Drawing.Size(235, 30);
+            this.txtDT.Size = new System.Drawing.Size(235, 26);
             this.txtDT.TabIndex = 5;
             // 
             // dataGridViewAccount
@@ -225,7 +225,7 @@ namespace Csharp_Entity_Store_Management
             this.cbxQuyen.Location = new System.Drawing.Point(798, 184);
             this.cbxQuyen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxQuyen.Name = "cbxQuyen";
-            this.cbxQuyen.Size = new System.Drawing.Size(235, 33);
+            this.cbxQuyen.Size = new System.Drawing.Size(235, 28);
             this.cbxQuyen.TabIndex = 23;
             // 
             // txtAccountID
@@ -233,7 +233,7 @@ namespace Csharp_Entity_Store_Management
             this.txtAccountID.Location = new System.Drawing.Point(230, 50);
             this.txtAccountID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAccountID.Name = "txtAccountID";
-            this.txtAccountID.Size = new System.Drawing.Size(219, 30);
+            this.txtAccountID.Size = new System.Drawing.Size(219, 26);
             this.txtAccountID.TabIndex = 22;
             // 
             // lblAccountID
@@ -241,10 +241,10 @@ namespace Csharp_Entity_Store_Management
             this.lblAccountID.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblAccountID.AutoSize = true;
             this.lblAccountID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccountID.Location = new System.Drawing.Point(4, 55);
+            this.lblAccountID.Location = new System.Drawing.Point(4, 57);
             this.lblAccountID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAccountID.Name = "lblAccountID";
-            this.lblAccountID.Size = new System.Drawing.Size(130, 25);
+            this.lblAccountID.Size = new System.Drawing.Size(104, 20);
             this.lblAccountID.TabIndex = 14;
             this.lblAccountID.Text = "Mã tài khoản:";
             // 
@@ -334,9 +334,9 @@ namespace Csharp_Entity_Store_Management
             // 
             this.txtSearchKeyword.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtSearchKeyword.ForeColor = System.Drawing.Color.Silver;
-            this.txtSearchKeyword.Location = new System.Drawing.Point(3, 233);
+            this.txtSearchKeyword.Location = new System.Drawing.Point(3, 235);
             this.txtSearchKeyword.Name = "txtSearchKeyword";
-            this.txtSearchKeyword.Size = new System.Drawing.Size(220, 30);
+            this.txtSearchKeyword.Size = new System.Drawing.Size(220, 26);
             this.txtSearchKeyword.TabIndex = 26;
             this.txtSearchKeyword.Text = "Nhập tên tài khoản";
             // 
@@ -361,7 +361,7 @@ namespace Csharp_Entity_Store_Management
             this.cbxRole.FormattingEnabled = true;
             this.cbxRole.Location = new System.Drawing.Point(327, 3);
             this.cbxRole.Name = "cbxRole";
-            this.cbxRole.Size = new System.Drawing.Size(71, 33);
+            this.cbxRole.Size = new System.Drawing.Size(71, 28);
             this.cbxRole.TabIndex = 28;
             this.cbxRole.SelectedValueChanged += new System.EventHandler(this.cbxRole_SelectedValueChanged);
             // 
@@ -369,9 +369,9 @@ namespace Csharp_Entity_Store_Management
             // 
             this.lblFilterQuyen.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblFilterQuyen.AutoSize = true;
-            this.lblFilterQuyen.Location = new System.Drawing.Point(244, 12);
+            this.lblFilterQuyen.Location = new System.Drawing.Point(262, 14);
             this.lblFilterQuyen.Name = "lblFilterQuyen";
-            this.lblFilterQuyen.Size = new System.Drawing.Size(77, 25);
+            this.lblFilterQuyen.Size = new System.Drawing.Size(59, 20);
             this.lblFilterQuyen.TabIndex = 29;
             this.lblFilterQuyen.Text = "Quyền:";
             // 
@@ -383,7 +383,7 @@ namespace Csharp_Entity_Store_Management
             this.cbxAddress.FormattingEnabled = true;
             this.cbxAddress.Location = new System.Drawing.Point(547, 3);
             this.cbxAddress.Name = "cbxAddress";
-            this.cbxAddress.Size = new System.Drawing.Size(128, 33);
+            this.cbxAddress.Size = new System.Drawing.Size(128, 28);
             this.cbxAddress.TabIndex = 30;
             this.cbxAddress.SelectedValueChanged += new System.EventHandler(this.cbxAddress_SelectedValueChanged);
             // 
@@ -391,9 +391,9 @@ namespace Csharp_Entity_Store_Management
             // 
             this.lblFilterDC.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblFilterDC.AutoSize = true;
-            this.lblFilterDC.Location = new System.Drawing.Point(464, 12);
+            this.lblFilterDC.Location = new System.Drawing.Point(480, 14);
             this.lblFilterDC.Name = "lblFilterDC";
-            this.lblFilterDC.Size = new System.Drawing.Size(77, 25);
+            this.lblFilterDC.Size = new System.Drawing.Size(61, 20);
             this.lblFilterDC.TabIndex = 31;
             this.lblFilterDC.Text = "Địa chỉ:";
             // 
@@ -401,9 +401,9 @@ namespace Csharp_Entity_Store_Management
             // 
             this.lblFilterVitri.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblFilterVitri.AutoSize = true;
-            this.lblFilterVitri.Location = new System.Drawing.Point(25, 12);
+            this.lblFilterVitri.Location = new System.Drawing.Point(38, 14);
             this.lblFilterVitri.Name = "lblFilterVitri";
-            this.lblFilterVitri.Size = new System.Drawing.Size(61, 25);
+            this.lblFilterVitri.Size = new System.Drawing.Size(48, 20);
             this.lblFilterVitri.TabIndex = 32;
             this.lblFilterVitri.Text = "Vị trí: ";
             // 
@@ -415,7 +415,7 @@ namespace Csharp_Entity_Store_Management
             this.cbxPosition.FormattingEnabled = true;
             this.cbxPosition.Location = new System.Drawing.Point(92, 3);
             this.cbxPosition.Name = "cbxPosition";
-            this.cbxPosition.Size = new System.Drawing.Size(106, 33);
+            this.cbxPosition.Size = new System.Drawing.Size(106, 28);
             this.cbxPosition.TabIndex = 33;
             this.cbxPosition.SelectedValueChanged += new System.EventHandler(this.cbxPosition_SelectedValueChanged);
             // 
@@ -520,15 +520,15 @@ namespace Csharp_Entity_Store_Management
             this.label1.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.label1, 4);
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(470, 6);
+            this.label1.Location = new System.Drawing.Point(500, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(312, 32);
+            this.label1.Size = new System.Drawing.Size(251, 26);
             this.label1.TabIndex = 37;
             this.label1.Text = "QUẢN LÝ TÀI KHOẢN";
             // 
             // frmManagementAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1276, 749);

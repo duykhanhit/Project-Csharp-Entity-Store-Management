@@ -39,7 +39,7 @@ namespace Csharp_Entity_Store_Management
             lbDate.Text = lbDate.Text + date[0];
             User user = data.Users.Where(p => p.userID == order.userID).SingleOrDefault();
             lbUserID.Text = lbUserID.Text + user.userID;
-            lbUsername.Text = lbUsername.Text + user.username;
+            lbUsername.Text = lbUsername.Text + user.fullname;
             Customer customer = data.Customers.Where(p => p.customerID == order.customerID).SingleOrDefault();
             lbCustomerName.Text = lbCustomerName.Text + customer.name;
             lbCustomerAddress.Text = lbCustomerAddress.Text + customer.address;

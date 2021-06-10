@@ -68,6 +68,7 @@ namespace Csharp_Entity_Store_Management
             this.dataSanPham.Location = new System.Drawing.Point(4, 243);
             this.dataSanPham.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataSanPham.Name = "dataSanPham";
+            this.dataSanPham.RowHeadersVisible = false;
             this.dataSanPham.RowHeadersWidth = 51;
             this.dataSanPham.Size = new System.Drawing.Size(1158, 411);
             this.dataSanPham.TabIndex = 21;
